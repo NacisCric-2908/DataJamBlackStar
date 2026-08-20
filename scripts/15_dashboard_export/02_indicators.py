@@ -42,6 +42,7 @@ estrato_loc = pd.read_parquet(os.path.join(GOLD, 'socioeconomico', 'estrato_ofic
 emerg_upz_anio = pd.read_parquet(os.path.join(GOLD, 'emergencias', 'emergencias_upz_anio.parquet'))
 delitos_loc = pd.read_parquet(os.path.join(BASE, 'data', 'silver', 'seguridad', 'delitos_localidad.parquet')).drop(columns='geometry', errors='ignore')
 master_loc = pd.read_parquet(os.path.join(GOLD, 'modelos', 'dataset_hipotesis_localidad.parquet'))
+master_upz = pd.read_parquet(os.path.join(GOLD, 'modelos', 'dataset_hipotesis_upz.parquet'))
 
 # ══════════════════════════════════════════════════════════════════
 # indicators/upz_year.csv — UNA FILA = UPZ x AÑO
@@ -87,6 +88,14 @@ vuln_upz = dim_upz[['upz_id', 'upz_nombre', 'localidad_id', 'localidad_nombre']]
                                   'pct_estrato_5_6_oficial': 'pct_stratum_5_6'})[
         ['upz_id', 'stratum_avg', 'stratum_mode', 'pct_stratum_1_2', 'pct_stratum_5_6']],
     on='upz_id', how='left')
+# La población y su densidad acompañan al estrato porque la densidad es el confusor
+# que separa "hay poca infraestructura" de "hay mucha gente por km2" (rho=-0.50 con estrato).
+pob_vuln = master_upz.rename(columns={
+    'cod_upz': 'upz_id', 'poblacion_total': 'population',
+    'poblacion_mujeres': 'population_female', 'poblacion_0_14': 'population_0_14',
+    'densidad_poblacional_hab_km2': 'population_density_km2'})[
+    ['upz_id', 'population', 'population_female', 'population_0_14', 'population_density_km2']]
+vuln_upz = vuln_upz.merge(pob_vuln, on='upz_id', how='left')
 vuln_upz.to_csv(os.path.join(OUT, 'indicators', 'vulnerability.csv'), index=False)
 print(f"indicators/vulnerability.csv: {vuln_upz.shape} (snapshot, sin dimensión temporal)")
 
@@ -100,6 +109,19 @@ waste_upz = dim_upz.merge(aseo_upz.rename(columns={
     on='upz_id', how='left')[['upz_id', 'upz_nombre', 'localidad_id', 'localidad_nombre',
                                 'cestas', 'cestas_per_km2', 'containers', 'containers_per_km2',
                                 'sweeping_route_coverage']]
+# Cobertura POR HABITANTE junto a la de por km2: exponer solo la densidad por área
+# oculta la desigualdad real, porque las UPZ populares son más densas y aparentan
+# buena cobertura. Ambas normalizaciones viajan juntas para que el dashboard pueda
+# contrastarlas (ver informe_final.md, "Hallazgo transversal — Normalización per cápita").
+percap_upz = master_upz.rename(columns={
+    'cod_upz': 'upz_id', 'poblacion_total': 'population',
+    'cestas_por_1000hab': 'cestas_per_1000pop', 'cestas_por_10milhab': 'cestas_per_10000pop',
+    'contenedores_por_1000hab': 'containers_per_1000pop',
+    'deficit_aseo_percapita': 'waste_deficit_percapita',
+    'upz_residencial': 'is_residential'})[
+    ['upz_id', 'population', 'cestas_per_1000pop', 'cestas_per_10000pop',
+     'containers_per_1000pop', 'waste_deficit_percapita', 'is_residential']]
+waste_upz = waste_upz.merge(percap_upz, on='upz_id', how='left')
 waste_upz.to_csv(os.path.join(OUT, 'indicators', 'waste_infrastructure_upz.csv'), index=False)
 
 waste_loc = dim_loc.merge(aseo_loc.rename(columns={
@@ -107,6 +129,14 @@ waste_loc = dim_loc.merge(aseo_loc.rename(columns={
     'n_contenedores': 'containers', 'densidad_contenedores_km2': 'containers_per_km2'}),
     on='localidad_id', how='left')[['localidad_id', 'localidad_nombre', 'cestas', 'cestas_per_km2',
                                       'containers', 'containers_per_km2']]
+percap_loc = master_loc.rename(columns={
+    'cod_localidad': 'localidad_id', 'poblacion_total': 'population',
+    'cestas_por_1000hab': 'cestas_per_1000pop', 'cestas_por_10milhab': 'cestas_per_10000pop',
+    'contenedores_por_1000hab': 'containers_per_1000pop',
+    'deficit_aseo_percapita': 'waste_deficit_percapita'})[
+    ['localidad_id', 'population', 'cestas_per_1000pop', 'cestas_per_10000pop',
+     'containers_per_1000pop', 'waste_deficit_percapita']]
+waste_loc = waste_loc.merge(percap_loc, on='localidad_id', how='left')
 waste_loc.to_csv(os.path.join(OUT, 'indicators', 'waste_infrastructure_localidad.csv'), index=False)
 print(f"indicators/waste_infrastructure_{{upz,localidad}}.csv: {waste_upz.shape}, {waste_loc.shape} (snapshot)")
 

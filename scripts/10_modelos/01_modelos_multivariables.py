@@ -107,6 +107,22 @@ ajustar_conteo(master_loc,
                'area_km2', 'M4_conjunto_delitos_localidad',
                'Hipótesis conjunta: Vulnerabilidad+DéficitAseo+Arrojo+Policía -> Delitos')
 
+# ══════════════════════════════════════════════════════════════════
+# H1 per cápita — Cobertura de aseo ~ Estrato, con offset de POBLACIÓN
+# ══════════════════════════════════════════════════════════════════
+# Prueba decisiva que el offset por área no permitía hacer: ¿la desigualdad de
+# infraestructura entre estratos sobrevive al controlar por densidad poblacional?
+# Si el efecto del estrato desapareciera al añadir log(densidad), la brecha sería
+# un artefacto de que las UPZ populares son más densas. Si sobrevive, es una
+# desigualdad real de cobertura por habitante.
+res_upz = master_upz[master_upz['upz_residencial']].copy()
+res_upz['log_densidad_pob'] = np.log(res_upz['densidad_poblacional_hab_km2'])
+cols_h1pc = ['estrato_promedio_oficial', 'log_densidad_pob']
+print("\nVIF modelo H1 per cápita (UPZ):", vif_de(res_upz, cols_h1pc))
+ajustar_conteo(res_upz, 'n_cestas ~ estrato_promedio_oficial + log_densidad_pob',
+               'poblacion_total', 'M5_cestas_percapita_UPZ',
+               'H1 per cápita: Vulnerabilidad -> Cobertura de aseo por habitante (controla densidad)')
+
 df_res = pd.DataFrame(resultados)
 df_res.to_parquet(os.path.join(GOLD, 'modelos', 'resultados_modelos.parquet'), index=False)
 df_res.to_csv(os.path.join(OUT, 'resultados_modelos.csv'), index=False)

@@ -23,3 +23,8 @@ manzanaestratificacion,make_valid() sobre geometrías inválidas,geometrías top
 manzanaestratificacion,filtrar ESTRATO entre 1 y 6,excluir manzanas sin estratificar (comercial/industrial/institucional) o con estrato inválido,5110
 manzanaestratificacion,reproyección a EPSG:4326,unificar CRS para spatial join,39150
 manzanaestratificacion,spatial join (representative_point within) a UPZ y Localidad,"reemplaza el proxy de estrato autorreportado en UAECOB por la fuente oficial real; match 98.5% a UPZ, 100.0% a Localidad",39150
+poblacion_upz,agregar 36 columnas de edad a totales por sexo y niñez (0-14),la fuente viene desagregada por sexo y edad; el pipeline necesita totales y el corte de niñez,3472
+poblacion_upz,convertir 'Código UPZ' (texto con ceros a la izquierda) a entero,la llave de UPZ del pipeline es entera (extraída de CMIUUPLA); sin esto el join falla,3472
+poblacion_localidad,agregar 202 columnas de edad a totales por sexo y niñez (0-14),la fuente viene desagregada por sexo y edad; el pipeline necesita totales y el corte de niñez,837
+poblacion_localidad,normalizar 'Código Localidad' a texto de 2 dígitos con cero a la izquierda,"dim_localidad usa cod_localidad como texto zero-padded (""01""..""20"")",837
+poblacion_localidad,consolidar 'Cabecera Municipal' + 'Centro Poblado y Rural Disperso' en una fila por localidad-año,7 localidades traen componente urbano y rural en filas separadas; se conserva poblacion_cabecera aparte porque el denominador correcto depende del indicador (los delitos cubren toda la localidad; el aseo domiciliario es urbano),217

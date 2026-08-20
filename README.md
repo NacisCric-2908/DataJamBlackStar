@@ -10,10 +10,10 @@
 
 Este repositorio contiene **dos pipelines**:
 
-1. **Pipeline original** (`notebooks/`, 6 scripts) — primera versión del análisis, con hallazgos por correlación simple.
-2. **Pipeline riguroso ampliado** (`01_ingesta/` … `15_dashboard_export/`) — auditoría formal de datos, estadística espacial (Moran's I, LISA, Getis-Ord Gi*), modelos multivariables (Binomial Negativa) con control de confusores, análisis de robustez/MAUP, y una capa de datos exportada para un dashboard externo.
+1. **Pipeline original** (`notebooks/`, 2 notebooks) — primera versión del análisis, con hallazgos por correlación simple.
+2. **Pipeline riguroso ampliado** (`scripts/01_ingesta/` … `scripts/15_dashboard_export/`) — auditoría formal de datos, estadística espacial (Moran's I, LISA, Getis-Ord Gi*), modelos multivariables (Binomial Negativa) con control de confusores, análisis de robustez/MAUP, y una capa de datos exportada para un dashboard externo.
 
-👉 **El pipeline riguroso matiza los hallazgos del original**: las correlaciones simples (r=0.74, r=0.68) son reales pero están mediadas por el estrato socioeconómico una vez se controla estadísticamente por vulnerabilidad — no son un mecanismo de causación directo entre déficit de aseo → arrojo → delitos. Ver conclusiones actualizadas en [`14_resultados/informe_final.md`](14_resultados/informe_final.md).
+👉 **El pipeline riguroso matiza los hallazgos del original**: las correlaciones simples (r=0.74, r=0.68) son reales pero están mediadas por el estrato socioeconómico una vez se controla estadísticamente por vulnerabilidad — no son un mecanismo de causación directo entre déficit de aseo → arrojo → delitos. Ver conclusiones actualizadas en [`docs/informe_final.md`](docs/informe_final.md).
 
 ---
 
@@ -55,7 +55,7 @@ Modelos predictivos, machine learning, índices de priorización de intervenció
 
 ## 📊 2. Fuentes de datos utilizadas
 
-Se integraron **14 fuentes** del Portal de Datos Abiertos de Bogotá y de la Infraestructura de Datos Espaciales del Distrito Capital (IDECA). Los datos crudos (`Bronze/`) **no se versionan en este repositorio** por su peso (>2 GB, con archivos individuales de hasta 1.1 GB) — se descargan desde el enlace al final de este documento.
+Se integraron **15 fuentes** del Portal de Datos Abiertos de Bogotá y de la Infraestructura de Datos Espaciales del Distrito Capital (IDECA). Los datos crudos (`Bronze/`) **no se versionan en este repositorio** por su peso (~295 MB, con archivos individuales de hasta 79 MB) — se descargan desde el enlace al final de este documento.
 
 | # | Fuente | Entidad | Formato | Variables clave |
 |---|---|---|---|---|
@@ -73,12 +73,13 @@ Se integraron **14 fuentes** del Portal de Datos Abiertos de Bogotá y de la Inf
 | 12 | Macrorutas de barrido | UAESP | GeoJSON | cobertura de barrido mecánico/manual |
 | 13 | Estación de bomberos | UAECOB | GeoJSON | ubicación de las 17 estaciones |
 | 14 | Hábitat en cifras — indicadores urbanos | Secretaría Distrital del Hábitat | XLSX | parques, uso del suelo, % predios por estrato |
+| 15 | Proyecciones y retroproyecciones de población (2005–2035) | Secretaría Distrital de Planeación / DANE | ODS | población por UPZ y localidad, desagregada por sexo y grupo de edad |
 
 **Consideraciones sobre la obtención de los datos:**
 
 - Todas las fuentes son de acceso público (`datosabiertos.bogota.gov.co`, `ideca.gov.co`), no requieren credenciales ni autenticación.
 - La fuente #5 (estratificación por manzana) se incorporó en una segunda etapa del proyecto: la fuente #6 (Esoc) no tiene una llave espacial verificable a UPZ/localidad, así que se reemplazó como variable principal de vulnerabilidad — ver `02_auditoria/reporte_auditoria.md` sección 4.1.
-- No existe en ninguna de las 14 fuentes un dato oficial de **población por UPZ o localidad** — esto está documentado como limitación explícita en todo el pipeline (no se aproxima ni se inventa).
+- La **población oficial por UPZ y localidad** proviene de las proyecciones SDP/DANE (15ª fuente), que cubren exactamente los mismos 112 polígonos UPZ del pipeline (join 112/112, sin imputación). Los indicadores se reportan normalizados **por área y por población**, porque comparar ambas es lo que separa densidad urbana de cobertura real de servicio.
 - Descarga de `Bronze/`: ver [enlace de datos](#-enlace-de-datos-crudos) al final de este documento.
 
 ---
@@ -90,10 +91,10 @@ Se integraron **14 fuentes** del Portal de Datos Abiertos de Bogotá y de la Inf
 ```mermaid
 flowchart TD
     subgraph Bronze ["🥉 Bronze — datos crudos, sin modificar"]
-        B["14 fuentes: XLSX, CSV, GeoJSON, GDB"]
+        B["15 fuentes: XLSX, CSV, ODS, GeoJSON"]
     end
     subgraph Silver ["🥈 Silver — limpio, estandarizado, por dominio"]
-        S["territorio · aseo · seguridad · emergencias · policia · bomberos · socioeconomico"]
+        S["territorio · aseo · seguridad · emergencias · policia · bomberos · socioeconomico · poblacion"]
     end
     subgraph Gold ["🥇 Gold — variables analíticas"]
         G["dimensiones · indicadores · modelos · estadística espacial"]
@@ -110,20 +111,20 @@ flowchart TD
 
 | Fase | Carpeta | Qué hace |
 |---|---|---|
-| 1 | `01_ingesta/` | Catálogo de las 14 fuentes en Bronze (formato, tamaño, columnas) |
-| 2 | `02_auditoria/` | Auditoría de calidad: geometrías inválidas, duplicados, nulos, CRS, cobertura temporal — **antes** de transformar nada |
-| 3–4 | `03_limpieza/` | Normalización por dominio, con tabla de trazabilidad (fuente → transformación → motivo → registros afectados) |
-| 5 | `05_integracion_espacial/` | *Spatial joins* reales (point-in-polygon, `within`/`intersects`) — no *matching* por texto |
-| 6 | `06_construccion_variables/` | Dataset maestro UPZ/localidad, panel UPZ×año, datasets por hipótesis, diccionario de datos |
-| 7 | `07_eda/` | Análisis exploratorio (distribuciones, mapas, correlaciones) |
-| 8 | `08_estadistica/` | Matriz de correlación con corrección por comparaciones múltiples (FDR) |
-| 9 | `09_estadistica_espacial/` | Moran's I global, LISA (Moran local), Getis-Ord Gi*, Moran bivariado |
-| 10 | `10_modelos/` | Modelos de conteo (Poisson/Binomial Negativa) con control de confusores y VIF |
-| 11 | `11_espacio_temporal/` | Tendencias, años atípicos, zonas persistentes vs. emergentes |
-| 12 | `12_validacion/` | Robustez: UPZ vs. localidad (MAUP), distintas especificaciones, distintos períodos |
-| 13 | `13_visualizacion/` | Mapas finales (LISA, hotspots, superposición, zonas prioritarias) |
-| 14 | `14_resultados/` | Informe final consolidado |
-| 15 | `15_dashboard_export/` | Exporta `data/dashboard/` — capa de consumo para una app externa, sin modelos predictivos |
+| 1 | `scripts/01_ingesta/` | Catálogo de las 15 fuentes en Bronze (formato, tamaño, columnas) |
+| 2 | `scripts/02_auditoria/` | Auditoría de calidad: geometrías inválidas, duplicados, nulos, CRS, cobertura temporal — **antes** de transformar nada |
+| 3–4 | `scripts/03_limpieza/` | Normalización por dominio, con tabla de trazabilidad (fuente → transformación → motivo → registros afectados) |
+| 5 | `scripts/05_integracion_espacial/` | *Spatial joins* reales (point-in-polygon, `within`/`intersects`) — no *matching* por texto |
+| 6 | `scripts/06_construccion_variables/` | Dataset maestro UPZ/localidad, panel UPZ×año, datasets por hipótesis, diccionario de datos |
+| 7 | `notebooks/01_eda_dataset_maestro.ipynb` | Análisis exploratorio (distribuciones, mapas, correlaciones) |
+| 8 | `scripts/08_estadistica/` | Matriz de correlación con corrección por comparaciones múltiples (FDR) |
+| 9 | `scripts/09_estadistica_espacial/` | Moran's I global, LISA (Moran local), Getis-Ord Gi*, Moran bivariado |
+| 10 | `scripts/10_modelos/` | Modelos de conteo (Poisson/Binomial Negativa) con control de confusores y VIF |
+| 11 | `scripts/11_espacio_temporal/` | Tendencias, años atípicos, zonas persistentes vs. emergentes |
+| 12 | `scripts/12_validacion/` | Robustez: UPZ vs. localidad (MAUP), distintas especificaciones, distintos períodos |
+| 13 | `notebooks/02_mapas_finales.ipynb` | Mapas finales (LISA, hotspots, superposición, zonas prioritarias) |
+| 14 | `docs/informe_final.md` | Informe final consolidado |
+| 15 | `scripts/15_dashboard_export/` | Exporta `data/dashboard/` — capa de consumo para una app externa, sin modelos predictivos |
 
 ### Técnicas estadísticas empleadas
 
@@ -139,13 +140,13 @@ flowchart TD
 El repositorio sigue estrictamente el estándar de entregables del **DataJam Bogotá 2026**:
 
 ```text
-├── main.py                             # Orquestador integral ejecutable de todo el pipeline (30 tareas)
+├── main.py                             # Orquestador integral ejecutable de todo el pipeline (29 tareas)
 ├── README.md                           # Documentación completa del proyecto y metodología
 ├── requirements.txt                    # Dependencias fijadas y verificadas
 ├── .gitignore
 │
 ├── data/                               # Arquitectura Medallion y capas de consumo
-│   ├── bronze/                         # 14 fuentes crudas sin modificar (NO versionado — ver sección 5)
+│   ├── bronze/                         # 15 fuentes crudas sin modificar (NO versionado — ver sección 5)
 │   ├── silver/                         # Capa limpia y estandarizada por dominio (territorio, aseo, etc.)
 │   ├── gold/                           # Capa analítica: modelos, variables consolidadas y rankings
 │   └── dashboard/                      # Capa de consumo estructurada para visualización externa (CSV/GeoJSON)
@@ -204,7 +205,7 @@ pip install -r requirements.txt
 
 ### Obtener los datos crudos
 
-`data/bronze/` no se versiona en git por su peso (>2 GB). Descárgalo del enlace de Drive al final de este documento y colócalo en:
+`data/bronze/` no se versiona en git por su peso (~295 MB). Descárgalo del enlace de Drive al final de este documento y colócalo en:
 
 ```text
 DataJamBlackStar/data/bronze/
@@ -222,7 +223,7 @@ python -c "import pandas, geopandas, scipy, statsmodels, libpysal, esda; print('
 
 El pipeline completo se ejecuta de forma 100% reproducible con un solo comando mediante el orquestador principal:
 
-### Ejecución de todo el pipeline (30 tareas)
+### Ejecución de todo el pipeline (29 tareas)
 
 ```bash
 python main.py
@@ -251,7 +252,8 @@ Resultado principal: **[`docs/informe_final.md`](docs/informe_final.md)**.
 
 > Ver la tabla completa de 8 hipótesis (28 pruebas estadísticas) en [`docs/informe_final.md`](docs/informe_final.md) sección 6, o en formato de datos en [`data/dashboard/hypotheses/hypothesis_results.csv`](data/dashboard/hypotheses/hypothesis_results.csv).
 
-- **Confirmado:** la vulnerabilidad socioeconómica se asocia significativamente con el déficit de aseo (H1) y con la concentración de puntos críticos de arrojo clandestino (H3), de forma robusta a la unidad espacial (UPZ/localidad) y a la fuente de estrato (oficial vs. proxy).
+- **Desigualdad de cobertura (hallazgo principal):** al normalizar por población oficial (15ª fuente), las UPZ de **estrato 1–2 tienen 8,9 veces menos cestas por habitante** que las de estrato 4–6 (2,56 vs 22,81 por 1.000 hab). La brecha **persiste al controlar por densidad poblacional** (IRR=1,78 por punto de estrato, p<0,0001) — no es un efecto de aglomeración urbana.
+- **Confirmado:** la vulnerabilidad socioeconómica se asocia significativamente con el déficit de aseo (H1), de forma robusta a la unidad espacial (UPZ/localidad), a la fuente de estrato (oficial vs. proxy) y a la normalización (área vs. per cápita — donde de hecho se fortalece: rho -0,574 → -0,628).
 - **No respaldado:** el déficit de aseo por sí solo no predice el arrojo clandestino una vez se controla por estrato (H2) — de hecho, los puntos críticos están más cerca de la infraestructura formal que un punto aleatorio de la ciudad.
 - **Parcialmente respaldado:** arrojo↔delitos y arrojo↔emergencias tienen correlación bivariada fuerte (rho hasta 0.83) pero se atenúan al controlar por vulnerabilidad — evidencia de mediación por estrato, no de un efecto directo.
 
@@ -267,7 +269,6 @@ Resultado principal: **[`docs/informe_final.md`](docs/informe_final.md)**.
 | Reporte de auditoría de datos | [`scripts/02_auditoria/reporte_auditoria.md`](scripts/02_auditoria/reporte_auditoria.md) |
 | Diccionario de datos (Gold) | [`scripts/06_construccion_variables/data_dictionary.csv`](scripts/06_construccion_variables/data_dictionary.csv) |
 | Capa de datos para dashboard externo | [`data/dashboard/`](data/dashboard/) |
-| Nota técnica oficial del equipo | [`docs/nota_tecnica_datajam_2026.md`](docs/nota_tecnica_datajam_2026.md) |
 | Notebooks analíticos ejecutados | [`notebooks/`](notebooks/) |
 
 ### 🏛️ Recomendaciones de política pública (pipeline original — sujetas a los matices de la sección 7)
@@ -280,6 +281,8 @@ Resultado principal: **[`docs/informe_final.md`](docs/informe_final.md)**.
 
 ## 🔗 Enlace de datos crudos
 
-`data/bronze/` (14 fuentes + geodatabase, ~2 GB) no está versionado en git — descárgalo aquí:
+`data/bronze/` (15 fuentes, ~295 MB) no está versionado en git — descárgalo aquí:
+
+> **Nota:** la carpeta de Drive incluye además el geodatabase catastral de IDECA (`gdb_mr_v06_26.gdb`, ~1.7 GB) y otras capas exploratorias que **no** consume ninguna fase del pipeline. No es necesario descargarlas para reproducir el análisis.
 
 [Google Drive — Datos crudos del proyecto](https://drive.google.com/drive/folders/1jQZh3PLFPnMqk9hLOA2zVPJMGfBdlYMB?usp=drive_link)

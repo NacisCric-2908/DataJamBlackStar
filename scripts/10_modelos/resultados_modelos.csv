@@ -11,3 +11,5 @@ M4_conjunto_delitos_localidad,Hipótesis conjunta: Vulnerabilidad+DéficitAseo+A
 M4_conjunto_delitos_localidad,Hipótesis conjunta: Vulnerabilidad+DéficitAseo+Arrojo+Policía -> Delitos,BinomialNegativa(alpha=1.0),deficit_aseo_relativo,-0.6923,0.5,0.0594,-1.412,0.0275,19,248.1
 M4_conjunto_delitos_localidad,Hipótesis conjunta: Vulnerabilidad+DéficitAseo+Arrojo+Policía -> Delitos,BinomialNegativa(alpha=1.0),n_puntos_criticos,0.0071,1.007,0.7233,-0.0323,0.0465,19,248.1
 M4_conjunto_delitos_localidad,Hipótesis conjunta: Vulnerabilidad+DéficitAseo+Arrojo+Policía -> Delitos,BinomialNegativa(alpha=1.0),n_cuadrantes,-0.0037,0.996,0.8511,-0.0422,0.0349,19,248.1
+M5_cestas_percapita_UPZ,H1 per cápita: Vulnerabilidad -> Cobertura de aseo por habitante (controla densidad),BinomialNegativa(alpha=1.0),estrato_promedio_oficial,0.5752,1.777,0.0,0.3901,0.7603,109,1607.1
+M5_cestas_percapita_UPZ,H1 per cápita: Vulnerabilidad -> Cobertura de aseo por habitante (controla densidad),BinomialNegativa(alpha=1.0),log_densidad_pob,-0.6875,0.503,0.0,-0.9023,-0.4727,109,1607.1

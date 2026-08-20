@@ -1,16 +1,15 @@
 unidad,variable,tipo,n
-Localidad,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",4
+Localidad,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",3
 Localidad,deficit_aseo_relativo,"Hotspot (Gi* alto, sig.)",1
-Localidad,deficit_aseo_relativo,No significativo,15
+Localidad,deficit_aseo_relativo,No significativo,16
 Localidad,densidad_homicidios_km2,"Coldspot (Gi* bajo, sig.)",2
 Localidad,densidad_homicidios_km2,"Hotspot (Gi* alto, sig.)",1
 Localidad,densidad_homicidios_km2,No significativo,17
 Localidad,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",2
 Localidad,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",2
 Localidad,densidad_incidentes_km2,No significativo,16
-Localidad,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",1
 Localidad,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",1
-Localidad,densidad_puntos_criticos_km2,No significativo,18
+Localidad,densidad_puntos_criticos_km2,No significativo,19
 UPZ,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",39
 UPZ,deficit_aseo_relativo,"Hotspot (Gi* alto, sig.)",3
 UPZ,deficit_aseo_relativo,No significativo,70

@@ -9,3 +9,9 @@ densidad_cuadrantes_km2,0.7922,0.0,False
 densidad_incidentes_km2,0.8186,0.0,False
 dist_estacion_bomberos_m,0.9264,1e-05,False
 cobertura_macrorutas_pct,0.9372,5e-05,False
+deficit_aseo_percapita,0.4252,0.0,False
+cestas_por_1000hab,0.4203,0.0,False
+contenedores_por_1000hab,0.6561,0.0,False
+puntos_criticos_por_100milhab,0.6928,0.0,False
+incidentes_por_100milhab,0.1557,0.0,False
+densidad_poblacional_hab_km2,0.9807,0.10484,True

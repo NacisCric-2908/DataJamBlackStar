@@ -41,19 +41,43 @@ print(f"metadata/dataset_catalog.csv: {dataset_catalog.shape}")
 # ══════════════════════════════════════════════════════════════════
 # metadata/data_dictionary.csv — incluye lo disponible Y lo NOT_AVAILABLE_YET
 # ══════════════════════════════════════════════════════════════════
+# Columnas que estaban declaradas NOT_AVAILABLE_YET en versiones previas y hoy SÍ existen,
+# tras incorporar la 15ª fuente (proyecciones de población SDP/DANE por UPZ y localidad).
+DISPONIBLES_NUEVAS = [
+    dict(dataset='vulnerability.csv / waste_infrastructure_*.csv', column='population',
+         description='Población oficial proyectada (SDP/DANE, Censo 2018)',
+         data_type='int', unit='habitantes',
+         source='Bronze/202503_{upz,localidad}_proyeccion_retroproyeccion_poblacion_2005_2035.ods',
+         transformation='agregación de grupos de edad por sexo; join por código UPZ (112/112)',
+         spatial_granularity='UPZ/Localidad', temporal_granularity='corte 2024',
+         nullable='no', motivo='DISPONIBLE — son proyecciones sobre el Censo 2018, no conteo observado'),
+    dict(dataset='vulnerability.csv', column='population_density_km2', description='Densidad poblacional',
+         data_type='float', unit='hab/km2', source='derivada de population / area_km2',
+         transformation='cociente directo', spatial_granularity='UPZ',
+         temporal_granularity='corte 2024', nullable='no',
+         motivo='DISPONIBLE — confusor clave: correlaciona -0.50 con estrato'),
+    dict(dataset='waste_infrastructure_*.csv', column='cestas_per_1000pop / cestas_per_10000pop / containers_per_1000pop',
+         description='Cobertura de mobiliario de aseo por habitante',
+         data_type='float', unit='unidades por 1.000 y por 10.000 hab',
+         source='derivada de Silver/aseo + Silver/poblacion',
+         transformation='n / poblacion * 1e3 (o 1e4)', spatial_granularity='UPZ/Localidad',
+         temporal_granularity='infraestructura snapshot; población 2024', nullable='sí',
+         motivo='DISPONIBLE — nulo en las 3 UPZ no residenciales (is_residential=False)'),
+    dict(dataset='waste_infrastructure_*.csv', column='waste_deficit_percapita',
+         description='Déficit de aseo relativo, normalizado por población',
+         data_type='float', unit='z-score', source='derivada de Silver/aseo + Silver/poblacion',
+         transformation='-z(cestas_por_1000hab + contenedores_por_1000hab)',
+         spatial_granularity='UPZ/Localidad', temporal_granularity='corte 2024', nullable='sí',
+         motivo='DISPONIBLE — NO comparable en escala con el déficit por km2'),
+    dict(dataset='waste_infrastructure_upz.csv', column='is_residential',
+         description='Marca si la UPZ tiene población residencial suficiente para tasas per cápita',
+         data_type='bool', unit='booleano', source='derivada de population',
+         transformation='poblacion_total >= 1000', spatial_granularity='UPZ',
+         temporal_granularity='corte 2024', nullable='no',
+         motivo='DISPONIBLE — False en El Mochuelo (7 hab), Parque Entrenubes (698) y Aeropuerto El Dorado (918)'),
+]
+
 NOT_AVAILABLE = [
-    dict(dataset='ALL', column='population', description='Población oficial por UPZ/localidad',
-         data_type='NOT_AVAILABLE_YET', unit='habitantes', source='NOT_AVAILABLE_YET',
-         transformation='NOT_AVAILABLE_YET', spatial_granularity='UPZ/Localidad', temporal_granularity='N/A',
-         nullable='N/A', motivo='Ninguna de las 14 fuentes trae población oficial por UPZ/localidad (ver informe_final.md limitaciones #3)'),
-    dict(dataset='ALL', column='population_density', description='Densidad poblacional',
-         data_type='NOT_AVAILABLE_YET', unit='hab/km2', source='NOT_AVAILABLE_YET',
-         transformation='NOT_AVAILABLE_YET', spatial_granularity='UPZ/Localidad', temporal_granularity='N/A',
-         nullable='N/A', motivo='Depende de population, no disponible'),
-    dict(dataset='ALL', column='*_per_100k', description='Tasas por 100.000 habitantes (cestas, contenedores, puntos críticos, delitos, emergencias)',
-         data_type='NOT_AVAILABLE_YET', unit='tasa/100k hab', source='NOT_AVAILABLE_YET',
-         transformation='NOT_AVAILABLE_YET', spatial_granularity='UPZ/Localidad', temporal_granularity='N/A',
-         nullable='N/A', motivo='Requieren población, no disponible. Se usa *_per_km2 en su lugar'),
     dict(dataset='vulnerability.csv', column='pct_stratum_1 / pct_stratum_2 (por separado)',
          description='Porcentaje de manzanas en estrato 1, y en estrato 2, por separado',
          data_type='NOT_AVAILABLE_YET', unit='%', source='NOT_AVAILABLE_YET',
@@ -62,7 +86,7 @@ NOT_AVAILABLE = [
     dict(dataset='vulnerability.csv', column='population_stratum_1_2', description='Población en estratos 1-2',
          data_type='NOT_AVAILABLE_YET', unit='habitantes', source='NOT_AVAILABLE_YET',
          transformation='NOT_AVAILABLE_YET', spatial_granularity='UPZ/Localidad', temporal_granularity='N/A',
-         nullable='N/A', motivo='Requiere población, no disponible'),
+         nullable='N/A', motivo='La población YA está disponible (15ª fuente), pero el DANE no la desagrega por estrato. Estimarla multiplicando pct_estrato_1_2 por la población total asumiría densidad uniforme entre estratos, supuesto que los propios datos contradicen (las UPZ de estrato bajo son ~1.8x más densas)'),
     dict(dataset='crime (UPZ)', column='high_impact_crimes / crimes_per_km2 a nivel UPZ',
          description='Delitos de alto impacto por UPZ', data_type='NOT_AVAILABLE_YET', unit='conteo',
          source='NOT_AVAILABLE_YET', transformation='NOT_AVAILABLE_YET', spatial_granularity='UPZ',
@@ -102,9 +126,9 @@ DISPONIBLES = [
          temporal_granularity='snapshot', nullable='No', motivo=''),
 ]
 
-data_dict = pd.DataFrame(DISPONIBLES + NOT_AVAILABLE)
+data_dict = pd.DataFrame(DISPONIBLES + DISPONIBLES_NUEVAS + NOT_AVAILABLE)
 data_dict.to_csv(os.path.join(OUT, 'metadata', 'data_dictionary.csv'), index=False)
-print(f"metadata/data_dictionary.csv: {data_dict.shape} ({len(DISPONIBLES)} disponibles documentados + {len(NOT_AVAILABLE)} NOT_AVAILABLE_YET/BLOCKED)")
+print(f"metadata/data_dictionary.csv: {data_dict.shape} ({len(DISPONIBLES)} disponibles + {len(DISPONIBLES_NUEVAS)} nuevos por la 15ª fuente + {len(NOT_AVAILABLE)} NOT_AVAILABLE_YET/BLOCKED)")
 
 # ══════════════════════════════════════════════════════════════════
 # Validación (sección 21 de agent2.md)

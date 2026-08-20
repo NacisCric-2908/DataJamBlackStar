@@ -21,12 +21,19 @@ OUT = os.path.dirname(__file__)
 master_upz = pd.read_parquet(os.path.join(GOLD, 'modelos', 'dataset_hipotesis_upz.parquet'))
 master_loc = pd.read_parquet(os.path.join(GOLD, 'modelos', 'dataset_hipotesis_localidad.parquet'))
 
+# Las variables per cápita (15ª fuente: población DANE/SDP por UPZ) entran junto a las
+# de densidad por km2, no en su lugar: comparar ambas normalizaciones es justamente lo
+# que revela cuánto de un "déficit" es densidad urbana y cuánto es cobertura real.
 VARS_UPZ = ['estrato_promedio_oficial', 'estrato_promedio_reportado', 'deficit_aseo_relativo', 'densidad_cestas_km2',
             'densidad_contenedores_km2', 'densidad_puntos_criticos_km2', 'densidad_cuadrantes_km2',
-            'densidad_incidentes_km2', 'dist_estacion_bomberos_m', 'cobertura_macrorutas_pct']
+            'densidad_incidentes_km2', 'dist_estacion_bomberos_m', 'cobertura_macrorutas_pct',
+            'deficit_aseo_percapita', 'cestas_por_1000hab', 'contenedores_por_1000hab',
+            'puntos_criticos_por_100milhab', 'incidentes_por_100milhab', 'densidad_poblacional_hab_km2']
 VARS_LOC = ['estrato_promedio_oficial', 'estrato_promedio_reportado', 'deficit_aseo_relativo', 'densidad_cestas_km2',
             'densidad_puntos_criticos_km2', 'densidad_cuadrantes_km2', 'densidad_homicidios_km2',
-            'densidad_incidentes_km2', 'dist_estacion_bomberos_m']
+            'densidad_incidentes_km2', 'dist_estacion_bomberos_m',
+            'deficit_aseo_percapita', 'cestas_por_1000hab', 'puntos_criticos_por_100milhab',
+            'homicidios_por_100milhab', 'densidad_poblacional_hab_km2']
 
 
 def test_normalidad(df, cols):

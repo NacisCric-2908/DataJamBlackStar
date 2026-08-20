@@ -6,7 +6,7 @@
 Ejecuta de manera secuencial y reproducible todas las fases del pipeline analítico:
   01. Ingesta (Catálogo de fuentes Bronze)
   02. Auditoría de Calidad de Datos (16 chequeos + estrato oficial)
-  03. Normalización y Limpieza -> Silver (Territorio, Aseo, Bomberos, Policía, Delitos, RBL, Estratos)
+  03. Normalización y Limpieza -> Silver (Territorio, Aseo, Bomberos, Policía, Delitos, RBL, Estratos, Población)
   05. Integración Espacial (Spatial Joins & Análisis de Proximidad)
   06. Construcción de Variables -> Gold (Dataset Maestro, Panel UPZ-Año, Diccionario, Ranking)
   07. Análisis Exploratorio de Datos (EDA Notebook)
@@ -46,6 +46,7 @@ PIPELINE_STEPS = [
     (3, "Limpieza Silver — Residuos RBL (2021-2026)", "script", "scripts/03_limpieza/06_normalizacion_rbl.py"),
     (3, "Limpieza Silver — Estratificación Catastral (Esoc)", "script", "scripts/03_limpieza/07_normalizacion_socioeconomico.py"),
     (3, "Limpieza Silver — Estratificación Oficial Manzanas SDP", "script", "scripts/03_limpieza/08_normalizacion_estrato_oficial.py"),
+    (3, "Limpieza Silver — Población oficial por UPZ y localidad (DANE/SDP)", "script", "scripts/03_limpieza/09_normalizacion_poblacion.py"),
     (5, "Integración Espacial — Spatial Joins UPZ & Localidades", "script", "scripts/05_integracion_espacial/01_spatial_joins.py"),
     (5, "Integración Espacial — Análisis de Proximidad a Infraestructura", "script", "scripts/05_integracion_espacial/02_analisis_proximidad.py"),
     (6, "Construcción Variables — Dataset Maestro Gold", "script", "scripts/06_construccion_variables/01_dataset_maestro.py"),
@@ -83,6 +84,7 @@ def ensure_directories():
         BASE_DIR / 'data' / 'silver' / 'seguridad',
         BASE_DIR / 'data' / 'silver' / 'emergencias',
         BASE_DIR / 'data' / 'silver' / 'socioeconomico',
+        BASE_DIR / 'data' / 'silver' / 'poblacion',
         BASE_DIR / 'data' / 'gold' / 'dimensiones',
         BASE_DIR / 'data' / 'gold' / 'aseo',
         BASE_DIR / 'data' / 'gold' / 'emergencias',

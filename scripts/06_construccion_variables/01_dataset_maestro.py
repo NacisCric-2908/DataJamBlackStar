@@ -127,6 +127,46 @@ master_upz['deficit_aseo_relativo'] = (-z(infra_density)).round(3)  # alto = poc
 estrato_oficial_upz = pd.read_parquet(os.path.join(SILVER, 'socioeconomico', 'estrato_oficial_upz.parquet'))
 master_upz = master_upz.merge(estrato_oficial_upz, on='cod_upz', how='left')
 
+# ── Normalización POR POBLACIÓN (15ª fuente: proyecciones DANE/SDP por UPZ) ──
+# El offset por área confunde densidad urbana con déficit de servicio: una UPZ densa
+# y popular puede tener buena cobertura por km2 y aun así muy poca por habitante.
+# La fuente de población cubre los mismos 112 polígonos UPZ, sin imputación.
+POB_ANIO = 2024  # último año con dato observado-ajustado en la serie del DANE
+pob_upz = pd.read_parquet(os.path.join(SILVER, 'poblacion', 'poblacion_upz.parquet'))
+pob_upz = (pob_upz[pob_upz['anio'] == POB_ANIO]
+           [['cod_upz', 'poblacion_total', 'poblacion_mujeres', 'poblacion_0_14']])
+master_upz = master_upz.merge(pob_upz, on='cod_upz', how='left')
+
+master_upz['densidad_poblacional_hab_km2'] = (master_upz['poblacion_total'] / master_upz['area_km2']).round(1)
+
+# Las UPZ sin población residencial real (parques metropolitanos, aeropuerto, zonas de
+# protección) hacen explotar cualquier tasa per cápita: 7 habitantes en El Mochuelo dan
+# ratios sin sentido. Se marcan para poder excluirlas explícitamente en el análisis en
+# vez de dejar que un denominador diminuto domine los resultados.
+UMBRAL_POB_RESIDENCIAL = 1000
+master_upz['upz_residencial'] = master_upz['poblacion_total'] >= UMBRAL_POB_RESIDENCIAL
+
+pob = master_upz['poblacion_total'].where(master_upz['upz_residencial'])
+master_upz['cestas_por_1000hab'] = (master_upz['n_cestas'] / pob * 1000).round(3)
+master_upz['contenedores_por_1000hab'] = (master_upz['n_contenedores'] / pob * 1000).round(3)
+# Por 10.000 habitantes: es la unidad en la que la UAESP y los informes de política
+# pública suelen expresar cobertura de mobiliario, por eso se deja explícita en vez de
+# obligar a reescalar el indicador por 1.000 en cada consumo.
+master_upz['cestas_por_10milhab'] = (master_upz['n_cestas'] / pob * 1e4).round(2)
+master_upz['puntos_criticos_por_100milhab'] = (master_upz['n_puntos_criticos'] / pob * 1e5).round(2)
+master_upz['incidentes_por_100milhab'] = (master_upz['n_incidentes_total'] / pob * 1e5).round(2)
+
+# Déficit per cápita: mismo criterio que deficit_aseo_relativo (z-score invertido de la
+# infraestructura conjunta) pero sobre la base poblacional. Se calcula solo sobre las UPZ
+# residenciales para que la media/desviación no queden distorsionadas por las excluidas.
+res = master_upz['upz_residencial']
+infra_pc = master_upz.loc[res, 'cestas_por_1000hab'] + master_upz.loc[res, 'contenedores_por_1000hab']
+master_upz['deficit_aseo_percapita'] = (-z(infra_pc)).round(3)
+
+n_excl = int((~res).sum())
+print(f"Población UPZ {POB_ANIO}: {int(master_upz['poblacion_total'].sum()):,} hab | "
+      f"{n_excl} UPZ no residenciales (<{UMBRAL_POB_RESIDENCIAL} hab) excluidas de las tasas per cápita")
+
 master_upz.to_parquet(os.path.join(GOLD, 'modelos', 'dataset_hipotesis_upz.parquet'), index=False)
 
 # ══════════════════════════════════════════════════════════════════
@@ -156,6 +196,26 @@ master_loc['deficit_aseo_relativo'] = (-z(infra_density_loc)).round(3)
 
 estrato_oficial_loc = pd.read_parquet(os.path.join(SILVER, 'socioeconomico', 'estrato_oficial_localidad.parquet'))
 master_loc = master_loc.merge(estrato_oficial_loc, on='cod_localidad', how='left')
+
+# ── Normalización POR POBLACIÓN a nivel localidad ──
+# Se usa poblacion_total (urbana + rural) porque DAILoc reporta los delitos de toda la
+# localidad, no solo de la cabecera. poblacion_cabecera queda disponible en Silver para
+# los indicadores estrictamente urbanos (aseo domiciliario).
+pob_loc = pd.read_parquet(os.path.join(SILVER, 'poblacion', 'poblacion_localidad.parquet'))
+pob_loc = (pob_loc[pob_loc['anio'] == POB_ANIO]
+           [['cod_localidad', 'poblacion_total', 'poblacion_cabecera', 'poblacion_mujeres', 'pct_rural']])
+master_loc = master_loc.merge(pob_loc, on='cod_localidad', how='left')
+
+master_loc['densidad_poblacional_hab_km2'] = (master_loc['poblacion_total'] / master_loc['area_km2']).round(1)
+master_loc['cestas_por_1000hab'] = (master_loc['n_cestas'] / master_loc['poblacion_total'] * 1000).round(3)
+master_loc['contenedores_por_1000hab'] = (master_loc['n_contenedores'] / master_loc['poblacion_total'] * 1000).round(3)
+master_loc['cestas_por_10milhab'] = (master_loc['n_cestas'] / master_loc['poblacion_total'] * 1e4).round(2)
+master_loc['puntos_criticos_por_100milhab'] = (master_loc['n_puntos_criticos'] / master_loc['poblacion_total'] * 1e5).round(2)
+master_loc['homicidios_por_100milhab'] = (master_loc['homicidios_cont'] / master_loc['poblacion_total'] * 1e5).round(2)
+master_loc['vif_por_100milmujeres'] = (master_loc['violencia_intrafamiliar_cont'] / master_loc['poblacion_mujeres'] * 1e5).round(2)
+
+infra_pc_loc = master_loc['cestas_por_1000hab'] + master_loc['contenedores_por_1000hab']
+master_loc['deficit_aseo_percapita'] = (-z(infra_pc_loc)).round(3)
 
 master_loc.to_parquet(os.path.join(GOLD, 'modelos', 'dataset_hipotesis_localidad.parquet'), index=False)
 

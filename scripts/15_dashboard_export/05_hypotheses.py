@@ -11,6 +11,7 @@ no se re-derivan.
 """
 import os
 import pandas as pd
+from statsmodels.stats.multitest import multipletests
 
 BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 OUT = os.path.join(BASE, 'data', 'dashboard')
@@ -44,6 +45,17 @@ add('H1', 'Vulnerabilidad socioeconómica -> Déficit de infraestructura de aseo
     'estrato_promedio_oficial', 'deficit_aseo_relativo', 'Moran Bivariado (UPZ)',
     biv['moran_I_bivariado'], biv['p_value_sim'], 'Moran I bivariado', None,
     'SUPPORTED', 'CONFIRMADA')
+
+# H1 (per cápita) — evidencia con la 15ª fuente: población oficial por UPZ
+m5 = modelos[(modelos['modelo'] == 'M5_cestas_percapita_UPZ') &
+             (modelos['variable'] == 'estrato_promedio_oficial')]
+if len(m5):
+    r5 = m5.iloc[0]
+    add('H1', 'Vulnerabilidad socioeconómica -> Déficit de infraestructura de aseo',
+        'estrato_promedio_oficial', 'cestas_por_1000hab',
+        'Binomial Negativa (UPZ, offset=población, controla densidad poblacional)',
+        r5['coef'], r5['p_value'], f"IRR={r5['coef_exp_irr']}",
+        f"[{r5['ci_low']}, {r5['ci_high']}]", 'SUPPORTED', 'CONFIRMADA', n=int(r5['n']))
 
 # H2 — Déficit de aseo -> Arrojo clandestino
 m1_deficit = modelos[(modelos['modelo'] == 'M1_puntos_criticos_UPZ') & (modelos['variable'] == 'deficit_aseo_relativo')].iloc[0]
@@ -127,7 +139,34 @@ for _, r in modelos[modelos['modelo'] == 'M4_conjunto_delitos_localidad'].iterro
         'SUPPORTED' if r['p_value'] < 0.05 else 'NOT_SIGNIFICANT', 'PARCIALMENTE_RESPALDADA_POR_VULNERABILIDAD', n=int(r['n']))
 
 df = pd.DataFrame(filas)
+
+# ── Corrección por comparaciones múltiples (Benjamini-Hochberg) ──
+# La tabla reúne toda la familia de pruebas de hipótesis del estudio, así que
+# los p crudos están sujetos a inflación del error tipo I. Se aplica el mismo
+# criterio FDR que la fase 08 usa para la matriz de correlaciones, para que el
+# nivel de rigor sea consistente entre ambas salidas.
+mask = df['p_value'].notna()
+rechaza, p_adj, _, _ = multipletests(df.loc[mask, 'p_value'], alpha=0.05, method='fdr_bh')
+df['p_value_fdr'] = pd.NA
+df.loc[mask, 'p_value_fdr'] = p_adj.round(4)
+df['sig_tras_fdr'] = pd.NA
+df.loc[mask, 'sig_tras_fdr'] = rechaza
+
+# Un resultado que solo es significativo antes de corregir no puede sostenerse
+# como "CONFIRMADA": se degrada explícitamente y queda trazable en la tabla.
+degradadas = df[mask & (df['p_value'] < 0.05) & (~df['sig_tras_fdr'].astype(bool))]
+df.loc[degradadas.index, 'evidence_level'] = (
+    df.loc[degradadas.index, 'evidence_level'].replace('CONFIRMADA', 'PARCIALMENTE_RESPALDADA'))
+df.loc[degradadas.index, 'conclusion'] = 'SUPPORTED_ONLY_BEFORE_FDR'
+
 df.to_csv(os.path.join(OUT, 'hypotheses', 'hypothesis_results.csv'), index=False)
 print(f"hypotheses/hypothesis_results.csv: {df.shape} ({df['hypothesis_id'].nunique()} hipótesis, {len(df)} pruebas)")
 print(df.groupby('hypothesis_id').size())
+print(f"\nFDR (Benjamini-Hochberg) sobre {int(mask.sum())} pruebas:")
+print(f"  significativas con p crudo < 0.05 : {int((df.loc[mask, 'p_value'] < 0.05).sum())}")
+print(f"  sobreviven la corrección FDR       : {int(df['sig_tras_fdr'].fillna(False).astype(bool).sum())}")
+if len(degradadas):
+    print("  degradadas (solo significativas antes de corregir):")
+    for _, r in degradadas.iterrows():
+        print(f"    - {r['hypothesis_id']}: {r['method']} (p={r['p_value']} -> p_fdr={r['p_value_fdr']})")
 print("\n✅ hypotheses/ completo.")

@@ -47,6 +47,14 @@ FUENTES_DECLARADAS = {
     'indicadores-urbanos-habitat-en-cifras-en-las-localidades.xlsx': ('Hábitat en cifras — indicadores urbanos',
             'Secretaría Distrital del Hábitat',
             'https://datosabiertos.bogota.gov.co/dataset/habitat-en-cifras-en-las-localidades-indicadores-urbanos'),
+    '202503_upz_proyeccion_retroproyeccion_poblacion_2005_2035.ods': (
+            'Proyecciones de población 2005-2035 (UPZ) — 15ª fuente, resuelve la normalización per cápita',
+            'Secretaría Distrital de Planeación / DANE',
+            'https://datosabiertos.bogota.gov.co/dataset/proyecciones-y-retroproyecciones-de-poblacion-2005-2035'),
+    '202503_localidad_proyeccion_retroproyeccion_poblacion_2005_2035.ods': (
+            'Proyecciones de población 2005-2035 (localidad) — 15ª fuente',
+            'Secretaría Distrital de Planeación / DANE',
+            'https://datosabiertos.bogota.gov.co/dataset/proyecciones-y-retroproyecciones-de-poblacion-2005-2035'),
     'manzanaestratificacion.json': ('Estratificación para Bogotá (manzana) — 14ª fuente, incorporada tras el proxy',
             'Secretaría Distrital de Planeación',
             'https://datosabiertos.bogota.gov.co/dataset/estratificacion-para-bogota'),
