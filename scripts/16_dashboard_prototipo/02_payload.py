@@ -8,7 +8,10 @@ global, series temporales y la geometria simplificada de 01_geometria.py.
 
 No calcula nada nuevo. Renombra columnas a claves cortas (para que el JSON
 embebido pese poco) y redondea. Toda cifra que aparece en el tablero se puede
-rastrear hasta una columna de data/gold/ o data/dashboard/.
+rastrear hasta una columna de data/gold/ o data/dashboard/. En particular, las
+tasas per capita se toman ya calculadas de Gold, que resuelve alli cual es el
+denominador correcto para cada indicador (los delitos cubren toda la localidad,
+el aseo domiciliario solo la cabecera urbana).
 
 Sumapaz queda fuera de la capa de localidades por la misma razon documentada
 en 01_geometria.py: no tiene estrato oficial y los modelos por localidad
@@ -60,6 +63,13 @@ def construir_upz():
         ('ninos',    'n_ninos_expuestos',           0),
         ('distbomb', 'dist_estacion_bomberos_m',    3),
         ('idx',      'idx_vulnerabilidad_compuesta', 3),
+        # denominador poblacional (proyecciones DANE/SDP 2024, 15a fuente)
+        ('pob',       'poblacion_total',               0),
+        ('denspob',   'densidad_poblacional_hab_km2',  1),
+        ('cestashab', 'cestas_por_1000hab',            2),
+        ('emerghab',  'incidentes_por_100milhab',      1),
+        ('arrojohab', 'puntos_criticos_por_100milhab', 2),
+        ('defhab',    'deficit_aseo_percapita',        3),
     ]
 
     filas = []
@@ -70,6 +80,9 @@ def construir_upz():
             'nom': r['nombre_upz'],
             'loc': nombre_loc.get(clave, ''),
             'modal': val(r['estrato_modal_oficial'], 0),
+            # False en El Mochuelo, Parque Entrenubes y Aeropuerto El Dorado.
+            # Gold ya deja sus tasas per capita en nulo; el tablero las marca.
+            'resid': bool(r['upz_residencial']),
         }
         for destino, origen, dec in campos:
             fila[destino] = val(r[origen], dec)
@@ -95,6 +108,15 @@ def construir_localidades():
         ('homd',    'densidad_homicidios_km2',      2),
         ('vif',     'violencia_intrafamiliar_cont', 0),
         ('delitos', 'delitos_alto_impacto_cont',    0),
+        # denominador poblacional. No hay 'incidentes_por_100milhab' por
+        # localidad: las emergencias solo traen tasa per capita a nivel UPZ.
+        ('pob',       'poblacion_total',               0),
+        ('denspob',   'densidad_poblacional_hab_km2',  1),
+        ('cestashab', 'cestas_por_1000hab',            2),
+        ('arrojohab', 'puntos_criticos_por_100milhab', 2),
+        ('defhab',    'deficit_aseo_percapita',        3),
+        ('homhab',    'homicidios_por_100milhab',      1),
+        ('vifhab',    'vif_por_100milmujeres',         0),
     ]
 
     filas = []
@@ -216,7 +238,9 @@ def main():
     with open(destino, 'w', encoding='utf-8') as fh:
         json.dump(payload, fh, ensure_ascii=False, separators=(',', ':'))
 
-    print(f'UPZ:        {len(payload["upz"])}')
+    pob = sum(f['pob'] or 0 for f in payload['upz'])
+    sin_tasa = sum(1 for f in payload['upz'] if not f['resid'])
+    print(f'UPZ:        {len(payload["upz"])} ({pob:,.0f} hab, {sin_tasa} sin tasa per capita)')
     print(f'Localidades:{len(payload["loc"]):4d}')
     print(f'Hipotesis:  {len(payload["hip"])} filas de resultado')
     print(f'Series:     {len(payload["trends"])} variables')

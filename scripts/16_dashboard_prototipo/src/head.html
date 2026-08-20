@@ -89,6 +89,7 @@ a{color:var(--accent)}
   font-weight:600;padding:7px 4px;color:var(--ink-3);transition:background .12s,color .12s}
 .seg button:hover{background:var(--surface-2);color:var(--ink)}
 .seg button[aria-pressed="true"]{background:var(--accent);color:#fff}
+.rail-grp .cav{margin-top:6px}
 
 .canvas{min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:6px;
   box-shadow:var(--shadow);position:relative;overflow:hidden}
@@ -130,9 +131,9 @@ a{color:var(--accent)}
 .rows{display:grid;grid-template-columns:repeat(auto-fit,minmax(212px,1fr))}
 .row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;
   padding:8px 15px;border-bottom:1px solid var(--line-2);font-size:12.5px}
-.row .k{color:var(--ink-2)}
+.row .k{color:var(--ink-2);text-wrap:balance}
 .row .v{font-family:var(--mono);font-weight:600;font-variant-numeric:tabular-nums;font-size:12.5px}
-.row .v small{font-weight:400;color:var(--ink-3);font-size:10.5px;margin-left:2px}
+.row .v small{font-weight:400;color:var(--ink-3);font-size:10.5px;margin-left:2px;white-space:nowrap}
 .row+.row{box-shadow:-1px 0 0 var(--line-2)}
 .bar{grid-column:1/-1;height:3px;background:var(--line-2);border-radius:2px;overflow:hidden;margin-top:1px}
 .bar i{display:block;height:100%;background:var(--accent);border-radius:2px}

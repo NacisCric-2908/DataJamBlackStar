@@ -8,11 +8,11 @@
         <span class="eyebrow">BlackStar · DataJam Bogotá 2026 · prototipo</span>
       </div>
       <h1>El estrato es el mapa. <em>Todo lo demás lo calca.</em></h1>
-      <p class="dek">Cruce de catorce fuentes abiertas de la UAESP, la UAECOB, la Secretaría de Seguridad, la MEBOG y Planeación sobre 112 UPZ. La cadena que parecía obvia (menos canecas, más basura tirada, más delito) no aparece en los datos. Lo que aparece es una sola variable de fondo.</p>
+      <p class="dek">Cruce de quince fuentes abiertas de la UAESP, la UAECOB, la Secretaría de Seguridad, la MEBOG, Planeación y el DANE sobre 112 UPZ. La cadena que parecía obvia (menos canecas, más basura tirada, más delito) no aparece en los datos. Lo que aparece es una sola variable de fondo.</p>
     </div>
     <div class="counters">
       <div class="counter"><b class="num" id="k-upz">112</b><span>UPZ urbanas</span></div>
-      <div class="counter"><b class="num" id="k-src">14</b><span>fuentes abiertas</span></div>
+      <div class="counter"><b class="num" id="k-src">15</b><span>fuentes abiertas</span></div>
       <div class="counter"><b class="num" id="k-emerg">—</b><span>emergencias 2016-20</span></div>
       <div class="counter"><b class="num" id="k-arrojo">—</b><span>puntos de arrojo</span></div>
     </div>
@@ -30,10 +30,18 @@
       <div class="rail">
         <div class="rail-grp">
           <span class="eyebrow">Unidad</span>
-          <div class="seg" role="group" aria-label="Unidad territorial">
+          <div class="seg" id="lvlseg" role="group" aria-label="Unidad territorial">
             <button type="button" data-lvl="upz" aria-pressed="true">UPZ</button>
             <button type="button" data-lvl="loc" aria-pressed="false">Localidad</button>
           </div>
+        </div>
+        <div class="rail-grp">
+          <span class="eyebrow">Denominador</span>
+          <div class="seg" id="den" role="group" aria-label="Denominador">
+            <button type="button" data-den="km" aria-pressed="true">Por km²</button>
+            <button type="button" data-den="hab" aria-pressed="false">Por habitante</button>
+          </div>
+          <p class="cav" id="den-nota"></p>
         </div>
         <div class="rail-grp" id="ind-list">
           <span class="eyebrow">Indicador</span>
@@ -108,7 +116,7 @@
 
   <div class="footnote">
     <div><span class="eyebrow">Qué es esto</span>Prototipo de tablero. Todas las cifras salen de <code>data/dashboard/</code> y <code>data/gold/</code> del repositorio, no hay datos de relleno.</div>
-    <div><span class="eyebrow">Límites declarados</span>Análisis correlacional y espacial, sin diseño causal. Las áreas se comparan por km², no por habitante: no existe población oficial por UPZ en las fuentes usadas.</div>
+    <div><span class="eyebrow">Límites declarados</span>Análisis correlacional y espacial, sin diseño causal. Cada medida se puede ver por km² o por habitante, con la población de 2024 que el DANE proyecta sobre el Censo 2018. Ninguno de los dos divisores es neutral: el área castiga a las UPZ extensas y la población castiga a los parques y las zonas de oficinas, que reciben gente de día y tienen pocos residentes de noche.</div>
     <div><span class="eyebrow">Cortes parciales</span>UAECOB 2020 va hasta agosto. RBL 2026 tiene 5 de 12 meses. Violencia intrafamiliar 2026 es año en curso. Se muestran sin corregir y se advierten.</div>
     <div><span class="eyebrow">Perímetro</span>El mapa muestra la Bogotá urbana. Sumapaz queda fuera: la estratificación oficial por manzana de Planeación no lo cubre, y por eso los modelos por localidad corren con 19.</div>
   </div>

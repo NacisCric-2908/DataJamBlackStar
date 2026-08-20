@@ -8,15 +8,22 @@ const IND = [
   {k:'estrato', l:'Estrato promedio',         u:'',     s:'est',  lv:['upz','loc'], mv:'estrato_promedio_oficial',
    d:'Estratificación oficial por manzana, Secretaría Distrital de Planeación'},
   {k:'deficit', l:'Déficit de aseo',          u:'z',    s:'div',  lv:['upz','loc'], mv:'deficit_aseo_relativo',
+   kh:'defhab',    uh:'z',            lvh:['upz','loc'],
    d:'z-score invertido de la densidad de cestas y contenedores'},
   {k:'arrojo',  l:'Arrojo clandestino',       u:'/km²', s:'mal',  lv:['upz','loc'], mv:'densidad_puntos_criticos_km2',
-   d:'Puntos críticos activos de la UAESP por km²'},
+   kh:'arrojohab', uh:'/100 mil hab', lvh:['upz','loc'],
+   d:'Puntos críticos activos de la UAESP'},
   {k:'emerg',   l:'Emergencias',              u:'/km²', s:'mal',  lv:['upz','loc'], mv:'densidad_incidentes_km2',
-   d:'Incidentes atendidos por la UAECOB entre 2016 y 2020, por km²'},
+   kh:'emerghab',  uh:'/100 mil hab', lvh:['upz'],
+   d:'Incidentes atendidos por la UAECOB entre 2016 y 2020'},
   {k:'cestas',  l:'Cestas públicas',          u:'/km²', s:'bien', lv:['upz','loc'], mv:null,
-   d:'Dotación de mobiliario de aseo por km²'},
+   kh:'cestashab', uh:'/1.000 hab',   lvh:['upz','loc'],
+   d:'Dotación de mobiliario de aseo'},
   {k:'homd',    l:'Homicidios',               u:'/km²', s:'mal',  lv:['loc'],       mv:'densidad_homicidios_km2',
-   d:'DAILoc. Los delitos solo se publican por localidad'}
+   kh:'homhab',    uh:'/100 mil hab', lvh:['loc'],
+   d:'DAILoc. Los delitos solo se publican por localidad'},
+  {k:'denspob', l:'Densidad poblacional',     u:'hab/km²', s:'bien', lv:['upz','loc'], mv:null,
+   d:'Proyecciones de población 2024, DANE y Planeación'}
 ];
 const VARLBL = {
   deficit_aseo_relativo:'Déficit de aseo', densidad_puntos_criticos_km2:'Arrojo',
@@ -24,9 +31,11 @@ const VARLBL = {
   densidad_cuadrantes_km2:'Cuadrantes',   densidad_homicidios_km2:'Homicidios',
   estrato_promedio_reportado:'Estrato reportado',
   n_puntos_criticos:'Arrojo',      n_cuadrantes:'Cuadrantes de policía',
+  cestas_por_1000hab:'Cestas por habitante', homicidios_cont:'Homicidios',
+  n_incidentes_total:'Emergencias', deficit_aseo_percapita:'Déficit per cápita',
   distancia_a_cesta_m:'Distancia a cesta'
 };
-let lvl = 'upz', ind = 'idx', sel = null, RAMP = [], SURF = [255,255,255];
+let lvl = 'upz', ind = 'idx', den = 'km', sel = null, RAMP = [], SURF = [255,255,255];
 
 /* ── color, todo derivado de la rampa de estrato ─────────── */
 const hex = h => { h = h.trim().replace('#',''); return [0,2,4].map(i=>parseInt(h.substr(i,2),16)); };
@@ -75,6 +84,11 @@ const trazar = polys => polys.map(p =>
 /* ── utilidades ──────────────────────────────────────────── */
 const filas = () => lvl==='upz' ? D.upz : D.loc;
 const meta  = () => IND.find(i => i.k===ind);
+// el indicador solo cambia de denominador si Gold trae la tasa en este nivel
+const perCapita = () => { const m = meta(); return !!(m.kh && m.lvh.includes(lvl)); };
+const enHab  = () => den==='hab' && perCapita();
+const campo  = () => enHab() ? meta().kh : meta().k;
+const unidad = () => enHab() ? meta().uh : meta().u;
 const fmt = (v,dec=1) => (v===null||v===undefined||Number.isNaN(v)) ? '—'
   : v.toLocaleString('es-CO',{minimumFractionDigits:dec, maximumFractionDigits:dec});
 const fmtInt = v => (v===null||v===undefined) ? '—' : Math.round(v).toLocaleString('es-CO');
@@ -82,8 +96,8 @@ const fmtP = p => p===null||p===undefined ? '' : (p < 0.001 ? 'p<0,001' : 'p ' +
 
 /* ── mapa ────────────────────────────────────────────────── */
 function pintarMapa(){
-  const m = meta(), rows = filas(), g = D.geo[lvl];
-  const vals = rows.map(r=>r[ind]).filter(v => v!==null && v!==undefined);
+  const m = meta(), rows = filas(), g = D.geo[lvl], c = campo();
+  const vals = rows.map(r=>r[c]).filter(v => v!==null && v!==undefined);
   const lo = Math.min(...vals), hi = Math.max(...vals);
   const ext = Math.max(Math.abs(lo), Math.abs(hi)) || 1;
   const norm = m.s==='div'                         // divergente: el cero queda en el centro
@@ -91,14 +105,14 @@ function pintarMapa(){
     : v => hi===lo ? .5 : (v-lo)/(hi-lo);
 
   $('#map').innerHTML = rows.filter(r => g[r.id]).map(r => {
-    const v = r[ind];
+    const v = r[c];
     const fill = (v===null||v===undefined) ? 'var(--line)'
       : paleta(m.s==='est' ? (v-1)/5 : norm(v), m.s);
     const cls = sel===r.id ? 'on' : (sel ? 'dim' : '');
     return `<path d="${trazar(g[r.id])}" fill="${fill}" data-id="${r.id}" class="${cls}"><title>${r.nom}</title></path>`;
   }).join('');
 
-  $('#lg-title').textContent = m.l + (m.u ? ' · ' + m.u : '');
+  $('#lg-title').textContent = m.l + (unidad() ? ' · ' + unidad() : '');
   $('#lg-bar').innerHTML = rampaLeyenda(m.s).map(c=>`<i style="background:${c}"></i>`).join('');
   const dec = Math.max(Math.abs(lo), Math.abs(hi)) < 10 ? 2 : 0;
   $('#lg-min').textContent = m.s==='est' ? '1' : fmt(lo, dec);
@@ -109,8 +123,9 @@ function pintarMapa(){
     p.addEventListener('mouseenter', () => {
       const r = rows.find(x => x.id===p.dataset.id);
       const b = p.getBoundingClientRect(), c = canvas.getBoundingClientRect();
-      const v = r[ind];
-      tip.innerHTML = `${r.nom}<br><b>${fmt(v, Math.abs(v||0)<10 ? 2 : 1)}</b> ${m.u}`;
+      const v = r[c];
+      const sd = enHab() && r.resid === false ? '<br><small>sin población residente</small>' : '';
+      tip.innerHTML = `${r.nom}<br><b>${fmt(v, Math.abs(v||0)<10 ? 2 : 1)}</b> ${unidad()}${sd}`;
       tip.style.left = (b.left - c.left + b.width/2) + 'px';
       tip.style.top  = (b.top  - c.top) + 'px';
       tip.classList.add('show');
@@ -126,9 +141,13 @@ function pintarMapa(){
 /* ── panel de detalle ────────────────────────────────────── */
 function pintarPanel(){
   const rows = filas();
-  const orden = [...rows].sort((a,b)=>(b[ind] ?? -1e9)-(a[ind] ?? -1e9));
+  const c = campo();
+  const orden = [...rows].sort((a,b)=>(b[c] ?? -1e9)-(a[c] ?? -1e9));
   const r = rows.find(x => x.id===sel) || orden[0];
   const tope = k => Math.max(...rows.map(x => Math.abs(x[k] ?? 0))) || 1;
+  const par = (kkm,khab,lab,ukm,uhab,dkm,dhab) =>
+    (den==='hab' && r[khab] !== null && r[khab] !== undefined)
+      ? linea(khab,lab,uhab,dhab) : linea(kkm,lab,ukm,dkm);
   const linea = (k,lab,unit,dec=1) => (r[k]===null||r[k]===undefined) ? '' :
     `<div class="row"><span class="k">${lab}</span>
       <span class="v">${fmt(r[k],dec)}<small>${unit}</small></span>
@@ -147,19 +166,19 @@ function pintarPanel(){
     <div class="panel-head">
       <span class="eyebrow">${sel ? 'Zona fijada' : 'Valor más alto del indicador'}</span>
       <h3>${r.nom}</h3>
-      <div class="sub">${lvl==='upz' ? `UPZ ${r.id} · ${r.loc}` : `Localidad ${r.id}`} · ${fmt(r.area,1)} km²
+      <div class="sub">${lvl==='upz' ? `UPZ ${r.id} · ${r.loc}` : `Localidad ${r.id}`} · ${fmt(r.area,1)} km² · ${fmtInt(r.pob)} hab
         &nbsp;<span class="est" style="background:${paleta((est-1)/5,'est')}">${est}</span></div>
       ${chips ? `<div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:5px">${chips}</div>` : ''}
     </div>
     <div class="rows">
       ${linea('estrato','Estrato promedio','',2)}
       ${linea('pct12','Manzanas estrato 1 y 2','%',1)}
-      ${linea('cestas','Cestas','/km²',0)}
-      ${linea('deficit','Déficit de aseo','z',2)}
-      ${linea('arrojo','Arrojo clandestino','/km²',2)}
-      ${linea('emerg','Emergencias','/km²',0)}
-      ${lvl==='loc' ? linea('homd','Homicidios','/km²',2) : linea('incendios','Incendios','',0)}
-      ${lvl==='loc' ? linea('vif','Violencia intrafamiliar','',0) : linea('distbomb','Distancia a bomberos','m',0)}
+      ${par('cestas','cestashab','Cestas','/km²','/1.000 hab',0,1)}
+      ${par('deficit','defhab','Déficit de aseo','z','z per cápita',2,2)}
+      ${par('arrojo','arrojohab','Arrojo clandestino','/km²','/100 mil hab',2,2)}
+      ${par('emerg','emerghab','Emergencias','/km²','/100 mil hab',0,0)}
+      ${lvl==='loc' ? par('homd','homhab','Homicidios','/km²','/100 mil hab',2,1) : linea('incendios','Incendios','',0)}
+      ${lvl==='loc' ? par('vif','vifhab','Violencia intrafamiliar','','/100 mil mujeres',0,0) : linea('distbomb','Distancia a bomberos','m',0)}
     </div>
     <div class="panel-foot">${lvl==='upz'
       ? `Índice compuesto <b class="num">${fmt(r.idx,2)}</b>. Puesto ${puesto} de ${rows.length} UPZ.`
@@ -179,7 +198,25 @@ function pintarRail(){
     b.onclick = () => { ind = i.k; sel = null; pintarRail(); pintarMapa(); pintarPanel(); };
     box.appendChild(b);
   });
+  pintarDenominador();
   pintarMoran();
+}
+
+/* ── denominador ─────────────────────────────────────────── */
+function pintarDenominador(){
+  // el denominador es una preferencia general y siempre se puede fijar. El
+  // indicador que no la puede honrar cae a km2 y la nota dice por que, en vez
+  // de bloquear el control y tragarse el clic.
+  const m = meta();
+  document.querySelectorAll('#den button').forEach(b =>
+    b.setAttribute('aria-pressed', String(b.dataset.den===den)));
+
+  let nota;
+  if (den !== 'hab')      nota = 'Población de 2024, proyectada por el DANE sobre el Censo 2018.';
+  else if (!m.kh)         nota = `${m.l} sigue en su escala: no es un conteo que se pueda repartir entre habitantes.`;
+  else if (!perCapita())  nota = `${m.l} solo trae tasa por habitante a nivel de UPZ, así que el mapa se queda en km².`;
+  else                    nota = 'Ojo con el tope: parques y zonas de oficinas reciben gente de día y tienen pocos residentes de noche, así que su tasa se dispara. Tres UPZ sin población residente quedan en gris.';
+  $('#den-nota').textContent = nota;
 }
 function pintarMoran(){
   const box = $('#moran');
@@ -194,11 +231,17 @@ function pintarMoran(){
       <span class="p ${m.sig?'sig':''}">${fmtP(m.p)}</span></div>`).join('') +
     `<p class="cav">I de Moran. Por encima de cero el fenómeno se agrupa en el espacio en vez de repartirse al azar.</p>`);
 }
-document.querySelectorAll('.seg button').forEach(b => {
+document.querySelectorAll('#lvlseg button').forEach(b => {
   b.onclick = () => {
     lvl = b.dataset.lvl; sel = null;
-    document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', String(x===b)));
+    document.querySelectorAll('#lvlseg button').forEach(x => x.setAttribute('aria-pressed', String(x===b)));
     if (!meta().lv.includes(lvl)) ind = 'estrato';
+    pintarRail(); pintarMapa(); pintarPanel();
+  };
+});
+document.querySelectorAll('#den button').forEach(b => {
+  b.onclick = () => {
+    den = b.dataset.den; sel = null;
     pintarRail(); pintarMapa(); pintarPanel();
   };
 });
@@ -235,6 +278,7 @@ function pintarHipotesis(){
   $('#hyps').innerHTML = Object.entries(grupos).map(([id, rs]) => {
     const n = NIVEL[rs[0].niv] || NIVEL.NO_RESPALDADA;
     const corto = m => m
+      .replace('Binomial Negativa (UPZ, offset=población, controla densidad poblacional)','NegBin per cápita')
       .replace('Binomial Negativa multivariable','NegBin')
       .replace('Spearman bivariado','Spearman')
       .replace('Moran Bivariado','Moran biv.')
@@ -321,7 +365,7 @@ function pintarRanking(){
   }).join('');
   $('#rank').querySelectorAll('tr').forEach(tr => tr.onclick = () => {
     lvl = 'upz'; sel = tr.dataset.id;
-    document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.lvl==='upz')));
+    document.querySelectorAll('#lvlseg button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.lvl==='upz')));
     if (!meta().lv.includes('upz')) ind = 'idx';
     pintarRail(); pintarMapa(); pintarPanel(); pintarRanking();
   });

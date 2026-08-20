@@ -28,12 +28,12 @@ estándar.
 | Script | Entrada | Salida |
 |---|---|---|
 | `01_geometria.py` | `data/dashboard/spatial/*.geojson` (5,1 MB) | `data/dashboard/prototipo/geo.json` (89 KB) |
-| `02_payload.py` | `data/gold/` + `data/dashboard/` + `geo.json` | `data/dashboard/prototipo/payload.json` (160 KB) |
-| `03_build.py` | `src/` + `payload.json` | `outputs/dashboard_prototipo_atlas.html` (198 KB) |
+| `02_payload.py` | `data/gold/` + `data/dashboard/` + `geo.json` | `data/dashboard/prototipo/payload.json` (174 KB) |
+| `03_build.py` | `src/` + `payload.json` | `outputs/dashboard_prototipo_atlas.html` (216 KB) |
 
 Los fuentes viven separados en `src/` (`head.html` con el CSS, `body.html` con
 el marcado, `app.js` con la lógica) porque editar los tres dentro de un archivo
-de 198 KB con el JSON incrustado en la mitad es inmanejable. `03_build.py` los
+de 216 KB con el JSON incrustado en la mitad es inmanejable. `03_build.py` los
 concatena.
 
 ## Decisiones que afectan lo que se ve
@@ -62,9 +62,24 @@ concuerdan: la UPZ 89 (San Isidro - Patios, Chapinero) sale con
 y etiqueta `No significativo`. El Gi\* no se pudo calcular ahí. La etiqueta es
 el campo conservador.
 
-**Las comparaciones son por km², nunca por habitante.** No existe población
-oficial por UPZ en las fuentes usadas, así que no se pueden construir tasas por
-cada 100.000 habitantes. El tablero lo declara.
+**El denominador se elige, y ninguna de las dos opciones es neutral.** Desde la
+15ª fuente (proyecciones de población del DANE y Planeación, año 2024) cada
+medida se puede ver por km² o por habitante. El área castiga a las UPZ
+extensas; la población castiga a los parques y las zonas de oficinas, que
+reciben gente de día y tienen pocos residentes de noche. Se ve en vivo: al
+pasar el arrojo clandestino a per cápita, Zona Industrial (6.944 residentes)
+salta del puesto 70 al primero. Por eso el control lleva su advertencia al lado
+y el tablero muestra las dos vistas en vez de escoger una.
+
+Las tasas se toman ya calculadas de Gold, que resuelve allí cuál es el
+denominador correcto para cada indicador: los delitos cubren toda la localidad
+y el aseo domiciliario solo la cabecera urbana. Tres UPZ (El Mochuelo, Parque
+Entrenubes y Aeropuerto El Dorado) no tienen población residente y Gold deja
+sus tasas en nulo; el mapa las pinta en gris y el tablero lo dice.
+
+Dos indicadores no cambian de denominador porque no son conteos: el estrato
+promedio y el índice compuesto. Las emergencias solo traen tasa per cápita a
+nivel de UPZ, así que por localidad el mapa se queda en km² y lo explica.
 
 ## Cortes parciales que el tablero advierte
 
