@@ -1,0 +1,115 @@
+<header class="masthead">
+  <div class="masthead-in">
+    <div>
+      <div class="brand">
+        <div class="ramp" aria-hidden="true">
+          <i style="background:var(--e1)"></i><i style="background:var(--e2)"></i><i style="background:var(--e3)"></i><i style="background:var(--e4)"></i><i style="background:var(--e5)"></i><i style="background:var(--e6)"></i>
+        </div>
+        <span class="eyebrow">BlackStar · DataJam Bogotá 2026 · prototipo</span>
+      </div>
+      <h1>El estrato es el mapa. <em>Todo lo demás lo calca.</em></h1>
+      <p class="dek">Cruce de catorce fuentes abiertas de la UAESP, la UAECOB, la Secretaría de Seguridad, la MEBOG y Planeación sobre 112 UPZ. La cadena que parecía obvia (menos canecas, más basura tirada, más delito) no aparece en los datos. Lo que aparece es una sola variable de fondo.</p>
+    </div>
+    <div class="counters">
+      <div class="counter"><b class="num" id="k-upz">112</b><span>UPZ urbanas</span></div>
+      <div class="counter"><b class="num" id="k-src">14</b><span>fuentes abiertas</span></div>
+      <div class="counter"><b class="num" id="k-emerg">—</b><span>emergencias 2016-20</span></div>
+      <div class="counter"><b class="num" id="k-arrojo">—</b><span>puntos de arrojo</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="sec">
+    <div class="sec-head">
+      <h2>Atlas territorial</h2>
+      <p>Elige un indicador y una unidad. Pasa el cursor para comparar, haz clic para fijar una zona.</p>
+    </div>
+    <div class="atlas">
+      <div class="rail">
+        <div class="rail-grp">
+          <span class="eyebrow">Unidad</span>
+          <div class="seg" role="group" aria-label="Unidad territorial">
+            <button type="button" data-lvl="upz" aria-pressed="true">UPZ</button>
+            <button type="button" data-lvl="loc" aria-pressed="false">Localidad</button>
+          </div>
+        </div>
+        <div class="rail-grp" id="ind-list">
+          <span class="eyebrow">Indicador</span>
+        </div>
+        <div class="rail-grp legend">
+          <span class="eyebrow" id="lg-title">Indicador</span>
+          <div class="legend-bar" id="lg-bar"></div>
+          <div class="legend-ends"><span id="lg-min">—</span><span id="lg-max">—</span></div>
+        </div>
+        <div class="rail-grp" id="moran">
+          <span class="eyebrow">¿El patrón está agrupado?</span>
+        </div>
+      </div>
+
+      <div class="canvas">
+        <svg id="map" viewBox="0 0 600 720" role="img" aria-label="Mapa coroplético de Bogotá"></svg>
+        <div class="tip" id="tip"></div>
+      </div>
+
+      <aside class="side">
+        <div class="panel" id="panel"></div>
+        <div class="rankbox">
+          <div class="rank-head">
+            <span class="eyebrow">Prioridad territorial</span>
+            <p>Índice compuesto: estrato invertido, déficit de aseo, arrojo y emergencias, 25% cada uno. Haz clic en una fila para llevarla al mapa.</p>
+          </div>
+          <div class="tablewrap">
+            <table>
+              <thead><tr>
+                <th></th><th>UPZ</th><th class="r">Índice</th><th class="r">Estrato</th>
+                <th class="r">Déficit</th><th class="r">Arrojo /km²</th>
+              </tr></thead>
+              <tbody id="rank"></tbody>
+            </table>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head">
+      <h2>El hallazgo que reordena la historia</h2>
+      <p>La misma relación, medida sola y medida con el estrato dentro del modelo.</p>
+    </div>
+    <div class="contrast">
+      <div class="cmp" id="cmp"></div>
+      <div class="note">
+        <b>Cómo leerlo.</b><br>
+        Donde hay más puntos de arrojo clandestino hay más homicidios y más emergencias. Eso es cierto y aguanta todas las pruebas de robustez que se le hicieron.
+        <br><br>
+        Pero cuando el modelo incluye además el estrato de la zona, el arrojo deja de aportar información. No es que la relación no exista: es que las dos cosas son consecuencia de lo mismo. La basura no está produciendo el delito. La pobreza está produciendo los dos.
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head">
+      <h2>Tablero de hipótesis</h2>
+      <p>Siete hipótesis declaradas antes de correr los modelos. Se reportan las que fallaron.</p>
+    </div>
+    <div class="hyps" id="hyps"></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head">
+      <h2>Series en el tiempo</h2>
+      <p>Cada fuente en su propia ventana. No existe un año con las tres medidas a la vez.</p>
+    </div>
+    <div class="series" id="series"></div>
+  </section>
+
+  <div class="footnote">
+    <div><span class="eyebrow">Qué es esto</span>Prototipo de tablero. Todas las cifras salen de <code>data/dashboard/</code> y <code>data/gold/</code> del repositorio, no hay datos de relleno.</div>
+    <div><span class="eyebrow">Límites declarados</span>Análisis correlacional y espacial, sin diseño causal. Las áreas se comparan por km², no por habitante: no existe población oficial por UPZ en las fuentes usadas.</div>
+    <div><span class="eyebrow">Cortes parciales</span>UAECOB 2020 va hasta agosto. RBL 2026 tiene 5 de 12 meses. Violencia intrafamiliar 2026 es año en curso. Se muestran sin corregir y se advierten.</div>
+    <div><span class="eyebrow">Perímetro</span>El mapa muestra la Bogotá urbana. Sumapaz queda fuera: la estratificación oficial por manzana de Planeación no lo cubre, y por eso los modelos por localidad corren con 19.</div>
+  </div>
+</div>
