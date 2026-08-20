@@ -136,43 +136,45 @@ flowchart TD
 
 ## 📁 4. Estructura del repositorio
 
+El repositorio sigue estrictamente el estándar de entregables del **DataJam Bogotá 2026**:
+
 ```text
-datajam/
-├── README.md                          # Este documento
-├── requirements.txt                    # Dependencias fijadas
+├── main.py                             # Orquestador integral ejecutable de todo el pipeline (30 tareas)
+├── README.md                           # Documentación completa del proyecto y metodología
+├── requirements.txt                    # Dependencias fijadas y verificadas
 ├── .gitignore
 │
-├── data/                                # Capa de datos del pipeline riguroso
-│   ├── bronze/                          # Datos crudos (NO versionado — ver sección 5)
-│   ├── silver/                          # Limpio/estandarizado por dominio (NO versionado)
-│   ├── gold/                            # Variables analíticas (versionado, liviano)
-│   └── dashboard/                       # Capa de consumo para app externa (versionado)
+├── data/                               # Arquitectura Medallion y capas de consumo
+│   ├── bronze/                         # 14 fuentes crudas sin modificar (NO versionado — ver sección 5)
+│   ├── silver/                         # Capa limpia y estandarizada por dominio (territorio, aseo, etc.)
+│   ├── gold/                           # Capa analítica: modelos, variables consolidadas y rankings
+│   └── dashboard/                      # Capa de consumo estructurada para visualización externa (CSV/GeoJSON)
 │       ├── dimensions/  indicators/  spatial/  temporal/  hypotheses/  metadata/
 │
-├── 01_ingesta/ … 15_dashboard_export/    # Pipeline riguroso — ver tabla de la sección 3
+├── notebooks/                          # Jupyter Notebooks analíticos y reproducibles
+│   ├── 01_eda_dataset_maestro.ipynb    # EDA visual del dataset maestro, distribuciones y correlaciones
+│   └── 02_mapas_finales.ipynb          # Análisis espacial final: mapas LISA, Getis-Ord Gi* y clusters
 │
-├── notebooks/                           # Pipeline original
-│   ├── 01_eda_rbl_series_temporales.ipynb
-│   ├── 02_eda_capas_geoespaciales.ipynb
-│   ├── 03_eda_incidentes_uaecob.ipynb
-│   ├── 04_eda_estratificacion_indicadores.ipynb
-│   └── scripts/
-│       ├── 01_build_silver_rbl.py
-│       ├── 02_build_silver_geo.py
-│       ├── 03_build_silver_incidentes.py
-│       ├── 04_build_silver_estratos.py
-│       ├── 05_build_gold_analisis.py
-│       └── 06_build_dashboard.py
+├── scripts/                            # Pipeline modular por fases de ingeniería y analítica
+│   ├── 01_ingesta/                     # Catálogo automático de fuentes Bronze
+│   ├── 02_auditoria/                   # 16 chequeos de calidad de datos y auditoría de estrato oficial
+│   ├── 03_limpieza/                    # Normalización Silver y tabla de trazabilidad
+│   ├── 05_integracion_espacial/        # Spatial joins (point-in-polygon) y análisis de proximidad
+│   ├── 06_construccion_variables/      # Datasets maestros (UPZ y localidad), panel UPZ×año y diccionario
+│   ├── 08_estadistica/                 # Pruebas de normalidad y correlación de Spearman con FDR
+│   ├── 09_estadistica_espacial/        # Moran's I global/local (LISA), Getis-Ord Gi* y pesos espaciales
+│   ├── 10_modelos/                     # Modelos multivariables Poisson y Binomial Negativa
+│   ├── 11_espacio_temporal/            # Análisis de series temporales y persistencia territorial
+│   ├── 12_validacion/                  # Análisis de robustez territorial (MAUP) y períodos
+│   └── 15_dashboard_export/            # Exportación y validación de la capa para dashboard
 │
-├── outputs/                             # Gráficos y dashboard HTML del pipeline original
-│   └── dashboard_datajam_bogota_2026.html
+├── outputs/                            # Entregables visuales y mapas exportados
+│   ├── figures/                        # Gráficos de alta resolución (distribuciones, LISA, hotspots)
+│   └── dashboard_datajam_bogota_2026.html  # Dashboard interactivo autónomo (Leaflet / Plotly)
 │
-└── docs/                                # Documentación e informes del equipo
-    ├── informe_exhaustivo_datajam_2026.md
-    └── nota_tecnica_datajam_2026.md
+└── docs/                               # Informes analíticos y notas técnicas
+    ├── informe_final.md                # Informe final consolidado con modelos multivariables
 ```
-
-**Nota sobre `Bronze/`, `Silver/`, `Gold/` (mayúscula) en la raíz:** son artefactos regenerables del pipeline original si se vuelve a correr `notebooks/scripts/*.py`; están en `.gitignore`, igual que `data/bronze/` y `data/silver/`.
 
 ---
 
@@ -180,16 +182,16 @@ datajam/
 
 ### Requisitos previos
 
-- Python 3.10 o superior
+- Python 3.10 o superior (verificado hasta Python 3.14)
 - ~2.5 GB de espacio en disco para los datos crudos (`data/bronze/`)
-- No se requieren credenciales, tokens ni conexión a bases de datos — todas las fuentes son de datos abiertos públicos
+- No se requieren credenciales ni tokens — todas las fuentes provienen de datos abiertos distritales (`datosabiertos.bogota.gov.co` e IDECA)
 
 ### Preparar el entorno
 
 ```bash
 # 1. Clonar el repositorio
 git clone <url-del-repositorio>
-cd datajam
+cd DataJamBlackStar
 
 # 2. Crear y activar entorno virtual
 python -m venv .venv
@@ -202,105 +204,52 @@ pip install -r requirements.txt
 
 ### Obtener los datos crudos
 
-`data/bronze/` no está versionado por su peso (>2 GB). Descárgalo del enlace de Drive al final de este documento y colócalo en:
+`data/bronze/` no se versiona en git por su peso (>2 GB). Descárgalo del enlace de Drive al final de este documento y colócalo en:
 
 ```text
-datajam/data/bronze/
+DataJamBlackStar/data/bronze/
 ```
-
-Debe quedar con esta estructura mínima: los 14 archivos/carpetas de fuentes (ver sección 2) más el geodatabase `gdb_mr_v06_26.gdb/`.
 
 ### Verificar la instalación
 
 ```bash
-python -c "import pandas, geopandas, esda, libpysal, statsmodels; print('OK')"
+python -c "import pandas, geopandas, scipy, statsmodels, libpysal, esda; print('Ambiente configurado correctamente ✅')"
 ```
 
 ---
 
 ## 🏃 6. Instrucciones de ejecución
 
-### Opción A — Pipeline original (rápido, genera el dashboard HTML)
+El pipeline completo se ejecuta de forma 100% reproducible con un solo comando mediante el orquestador principal:
+
+### Ejecución de todo el pipeline (30 tareas)
 
 ```bash
-python notebooks/scripts/01_build_silver_rbl.py
-python notebooks/scripts/02_build_silver_geo.py
-python notebooks/scripts/03_build_silver_incidentes.py
-python notebooks/scripts/04_build_silver_estratos.py
-python notebooks/scripts/05_build_gold_analisis.py
-python notebooks/scripts/06_build_dashboard.py
+python main.py
+```
 
-# Abrir el resultado
+### Opciones avanzadas de ejecución:
+
+```bash
+# Ejecutar solo scripts ETL y estadísticos omitiendo notebooks (rápido, ~30s)
+python main.py --skip-notebooks
+
+# Ejecutar fases específicas (ejemplo: solo ingesta, auditoría y limpieza)
+python main.py --phases 1 2 3
+
+# Visualizar el dashboard interactivo
 xdg-open outputs/dashboard_datajam_bogota_2026.html   # Linux
 open outputs/dashboard_datajam_bogota_2026.html       # macOS
 start outputs/dashboard_datajam_bogota_2026.html      # Windows
 ```
 
-### Opción B — Pipeline riguroso completo (auditoría + estadística + informe)
-
-Ejecutar **en este orden** (cada fase depende de la anterior):
-
-```bash
-python 01_ingesta/01_catalogo_fuentes.py
-python 02_auditoria/01_auditoria_datos.py
-python 02_auditoria/02_auditoria_estrato_oficial.py
-python 03_limpieza/04_normalizacion_silver.py
-python 03_limpieza/05_normalizacion_emergencias.py
-python 03_limpieza/06_normalizacion_rbl.py
-python 03_limpieza/07_normalizacion_socioeconomico.py
-python 03_limpieza/08_normalizacion_estrato_oficial.py
-python 05_integracion_espacial/01_spatial_joins.py
-python 05_integracion_espacial/02_analisis_proximidad.py
-python 06_construccion_variables/01_dataset_maestro.py
-python 06_construccion_variables/02_dataset_upz_anio_e_hipotesis.py
-python 06_construccion_variables/03_data_dictionary.py
-python 06_construccion_variables/04_completar_gold_subcarpetas.py
-python 06_construccion_variables/05_ranking_territorial.py
-jupyter nbconvert --to notebook --execute --inplace 07_eda/01_eda_dataset_maestro.ipynb
-python 08_estadistica/01_pruebas_estadisticas.py
-python 09_estadistica_espacial/01_moran_lisa_getis.py
-python 09_estadistica_espacial/02_guardar_pesos_espaciales.py
-python 10_modelos/01_modelos_multivariables.py
-python 11_espacio_temporal/01_analisis_temporal.py
-python 12_validacion/01_robustez.py
-python 12_validacion/02_robustez_periodos.py
-jupyter nbconvert --to notebook --execute --inplace 13_visualizacion/01_mapas_finales.ipynb
-```
-
-Resultado principal: **[`14_resultados/informe_final.md`](14_resultados/informe_final.md)**.
-
-### Opción C — Generar la capa de datos para el dashboard externo
-
-Requiere haber corrido la Opción B primero (usa `data/gold/`):
-
-```bash
-python 15_dashboard_export/01_dimensions.py
-python 15_dashboard_export/02_indicators.py
-python 15_dashboard_export/03_spatial.py
-python 15_dashboard_export/04_temporal.py
-python 15_dashboard_export/05_hypotheses.py
-python 15_dashboard_export/06_metadata_and_validation.py   # valida integridad al final
-```
-
-Resultado: `data/dashboard/` (21 CSV/GeoJSON + diccionario de datos), lista para que una app externa la consuma.
-
-### Verificación / pruebas
-
-No hay suite de tests automatizada (proyecto de análisis de datos, no de software de producción). La validación se hace por:
-
-```bash
-# Sintaxis de todos los scripts
-find . -name "*.py" -not -path "./.venv/*" -exec python -m py_compile {} \;
-
-# Validación de integridad de la capa dashboard (incluida en el script 06 de esa fase)
-python 15_dashboard_export/06_metadata_and_validation.py
-```
+Resultado principal: **[`docs/informe_final.md`](docs/informe_final.md)**.
 
 ---
 
 ## 💡 7. Hallazgos principales
 
-> Ver la tabla completa de 8 hipótesis (28 pruebas estadísticas) en [`14_resultados/informe_final.md`](14_resultados/informe_final.md) sección 6, o en formato de datos en [`data/dashboard/hypotheses/hypothesis_results.csv`](data/dashboard/hypotheses/hypothesis_results.csv).
+> Ver la tabla completa de 8 hipótesis (28 pruebas estadísticas) en [`docs/informe_final.md`](docs/informe_final.md) sección 6, o en formato de datos en [`data/dashboard/hypotheses/hypothesis_results.csv`](data/dashboard/hypotheses/hypothesis_results.csv).
 
 - **Confirmado:** la vulnerabilidad socioeconómica se asocia significativamente con el déficit de aseo (H1) y con la concentración de puntos críticos de arrojo clandestino (H3), de forma robusta a la unidad espacial (UPZ/localidad) y a la fuente de estrato (oficial vs. proxy).
 - **No respaldado:** el déficit de aseo por sí solo no predice el arrojo clandestino una vez se controla por estrato (H2) — de hecho, los puntos críticos están más cerca de la infraestructura formal que un punto aleatorio de la ciudad.
@@ -312,12 +261,14 @@ python 15_dashboard_export/06_metadata_and_validation.py
 
 | Entregable | Ubicación |
 |---|---|
-| Dashboard HTML interactivo (pipeline original) | [`outputs/dashboard_datajam_bogota_2026.html`](outputs/dashboard_datajam_bogota_2026.html) |
-| Informe final riguroso | [`14_resultados/informe_final.md`](14_resultados/informe_final.md) |
-| Reporte de auditoría de datos | [`02_auditoria/reporte_auditoria.md`](02_auditoria/reporte_auditoria.md) |
-| Diccionario de datos (Gold) | [`06_construccion_variables/data_dictionary.csv`](06_construccion_variables/data_dictionary.csv) |
+| Orquestador Maestro de Ejecución | [`main.py`](main.py) |
+| Dashboard HTML interactivo | [`outputs/dashboard_datajam_bogota_2026.html`](outputs/dashboard_datajam_bogota_2026.html) |
+| Informe final riguroso | [`docs/informe_final.md`](docs/informe_final.md) |
+| Reporte de auditoría de datos | [`scripts/02_auditoria/reporte_auditoria.md`](scripts/02_auditoria/reporte_auditoria.md) |
+| Diccionario de datos (Gold) | [`scripts/06_construccion_variables/data_dictionary.csv`](scripts/06_construccion_variables/data_dictionary.csv) |
 | Capa de datos para dashboard externo | [`data/dashboard/`](data/dashboard/) |
 | Nota técnica oficial del equipo | [`docs/nota_tecnica_datajam_2026.md`](docs/nota_tecnica_datajam_2026.md) |
+| Notebooks analíticos ejecutados | [`notebooks/`](notebooks/) |
 
 ### 🏛️ Recomendaciones de política pública (pipeline original — sujetas a los matices de la sección 7)
 

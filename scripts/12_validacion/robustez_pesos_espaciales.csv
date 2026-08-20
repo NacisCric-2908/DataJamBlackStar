@@ -1,0 +1,7 @@
+variable,pesos_espaciales,moran_I,p_value
+deficit_aseo_relativo,Queen (contigüidad),0.4073,0.001
+deficit_aseo_relativo,KNN k=5,0.3448,0.001
+densidad_puntos_criticos_km2,Queen (contigüidad),0.2845,0.001
+densidad_puntos_criticos_km2,KNN k=5,0.2484,0.001
+densidad_incidentes_km2,Queen (contigüidad),0.2936,0.001
+densidad_incidentes_km2,KNN k=5,0.2444,0.001

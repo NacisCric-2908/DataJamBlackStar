@@ -1,0 +1,31 @@
+unidad,variable,tipo,n
+Localidad,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",4
+Localidad,deficit_aseo_relativo,"Hotspot (Gi* alto, sig.)",1
+Localidad,deficit_aseo_relativo,No significativo,15
+Localidad,densidad_homicidios_km2,"Coldspot (Gi* bajo, sig.)",2
+Localidad,densidad_homicidios_km2,"Hotspot (Gi* alto, sig.)",1
+Localidad,densidad_homicidios_km2,No significativo,17
+Localidad,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",2
+Localidad,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",2
+Localidad,densidad_incidentes_km2,No significativo,16
+Localidad,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",1
+Localidad,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",1
+Localidad,densidad_puntos_criticos_km2,No significativo,18
+UPZ,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",39
+UPZ,deficit_aseo_relativo,"Hotspot (Gi* alto, sig.)",3
+UPZ,deficit_aseo_relativo,No significativo,70
+UPZ,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",16
+UPZ,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",14
+UPZ,densidad_cuadrantes_km2,No significativo,82
+UPZ,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",12
+UPZ,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",17
+UPZ,densidad_incidentes_km2,No significativo,83
+UPZ,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",19
+UPZ,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",20
+UPZ,densidad_puntos_criticos_km2,No significativo,73
+UPZ,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",25
+UPZ,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",22
+UPZ,estrato_promedio_oficial,No significativo,65
+UPZ,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",30
+UPZ,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",29
+UPZ,estrato_promedio_reportado,No significativo,53

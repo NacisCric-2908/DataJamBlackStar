@@ -3,7 +3,7 @@ H1,Vulnerabilidad socioeconómica -> Déficit de infraestructura de aseo,estrato
 H1,Vulnerabilidad socioeconómica -> Déficit de infraestructura de aseo,estrato_promedio_oficial,deficit_aseo_relativo,Spearman (Localidad),-0.598,0.0068,rho,,19.0,SUPPORTED,CONFIRMADA
 H1,Vulnerabilidad socioeconómica -> Déficit de infraestructura de aseo,estrato_promedio_oficial,deficit_aseo_relativo,Moran Bivariado (UPZ),-0.381,0.001,Moran I bivariado,,,SUPPORTED,CONFIRMADA
 H2,Déficit de infraestructura de aseo -> Arrojo clandestino,deficit_aseo_relativo,n_puntos_criticos,"Binomial Negativa multivariable (UPZ, controla estrato)",-0.4835,0.0005,IRR=0.617,"[-0.7578, -0.2092]",112.0,SIGNIFICANT_OPPOSITE_DIRECTION,NO_RESPALDADA
-H2,Déficit de infraestructura de aseo -> Arrojo clandestino,deficit_aseo_relativo,densidad_puntos_criticos_km2,Moran Bivariado (UPZ),-0.0074,0.476,Moran I bivariado,,,NOT_SUPPORTED,NO_RESPALDADA
+H2,Déficit de infraestructura de aseo -> Arrojo clandestino,deficit_aseo_relativo,densidad_puntos_criticos_km2,Moran Bivariado (UPZ),-0.0074,0.447,Moran I bivariado,,,NOT_SUPPORTED,NO_RESPALDADA
 H2,Déficit de infraestructura de aseo -> Arrojo clandestino,n_puntos_criticos,distancia_a_cesta_m,Mann-Whitney U (vs. puntos aleatorios),,0.0,media_puntos_criticos=91.8m vs media_aleatorio=212.8m,,,SIGNIFICANT_OPPOSITE_DIRECTION,NO_RESPALDADA
 H2,Déficit de infraestructura de aseo -> Arrojo clandestino,n_puntos_criticos,distancia_a_contenedor_m,Mann-Whitney U (vs. puntos aleatorios),,0.0,media_puntos_criticos=303.9m vs media_aleatorio=466.3m,,,SIGNIFICANT_OPPOSITE_DIRECTION,NO_RESPALDADA
 H2,Déficit de infraestructura de aseo -> Arrojo clandestino,n_puntos_criticos,distancia_a_bombero_m,Mann-Whitney U (vs. puntos aleatorios),,0.0,media_puntos_criticos=1748.4m vs media_aleatorio=2308.4m,,,SIGNIFICANT_OPPOSITE_DIRECTION,NO_RESPALDADA
@@ -18,7 +18,7 @@ H5,Arrojo clandestino -> Emergencias urbanas,n_puntos_criticos,n_incidentes_tota
 H5,Arrojo clandestino -> Emergencias urbanas,densidad_puntos_criticos_km2,densidad_incidentes_km2,Spearman bivariado (densidad),0.261,0.0055,rho,,112.0,SUPPORTED,PARCIALMENTE_RESPALDADA
 H5,Arrojo clandestino -> Emergencias urbanas,densidad_puntos_criticos_km2,densidad_incidentes_km2,Spearman bivariado (log),0.261,0.0055,rho,,112.0,SUPPORTED,PARCIALMENTE_RESPALDADA
 H5,Arrojo clandestino -> Emergencias urbanas,n_puntos_criticos,n_incidentes_total,"Binomial Negativa multivariable (UPZ, controla estrato+distancia bomberos)",-0.0093,0.6807,IRR=0.991,"[-0.0537, 0.0351]",112.0,NOT_SIGNIFICANT_INCREMENTAL,PARCIALMENTE_RESPALDADA
-H5,Arrojo clandestino -> Emergencias urbanas,densidad_puntos_criticos_km2,densidad_incidentes_km2,Moran Bivariado (UPZ),0.1056,0.029,Moran I bivariado,,,SUPPORTED_WEAK,PARCIALMENTE_RESPALDADA
+H5,Arrojo clandestino -> Emergencias urbanas,densidad_puntos_criticos_km2,densidad_incidentes_km2,Moran Bivariado (UPZ),0.1056,0.04,Moran I bivariado,,,SUPPORTED_WEAK,PARCIALMENTE_RESPALDADA
 H5,Arrojo clandestino -> Emergencias urbanas,n_puntos_criticos,n_incidentes_total,"Spearman, sub-periodo 2016-2017",0.144,0.1296,rho,,112.0,NOT_SUPPORTED,PARCIALMENTE_RESPALDADA
 H5,Arrojo clandestino -> Emergencias urbanas,n_puntos_criticos,n_incidentes_total,"Spearman, sub-periodo 2019-2020",0.521,0.0,rho,,112.0,SUPPORTED,PARCIALMENTE_RESPALDADA
 H6,Vulnerabilidad socioeconómica -> Delitos de alto impacto,estrato_promedio_oficial,homicidios_cont,"Binomial Negativa multivariable conjunto (localidad, controla déficit+arrojo+cuadrantes)",-0.9224,0.0452,IRR=0.398,"[-1.825, -0.0198]",19.0,SUPPORTED,CONFIRMADA

@@ -205,10 +205,6 @@ pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,linux
 
-Bronze/
-Silver/
-Gold/
 agent.md
 agent2.md
-data/bronze/
-data/silver/
+data/

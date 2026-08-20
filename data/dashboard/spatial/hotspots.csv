@@ -131,7 +131,7 @@ UPZ,16,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.65,0.02199999
 UPZ,21,densidad_puntos_criticos_km2,No significativo,-0.158,0.35899999737739563,False
 UPZ,89,densidad_puntos_criticos_km2,No significativo,,0.0010000000474974513,True
 UPZ,106,densidad_puntos_criticos_km2,No significativo,-0.439,0.1889999955892563,False
-UPZ,86,densidad_puntos_criticos_km2,No significativo,0.412,0.17499999701976776,False
+UPZ,86,densidad_puntos_criticos_km2,No significativo,0.412,0.17599999904632568,False
 UPZ,82,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.857,0.04399999976158142,True
 UPZ,37,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",1.538,0.003000000026077032,True
 UPZ,49,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.961,0.03200000151991844,True
@@ -146,7 +146,7 @@ UPZ,101,densidad_puntos_criticos_km2,No significativo,0.288,0.17000000178813934,
 UPZ,91,densidad_puntos_criticos_km2,No significativo,0.233,0.2370000034570694,False
 UPZ,108,densidad_puntos_criticos_km2,No significativo,-0.148,0.36800000071525574,False
 UPZ,55,densidad_puntos_criticos_km2,No significativo,0.072,0.3720000088214874,False
-UPZ,51,densidad_puntos_criticos_km2,No significativo,0.312,0.2280000001192093,False
+UPZ,51,densidad_puntos_criticos_km2,No significativo,0.312,0.22699999809265137,False
 UPZ,60,densidad_puntos_criticos_km2,No significativo,0.167,0.27300000190734863,False
 UPZ,56,densidad_puntos_criticos_km2,No significativo,-0.148,0.3930000066757202,False
 UPZ,65,densidad_puntos_criticos_km2,No significativo,0.435,0.10100000351667404,False
@@ -171,7 +171,7 @@ UPZ,58,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.78,0.00700000
 UPZ,43,densidad_puntos_criticos_km2,No significativo,-0.232,0.2849999964237213,False
 UPZ,47,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.996,0.024000000208616257,True
 UPZ,36,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.849,0.035999998450279236,True
-UPZ,66,densidad_puntos_criticos_km2,No significativo,0.33,0.1889999955892563,False
+UPZ,66,densidad_puntos_criticos_km2,No significativo,0.33,0.1899999976158142,False
 UPZ,57,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.818,0.0010000000474974513,True
 UPZ,52,densidad_puntos_criticos_km2,No significativo,-0.494,0.12700000405311584,False
 UPZ,11,densidad_puntos_criticos_km2,No significativo,-0.695,0.057999998331069946,False
@@ -191,7 +191,7 @@ UPZ,67,densidad_puntos_criticos_km2,No significativo,0.252,0.24699999392032623,F
 UPZ,63,densidad_puntos_criticos_km2,No significativo,-0.248,0.2669999897480011,False
 UPZ,28,densidad_puntos_criticos_km2,No significativo,-0.305,0.22300000488758087,False
 UPZ,30,densidad_puntos_criticos_km2,No significativo,0.166,0.3089999854564667,False
-UPZ,116,densidad_puntos_criticos_km2,No significativo,0.134,0.335999995470047,False
+UPZ,116,densidad_puntos_criticos_km2,No significativo,0.134,0.3370000123977661,False
 UPZ,85,densidad_puntos_criticos_km2,No significativo,0.502,0.10599999874830246,False
 UPZ,42,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.96,0.008999999612569809,True
 UPZ,111,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.542,0.026000000536441803,True
@@ -337,9 +337,9 @@ UPZ,113,densidad_incidentes_km2,No significativo,-0.093,0.4620000123977661,False
 UPZ,81,densidad_incidentes_km2,No significativo,0.001,0.45399999618530273,False
 UPZ,75,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-0.901,0.003000000026077032,True
 UPZ,22,densidad_cuadrantes_km2,No significativo,-0.144,0.46799999475479126,False
-UPZ,114,densidad_cuadrantes_km2,No significativo,-0.55,0.1420000046491623,False
+UPZ,114,densidad_cuadrantes_km2,No significativo,-0.55,0.14100000262260437,False
 UPZ,103,densidad_cuadrantes_km2,No significativo,-0.176,0.367000013589859,False
-UPZ,105,densidad_cuadrantes_km2,No significativo,-0.184,0.36399999260902405,False
+UPZ,105,densidad_cuadrantes_km2,No significativo,-0.184,0.3619999885559082,False
 UPZ,88,densidad_cuadrantes_km2,No significativo,0.134,0.30300000309944153,False
 UPZ,27,densidad_cuadrantes_km2,No significativo,-0.373,0.23600000143051147,False
 UPZ,99,densidad_cuadrantes_km2,No significativo,0.732,0.05700000002980232,False
@@ -365,12 +365,12 @@ UPZ,23,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-0.647,0.028999999165
 UPZ,110,densidad_cuadrantes_km2,No significativo,-0.483,0.050999999046325684,False
 UPZ,100,densidad_cuadrantes_km2,No significativo,0.565,0.0989999994635582,False
 UPZ,83,densidad_cuadrantes_km2,No significativo,0.882,0.05700000002980232,False
-UPZ,107,densidad_cuadrantes_km2,No significativo,-0.147,0.4259999990463257,False
+UPZ,107,densidad_cuadrantes_km2,No significativo,-0.147,0.42500001192092896,False
 UPZ,101,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",1.234,0.004999999888241291,True
 UPZ,91,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",2.111,0.0010000000474974513,True
 UPZ,108,densidad_cuadrantes_km2,No significativo,0.01,0.421999990940094,False
 UPZ,55,densidad_cuadrantes_km2,No significativo,-0.169,0.43799999356269836,False
-UPZ,51,densidad_cuadrantes_km2,No significativo,0.015,0.38999998569488525,False
+UPZ,51,densidad_cuadrantes_km2,No significativo,0.015,0.39100000262260437,False
 UPZ,60,densidad_cuadrantes_km2,No significativo,-0.227,0.2980000078678131,False
 UPZ,56,densidad_cuadrantes_km2,No significativo,-0.212,0.34599998593330383,False
 UPZ,65,densidad_cuadrantes_km2,No significativo,-0.025,0.4620000123977661,False
@@ -518,7 +518,7 @@ UPZ,104,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",0.773,0.013000000268
 UPZ,31,estrato_promedio_oficial,No significativo,0.336,0.2029999941587448,False
 UPZ,68,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-1.148,0.04399999976158142,True
 UPZ,64,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-1.134,0.009999999776482582,True
-UPZ,71,estrato_promedio_oficial,No significativo,-0.173,0.4059999883174896,False
+UPZ,71,estrato_promedio_oficial,No significativo,-0.173,0.4050000011920929,False
 UPZ,29,estrato_promedio_oficial,No significativo,0.181,0.32899999618530273,False
 UPZ,76,estrato_promedio_oficial,No significativo,-0.13,0.4480000138282776,False
 UPZ,3,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",1.617,0.01600000075995922,True
@@ -682,7 +682,7 @@ Localidad,12,deficit_aseo_relativo,No significativo,-0.284,0.22499999403953552,F
 Localidad,13,deficit_aseo_relativo,No significativo,-0.474,0.06300000101327896,False
 Localidad,16,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.895,0.009999999776482582,True
 Localidad,14,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.948,0.02199999988079071,True
-Localidad,20,deficit_aseo_relativo,No significativo,-1.39,0.06599999964237213,False
+Localidad,20,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-1.39,0.0010000000474974513,True
 Localidad,01,deficit_aseo_relativo,No significativo,0.136,0.3930000066757202,False
 Localidad,02,deficit_aseo_relativo,No significativo,0.157,0.3569999933242798,False
 Localidad,03,deficit_aseo_relativo,No significativo,0.636,0.05299999937415123,False
@@ -700,9 +700,9 @@ Localidad,18,densidad_puntos_criticos_km2,No significativo,0.333,0.2249999940395
 Localidad,17,densidad_puntos_criticos_km2,No significativo,-0.727,0.26600000262260437,False
 Localidad,12,densidad_puntos_criticos_km2,No significativo,-0.495,0.09399999678134918,False
 Localidad,13,densidad_puntos_criticos_km2,No significativo,0.034,0.4350000023841858,False
-Localidad,16,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.693,0.02199999988079071,True
+Localidad,16,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.693,0.023000000044703484,True
 Localidad,14,densidad_puntos_criticos_km2,No significativo,0.286,0.25,False
-Localidad,20,densidad_puntos_criticos_km2,No significativo,-1.065,0.06599999964237213,False
+Localidad,20,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-1.065,0.0010000000474974513,True
 Localidad,01,densidad_puntos_criticos_km2,No significativo,-0.437,0.25699999928474426,False
 Localidad,02,densidad_puntos_criticos_km2,No significativo,-0.56,0.07599999755620956,False
 Localidad,03,densidad_puntos_criticos_km2,No significativo,0.275,0.24199999868869781,False
@@ -710,7 +710,7 @@ Localidad,04,densidad_puntos_criticos_km2,No significativo,0.454,0.1829999983310
 Localidad,05,densidad_puntos_criticos_km2,No significativo,-0.296,0.25,False
 Localidad,19,densidad_puntos_criticos_km2,No significativo,0.183,0.3540000021457672,False
 Localidad,07,densidad_puntos_criticos_km2,No significativo,0.059,0.41600000858306885,False
-Localidad,08,densidad_puntos_criticos_km2,No significativo,-0.002,0.48100000619888306,False
+Localidad,08,densidad_puntos_criticos_km2,No significativo,-0.002,0.4819999933242798,False
 Localidad,09,densidad_homicidios_km2,No significativo,-0.093,0.4909999966621399,False
 Localidad,10,densidad_homicidios_km2,No significativo,-0.58,0.07199999690055847,False
 Localidad,11,densidad_homicidios_km2,No significativo,-0.592,0.06499999761581421,False
