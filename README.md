@@ -10,6 +10,16 @@
 
 ---
 
+## 🔬 Análisis riguroso ampliado (nuevo)
+
+Este README describe el pipeline **original** (6 scripts, `notebooks/`) y sus hallazgos iniciales. Además existe un **segundo análisis, más exhaustivo y con estadística formal** (Moran's I, LISA, Getis-Ord Gi*, modelos Binomial Negativa, control de confusores, análisis de robustez y MAUP), construido en `01_ingesta/` … `14_resultados/` a partir de una especificación (`agent.md`).
+
+**Ese análisis matiza los hallazgos de este README**: las correlaciones simples (r=0.74, r=0.68) resultaron reales pero mediadas/confundidas por el estrato una vez se controla por vulnerabilidad en un modelo multivariable — no son un mecanismo de causación directo entre déficit de aseo → arrojo → delitos. Además usa el estrato **oficial** por manzana (no un proxy) para toda la variable de vulnerabilidad.
+
+👉 **Ver conclusiones actualizadas en [`14_resultados/informe_final.md`](14_resultados/informe_final.md)**.
+
+---
+
 ## 📌 Tabla de Contenidos
 1. [Resumen Ejecutivo & Hipótesis](#-resumen-ejecutivo--hipótesis)
 2. [Metodología DataJam en 5 Pasos](#-metodología-datajam-en-5-pasos)
@@ -145,6 +155,8 @@ start outputs/dashboard_datajam_bogota_2026.html     # Windows
 
 ## 💡 Hallazgos Principales Validados
 
+> ⚠️ Estos son los hallazgos del pipeline original (correlaciones bivariadas simples). El análisis riguroso ampliado (ver arriba) confirma que #1 y la vulnerabilidad como variable subyacente se sostienen con estadística formal — pero #2 (crimen vs basuras) no sobrevive como efecto independiente al controlar por estrato en un modelo multivariable. Detalle completo en [`14_resultados/informe_final.md`](14_resultados/informe_final.md).
+
 1. **La Brecha de Cestas ($r = +0.74$):**
    * Teusaquillo y Chapinero cuentan con **285 a 337 cestas por cada 10.000 habitantes**.
    * Bosa y Ciudad Bolívar cuentan con apenas **29 cestas por cada 10.000 habitantes** (brecha de 10 a 1).
@@ -161,7 +173,7 @@ start outputs/dashboard_datajam_bogota_2026.html     # Windows
 
 ## 💻 Entregable: Dashboard Interactivo
 
-El archivo autónomo [`outputs/dashboard_datajam_bogota_2026.html`](file:///home/naciscric/Documentos/DataJamBlackStar/outputs/dashboard_datajam_bogota_2026.html) no requiere servidores ni conexión a internet. Incluye:
+El archivo autónomo [`outputs/dashboard_datajam_bogota_2026.html`](outputs/dashboard_datajam_bogota_2026.html) no requiere servidores ni conexión a internet. Incluye:
 * **Mapa Territorial Leaflet:** UPZ por Índice de Vulnerabilidad, Puntos Críticos de Arrojo, Cuadrantes de Policía (MEBOG) y Estaciones de Bomberos.
 * **Módulo de Hipótesis y Seguridad:** Gráficos Plotly interactivos de dispersión de crimen, cestas, puntos de arrojo y delitos de alto impacto por localidad.
 * **Series Temporales:** Histórico de residuos (2021-2026) e incidentes (2016-2020).

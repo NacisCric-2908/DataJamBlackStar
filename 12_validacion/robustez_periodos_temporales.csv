@@ -1,0 +1,5 @@
+hipotesis,periodo,spearman_rho,p_value,n
+"H5 (arrojo vs incidentes, UPZ)",2016-2017,0.144,0.1296,112
+"H5 (arrojo vs incidentes, UPZ)",2019-2020,0.521,0.0,112
+"H4 (arrojo vs homicidios, localidad)",2018-2021,0.757,0.0001,20
+"H4 (arrojo vs homicidios, localidad)",2022-2026,0.784,0.0,20

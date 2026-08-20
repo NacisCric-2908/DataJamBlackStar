@@ -24,7 +24,7 @@ import numpy as np
 from shapely.validation import make_valid
 
 BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-BRONZE = os.path.join(BASE, 'Bronze')
+BRONZE = os.path.join(BASE, 'data', 'bronze')
 SILVER_GEO = os.path.join(BASE, 'Silver', 'capas_geo')
 os.makedirs(SILVER_GEO, exist_ok=True)
 

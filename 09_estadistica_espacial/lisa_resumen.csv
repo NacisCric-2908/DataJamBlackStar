@@ -1,0 +1,40 @@
+unidad,variable,cluster,n
+Localidad,deficit_aseo_relativo,High-High,1
+Localidad,deficit_aseo_relativo,High-Low,1
+Localidad,deficit_aseo_relativo,Low-Low,2
+Localidad,deficit_aseo_relativo,No significativo,16
+Localidad,densidad_homicidios_km2,High-High,1
+Localidad,densidad_homicidios_km2,Low-Low,2
+Localidad,densidad_homicidios_km2,No significativo,17
+Localidad,densidad_incidentes_km2,High-High,1
+Localidad,densidad_incidentes_km2,Low-High,1
+Localidad,densidad_incidentes_km2,Low-Low,1
+Localidad,densidad_incidentes_km2,No significativo,17
+Localidad,densidad_puntos_criticos_km2,Low-High,1
+Localidad,densidad_puntos_criticos_km2,No significativo,19
+UPZ,deficit_aseo_relativo,High-High,20
+UPZ,deficit_aseo_relativo,High-Low,4
+UPZ,deficit_aseo_relativo,Low-Low,19
+UPZ,deficit_aseo_relativo,No significativo,69
+UPZ,densidad_cuadrantes_km2,High-High,13
+UPZ,densidad_cuadrantes_km2,Low-High,1
+UPZ,densidad_cuadrantes_km2,Low-Low,17
+UPZ,densidad_cuadrantes_km2,No significativo,81
+UPZ,densidad_incidentes_km2,High-High,12
+UPZ,densidad_incidentes_km2,High-Low,3
+UPZ,densidad_incidentes_km2,Low-High,5
+UPZ,densidad_incidentes_km2,Low-Low,10
+UPZ,densidad_incidentes_km2,No significativo,82
+UPZ,densidad_puntos_criticos_km2,High-High,13
+UPZ,densidad_puntos_criticos_km2,Low-High,7
+UPZ,densidad_puntos_criticos_km2,Low-Low,20
+UPZ,densidad_puntos_criticos_km2,No significativo,72
+UPZ,estrato_promedio_oficial,High-High,20
+UPZ,estrato_promedio_oficial,Low-High,2
+UPZ,estrato_promedio_oficial,Low-Low,26
+UPZ,estrato_promedio_oficial,No significativo,64
+UPZ,estrato_promedio_reportado,High-High,28
+UPZ,estrato_promedio_reportado,High-Low,1
+UPZ,estrato_promedio_reportado,Low-High,1
+UPZ,estrato_promedio_reportado,Low-Low,30
+UPZ,estrato_promedio_reportado,No significativo,52

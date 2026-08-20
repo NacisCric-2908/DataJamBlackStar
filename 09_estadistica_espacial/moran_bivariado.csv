@@ -1,0 +1,6 @@
+unidad,var_x,var_y,moran_I_bivariado,p_value_sim
+UPZ,deficit_aseo_relativo,densidad_puntos_criticos_km2,-0.0074,0.476
+UPZ,densidad_puntos_criticos_km2,densidad_incidentes_km2,0.1056,0.029
+UPZ,estrato_promedio_oficial,deficit_aseo_relativo,-0.381,0.001
+Localidad,deficit_aseo_relativo,densidad_puntos_criticos_km2,-0.0728,0.335
+Localidad,densidad_puntos_criticos_km2,densidad_homicidios_km2,0.136,0.08

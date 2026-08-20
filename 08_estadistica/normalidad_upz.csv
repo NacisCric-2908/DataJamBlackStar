@@ -1,0 +1,11 @@
+variable,shapiro_stat,p_value,normal_al_5pct
+estrato_promedio_oficial,0.9514,0.00046,False
+estrato_promedio_reportado,0.9689,0.01019,False
+deficit_aseo_relativo,0.9454,0.00018,False
+densidad_cestas_km2,0.9235,1e-05,False
+densidad_contenedores_km2,0.7571,0.0,False
+densidad_puntos_criticos_km2,0.8243,0.0,False
+densidad_cuadrantes_km2,0.7922,0.0,False
+densidad_incidentes_km2,0.8186,0.0,False
+dist_estacion_bomberos_m,0.9264,1e-05,False
+cobertura_macrorutas_pct,0.9372,5e-05,False

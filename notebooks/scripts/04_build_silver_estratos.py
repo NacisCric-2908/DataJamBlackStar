@@ -20,8 +20,9 @@ import pandas as pd
 import numpy as np
 
 BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-BRONZE = os.path.join(BASE, 'Bronze')
+BRONZE = os.path.join(BASE, 'data', 'bronze')
 SILVER = os.path.join(BASE, 'Silver')
+os.makedirs(SILVER, exist_ok=True)
 
 print("=" * 60)
 print("SCRIPT 04 — BUILD SILVER: ESTRATOS E INDICADORES")

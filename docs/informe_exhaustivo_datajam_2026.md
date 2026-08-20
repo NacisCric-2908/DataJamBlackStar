@@ -8,6 +8,10 @@
 
 ---
 
+> ⚠️ **Nota (análisis posterior):** este documento presenta la validación de hipótesis basada en correlaciones bivariadas simples. Un análisis estadístico más riguroso, posterior a este informe (Moran's I, LISA, Getis-Ord Gi*, modelos Binomial Negativa con control de confusores, análisis de robustez y MAUP, estrato oficial por manzana en vez de proxy), matiza estos hallazgos — en particular, la relación "déficit de aseo → arrojo clandestino" no se sostiene al controlar por estrato, y "arrojo → delitos/emergencias" está mediada por vulnerabilidad más que ser un efecto directo. Ver conclusiones actualizadas en [`../14_resultados/informe_final.md`](../14_resultados/informe_final.md).
+
+---
+
 ## 📑 ÍNDICE GENERAL
 1. [Resumen Ejecutivo](#1-resumen-ejecutivo)
 2. [Marco Metodológico Oficial (5 Pasos DataJam)](#2-marco-metodológico-oficial-5-pasos-datajam)
@@ -331,7 +335,7 @@ xdg-open outputs/dashboard_datajam_bogota_2026.html
 
 ### 8.3 Entregables Generados
 
-* 🌐 **Dashboard Interactivo:** [`outputs/dashboard_datajam_bogota_2026.html`](file:///home/naciscric/Documentos/DataJamBlackStar/outputs/dashboard_datajam_bogota_2026.html) (2.2 MB, autónomo, con mapas Leaflet conmutables y gráficos Plotly).
-* 📑 **Nota Técnica Oficial:** [`docs/nota_tecnica_datajam_2026.md`](file:///home/naciscric/Documentos/DataJamBlackStar/docs/nota_tecnica_datajam_2026.md).
-* 📓 **Notebooks EDA:** [`notebooks/01_eda_rbl_series_temporales.ipynb`](file:///home/naciscric/Documentos/DataJamBlackStar/notebooks/01_eda_rbl_series_temporales.ipynb), [`notebooks/02_eda_capas_geoespaciales.ipynb`](file:///home/naciscric/Documentos/DataJamBlackStar/notebooks/02_eda_capas_geoespaciales.ipynb), [`notebooks/03_eda_incidentes_uaecob.ipynb`](file:///home/naciscric/Documentos/DataJamBlackStar/notebooks/03_eda_incidentes_uaecob.ipynb), [`notebooks/04_eda_estratificacion_indicadores.ipynb`](file:///home/naciscric/Documentos/DataJamBlackStar/notebooks/04_eda_estratificacion_indicadores.ipynb).
+* 🌐 **Dashboard Interactivo:** [`outputs/dashboard_datajam_bogota_2026.html`](../outputs/dashboard_datajam_bogota_2026.html) (2.2 MB, autónomo, con mapas Leaflet conmutables y gráficos Plotly).
+* 📑 **Nota Técnica Oficial:** [`docs/nota_tecnica_datajam_2026.md`](nota_tecnica_datajam_2026.md).
+* 📓 **Notebooks EDA:** [`notebooks/01_eda_rbl_series_temporales.ipynb`](../notebooks/01_eda_rbl_series_temporales.ipynb), [`notebooks/02_eda_capas_geoespaciales.ipynb`](../notebooks/02_eda_capas_geoespaciales.ipynb), [`notebooks/03_eda_incidentes_uaecob.ipynb`](../notebooks/03_eda_incidentes_uaecob.ipynb), [`notebooks/04_eda_estratificacion_indicadores.ipynb`](../notebooks/04_eda_estratificacion_indicadores.ipynb).
 * 🥇 **Capa Gold Analítica:** `Gold/gold_upz_analisis.geoparquet`, `Gold/gold_localidad_analisis.parquet`, `Gold/gold_delitos_seguridad.parquet`.

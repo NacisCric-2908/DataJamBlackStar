@@ -1,0 +1,141 @@
+localidad_id,localidad_nombre,crime_category,crime_count
+09,FONTIBON,homicidios,126.0
+10,ENGATIVA,homicidios,233.0
+11,SUBA,homicidios,331.0
+15,ANTONIO NARINO,homicidios,55.0
+06,TUNJUELITO,homicidios,124.0
+18,RAFAEL URIBE URIBE,homicidios,340.0
+17,CANDELARIA,homicidios,18.0
+12,BARRIOS UNIDOS,homicidios,67.0
+13,TEUSAQUILLO,homicidios,41.0
+16,PUENTE ARANDA,homicidios,130.0
+14,LOS MARTIRES,homicidios,246.0
+20,SUMAPAZ,homicidios,7.0
+01,USAQUEN,homicidios,176.0
+02,CHAPINERO,homicidios,46.0
+03,SANTA FE,homicidios,246.0
+04,SAN CRISTOBAL,homicidios,229.0
+05,USME,homicidios,326.0
+19,CIUDAD BOLIVAR,homicidios,892.0
+07,BOSA,homicidios,439.0
+08,KENNEDY,homicidios,668.0
+09,FONTIBON,hurto_personas,54954.0
+10,ENGATIVA,hurto_personas,87850.0
+11,SUBA,hurto_personas,92812.0
+15,ANTONIO NARINO,hurto_personas,17154.0
+06,TUNJUELITO,hurto_personas,17638.0
+18,RAFAEL URIBE URIBE,hurto_personas,28792.0
+17,CANDELARIA,hurto_personas,9816.0
+12,BARRIOS UNIDOS,hurto_personas,36545.0
+13,TEUSAQUILLO,hurto_personas,53938.0
+16,PUENTE ARANDA,hurto_personas,42086.0
+14,LOS MARTIRES,hurto_personas,38687.0
+20,SUMAPAZ,hurto_personas,0.0
+01,USAQUEN,hurto_personas,67133.0
+02,CHAPINERO,hurto_personas,78675.0
+03,SANTA FE,hurto_personas,49735.0
+04,SAN CRISTOBAL,hurto_personas,23006.0
+05,USME,hurto_personas,17110.0
+19,CIUDAD BOLIVAR,hurto_personas,33819.0
+07,BOSA,hurto_personas,40224.0
+08,KENNEDY,hurto_personas,91032.0
+09,FONTIBON,hurto_residencias,3419.0
+10,ENGATIVA,hurto_residencias,8839.0
+11,SUBA,hurto_residencias,9851.0
+15,ANTONIO NARINO,hurto_residencias,1140.0
+06,TUNJUELITO,hurto_residencias,1297.0
+18,RAFAEL URIBE URIBE,hurto_residencias,2952.0
+17,CANDELARIA,hurto_residencias,291.0
+12,BARRIOS UNIDOS,hurto_residencias,2257.0
+13,TEUSAQUILLO,hurto_residencias,3338.0
+16,PUENTE ARANDA,hurto_residencias,3113.0
+14,LOS MARTIRES,hurto_residencias,1394.0
+20,SUMAPAZ,hurto_residencias,0.0
+01,USAQUEN,hurto_residencias,6324.0
+02,CHAPINERO,hurto_residencias,3212.0
+03,SANTA FE,hurto_residencias,1191.0
+04,SAN CRISTOBAL,hurto_residencias,2572.0
+05,USME,hurto_residencias,2718.0
+19,CIUDAD BOLIVAR,hurto_residencias,3786.0
+07,BOSA,hurto_residencias,4742.0
+08,KENNEDY,hurto_residencias,8592.0
+09,FONTIBON,hurto_comercio,13665.0
+10,ENGATIVA,hurto_comercio,21683.0
+11,SUBA,hurto_comercio,23392.0
+15,ANTONIO NARINO,hurto_comercio,4735.0
+06,TUNJUELITO,hurto_comercio,4478.0
+18,RAFAEL URIBE URIBE,hurto_comercio,7457.0
+17,CANDELARIA,hurto_comercio,2464.0
+12,BARRIOS UNIDOS,hurto_comercio,9265.0
+13,TEUSAQUILLO,hurto_comercio,14516.0
+16,PUENTE ARANDA,hurto_comercio,10345.0
+14,LOS MARTIRES,hurto_comercio,9653.0
+20,SUMAPAZ,hurto_comercio,0.0
+01,USAQUEN,hurto_comercio,15749.0
+02,CHAPINERO,hurto_comercio,20779.0
+03,SANTA FE,hurto_comercio,13209.0
+04,SAN CRISTOBAL,hurto_comercio,6312.0
+05,USME,hurto_comercio,4415.0
+19,CIUDAD BOLIVAR,hurto_comercio,8936.0
+07,BOSA,hurto_comercio,10220.0
+08,KENNEDY,hurto_comercio,22427.0
+09,FONTIBON,lesiones_personales,3026.0
+10,ENGATIVA,lesiones_personales,6362.0
+11,SUBA,lesiones_personales,7894.0
+15,ANTONIO NARINO,lesiones_personales,1482.0
+06,TUNJUELITO,lesiones_personales,2470.0
+18,RAFAEL URIBE URIBE,lesiones_personales,4839.0
+17,CANDELARIA,lesiones_personales,912.0
+12,BARRIOS UNIDOS,lesiones_personales,2315.0
+13,TEUSAQUILLO,lesiones_personales,1962.0
+16,PUENTE ARANDA,lesiones_personales,3636.0
+14,LOS MARTIRES,lesiones_personales,3078.0
+20,SUMAPAZ,lesiones_personales,16.0
+01,USAQUEN,lesiones_personales,3583.0
+02,CHAPINERO,lesiones_personales,2286.0
+03,SANTA FE,lesiones_personales,3304.0
+04,SAN CRISTOBAL,lesiones_personales,5083.0
+05,USME,lesiones_personales,4813.0
+19,CIUDAD BOLIVAR,lesiones_personales,8240.0
+07,BOSA,lesiones_personales,6891.0
+08,KENNEDY,lesiones_personales,10418.0
+09,FONTIBON,delitos_sexuales,1065.0
+10,ENGATIVA,delitos_sexuales,2359.0
+11,SUBA,delitos_sexuales,2983.0
+15,ANTONIO NARINO,delitos_sexuales,424.0
+06,TUNJUELITO,delitos_sexuales,747.0
+18,RAFAEL URIBE URIBE,delitos_sexuales,1488.0
+17,CANDELARIA,delitos_sexuales,533.0
+12,BARRIOS UNIDOS,delitos_sexuales,671.0
+13,TEUSAQUILLO,delitos_sexuales,894.0
+16,PUENTE ARANDA,delitos_sexuales,1339.0
+14,LOS MARTIRES,delitos_sexuales,1402.0
+20,SUMAPAZ,delitos_sexuales,18.0
+01,USAQUEN,delitos_sexuales,1312.0
+02,CHAPINERO,delitos_sexuales,893.0
+03,SANTA FE,delitos_sexuales,1151.0
+04,SAN CRISTOBAL,delitos_sexuales,1807.0
+05,USME,delitos_sexuales,1932.0
+19,CIUDAD BOLIVAR,delitos_sexuales,3218.0
+07,BOSA,delitos_sexuales,2521.0
+08,KENNEDY,delitos_sexuales,2991.0
+09,FONTIBON,violencia_intrafamiliar,7458.0
+10,ENGATIVA,violencia_intrafamiliar,15720.0
+11,SUBA,violencia_intrafamiliar,19848.0
+15,ANTONIO NARINO,violencia_intrafamiliar,2041.0
+06,TUNJUELITO,violencia_intrafamiliar,4020.0
+18,RAFAEL URIBE URIBE,violencia_intrafamiliar,7548.0
+17,CANDELARIA,violencia_intrafamiliar,1230.0
+12,BARRIOS UNIDOS,violencia_intrafamiliar,3333.0
+13,TEUSAQUILLO,violencia_intrafamiliar,2952.0
+16,PUENTE ARANDA,violencia_intrafamiliar,6154.0
+14,LOS MARTIRES,violencia_intrafamiliar,4282.0
+20,SUMAPAZ,violencia_intrafamiliar,24.0
+01,USAQUEN,violencia_intrafamiliar,7162.0
+02,CHAPINERO,violencia_intrafamiliar,3308.0
+03,SANTA FE,violencia_intrafamiliar,4368.0
+04,SAN CRISTOBAL,violencia_intrafamiliar,10587.0
+05,USME,violencia_intrafamiliar,9212.0
+19,CIUDAD BOLIVAR,violencia_intrafamiliar,19372.0
+07,BOSA,violencia_intrafamiliar,17961.0
+08,KENNEDY,violencia_intrafamiliar,20001.0

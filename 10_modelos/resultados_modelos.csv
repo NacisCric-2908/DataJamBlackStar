@@ -1,0 +1,13 @@
+modelo,hipotesis,familia,variable,coef,coef_exp_irr,p_value,ci_low,ci_high,n,aic
+M1_puntos_criticos_UPZ,H2+H3: Déficit aseo / Vulnerabilidad -> Arrojo clandestino,BinomialNegativa(alpha=1.0),deficit_aseo_relativo,-0.4835,0.617,0.0005,-0.7578,-0.2092,112,547.8
+M1_puntos_criticos_UPZ,H2+H3: Déficit aseo / Vulnerabilidad -> Arrojo clandestino,BinomialNegativa(alpha=1.0),estrato_promedio_oficial,-0.8987,0.407,0.0,-1.1812,-0.6161,112,547.8
+M2_incidentes_UPZ,H5+H7: Arrojo / Vulnerabilidad -> Emergencias urbanas,BinomialNegativa(alpha=1.0),n_puntos_criticos,-0.0093,0.991,0.6807,-0.0537,0.0351,112,1874.8
+M2_incidentes_UPZ,H5+H7: Arrojo / Vulnerabilidad -> Emergencias urbanas,BinomialNegativa(alpha=1.0),estrato_promedio_oficial,-0.0075,0.993,0.9345,-0.1864,0.1714,112,1874.8
+M2_incidentes_UPZ,H5+H7: Arrojo / Vulnerabilidad -> Emergencias urbanas,BinomialNegativa(alpha=1.0),dist_estacion_bomberos_m,-0.0002,1.0,0.0225,-0.0004,-0.0,112,1874.8
+M3_homicidios_localidad,H4+H6: Arrojo / Vulnerabilidad -> Delitos de alto impacto,BinomialNegativa(alpha=1.0),n_puntos_criticos,0.0287,1.029,0.0768,-0.0031,0.0604,20,265.7
+M3_homicidios_localidad,H4+H6: Arrojo / Vulnerabilidad -> Delitos de alto impacto,BinomialNegativa(alpha=1.0),deficit_aseo_relativo,-0.4145,0.661,0.0731,-0.8679,0.0388,20,265.7
+M3_homicidios_localidad,H4+H6: Arrojo / Vulnerabilidad -> Delitos de alto impacto,BinomialNegativa(alpha=1.0),n_cuadrantes,-0.013,0.987,0.3761,-0.0419,0.0158,20,265.7
+M4_conjunto_delitos_localidad,Hipótesis conjunta: Vulnerabilidad+DéficitAseo+Arrojo+Policía -> Delitos,BinomialNegativa(alpha=1.0),estrato_promedio_oficial,-0.9224,0.398,0.0452,-1.825,-0.0198,19,248.1
+M4_conjunto_delitos_localidad,Hipótesis conjunta: Vulnerabilidad+DéficitAseo+Arrojo+Policía -> Delitos,BinomialNegativa(alpha=1.0),deficit_aseo_relativo,-0.6923,0.5,0.0594,-1.412,0.0275,19,248.1
+M4_conjunto_delitos_localidad,Hipótesis conjunta: Vulnerabilidad+DéficitAseo+Arrojo+Policía -> Delitos,BinomialNegativa(alpha=1.0),n_puntos_criticos,0.0071,1.007,0.7233,-0.0323,0.0465,19,248.1
+M4_conjunto_delitos_localidad,Hipótesis conjunta: Vulnerabilidad+DéficitAseo+Arrojo+Policía -> Delitos,BinomialNegativa(alpha=1.0),n_cuadrantes,-0.0037,0.996,0.8511,-0.0422,0.0349,19,248.1

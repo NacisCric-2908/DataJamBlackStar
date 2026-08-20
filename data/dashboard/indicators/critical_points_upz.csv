@@ -1,0 +1,113 @@
+upz_id,upz_nombre,localidad_id,localidad_nombre,critical_points,critical_points_per_km2
+75,Fontibon,09,FONTIBON,11,2.22
+22,Doce De Octubre,12,BARRIOS UNIDOS,9,2.68
+114,Modelia,09,FONTIBON,5,1.91
+103,Parque Salitre,12,BARRIOS UNIDOS,0,0.0
+105,Jardin Botanico,10,ENGATIVA,0,0.0
+88,El Refugio,02,CHAPINERO,0,0.0
+27,Suba,11,SUBA,5,0.77
+99,Chapinero,02,CHAPINERO,3,1.88
+109,Ciudad Salitre Oriental,13,TEUSAQUILLO,0,0.0
+90,Pardo Rubio,02,CHAPINERO,2,0.7
+33,Sosiego,04,SAN CRISTOBAL,4,1.7
+102,La Sabana,14,LOS MARTIRES,16,3.55
+45,Carvajal,08,KENNEDY,14,3.19
+93,Las Nieves,03,SANTA FE,5,2.9
+72,Bolivia,10,ENGATIVA,1,0.21
+15,Country Club,01,USAQUEN,0,0.0
+16,Santa Barbara,01,USAQUEN,0,0.0
+21,Los Andes,12,BARRIOS UNIDOS,2,0.73
+89,San Isidro - Patios,02,CHAPINERO,0,0.0
+106,La Esmeralda,13,TEUSAQUILLO,0,0.0
+86,El Porvenir,07,BOSA,11,2.39
+82,Patio Bonito,08,KENNEDY,12,3.78
+37,Santa Isabel,14,LOS MARTIRES,3,1.5
+49,Apogeo,07,BOSA,2,0.95
+19,El Prado,11,SUBA,5,1.15
+24,Niza,11,SUBA,1,0.13
+23,Casa Blanca Suba,11,SUBA,0,0.0
+110,Ciudad Salitre Occidental,09,FONTIBON,0,0.0
+100,Galerias,13,TEUSAQUILLO,3,1.26
+83,Las Margaritas,08,KENNEDY,2,1.36
+107,Quinta Paredes,13,TEUSAQUILLO,2,1.15
+101,Teusaquillo,13,TEUSAQUILLO,1,0.42
+91,Sagrado Corazon,03,SANTA FE,2,1.37
+108,Zona Industrial,16,PUENTE ARANDA,4,1.15
+55,Diana Turbay,18,RAFAEL URIBE URIBE,6,2.84
+51,Los Libertadores,04,SAN CRISTOBAL,5,1.37
+60,Parque Entrenubes,05,USME,0,0.0
+56,Danubio,05,USME,1,0.35
+65,Arborizadora,19,CIUDAD BOLIVAR,10,3.27
+2,La Academia,11,SUBA,0,0.0
+17,San Jose De Bavaria,11,SUBA,1,0.23
+18,Britalia,11,SUBA,2,0.61
+26,Las Ferias,10,ENGATIVA,13,2.75
+48,Timiza,08,KENNEDY,12,2.79
+13,Los Cedros,01,USAQUEN,0,0.0
+70,Jerusalem,19,CIUDAD BOLIVAR,6,1.12
+35,Ciudad Jardin,15,ANTONIO NARINO,3,2.25
+38,Restrepo,15,ANTONIO NARINO,15,4.23
+115,Capellania,09,FONTIBON,6,2.21
+50,La Gloria,04,SAN CRISTOBAL,15,3.89
+20,La Alhambra,11,SUBA,0,0.0
+79,Calandaima,08,KENNEDY,6,1.88
+61,Ciudad Usme,05,USME,1,0.11
+12,Toberin,01,USAQUEN,2,0.69
+10,La Uribe,01,USAQUEN,1,0.29
+59,Alfonso Lopez,05,USME,0,0.0
+58,Comuneros,05,USME,3,0.61
+43,San Rafael,16,PUENTE ARANDA,1,0.3
+47,Kennedy Central,08,KENNEDY,2,0.59
+36,San Jose,18,RAFAEL URIBE URIBE,5,2.41
+66,San Francisco,19,CIUDAD BOLIVAR,7,3.92
+57,Gran Yomasa,05,USME,5,0.93
+52,La Flora,05,USME,0,0.0
+11,San Cristobal Norte,01,USAQUEN,1,0.36
+14,Usaquen,01,USAQUEN,0,0.0
+73,Garces Navas,10,ENGATIVA,9,1.62
+74,Engativa,10,ENGATIVA,10,1.7
+104,Parque Simon Bolivar - Can,13,TEUSAQUILLO,0,0.0
+31,Santa Cecilia,10,ENGATIVA,2,0.65
+68,El Tesoro,19,CIUDAD BOLIVAR,3,1.42
+64,Monte Blanco,19,CIUDAD BOLIVAR,0,0.0
+71,Tibabuyes,11,SUBA,17,2.34
+29,Minuto De Dios,10,ENGATIVA,6,1.61
+76,Fontibon San Pablo,09,FONTIBON,5,1.39
+3,Guaymaral,11,SUBA,0,0.0
+80,Corabastos,08,KENNEDY,8,4.34
+67,Lucero,19,CIUDAD BOLIVAR,10,1.71
+63,El Mochuelo,19,CIUDAD BOLIVAR,0,0.0
+28,El Rincon,11,SUBA,11,1.55
+30,Boyaca Real,10,ENGATIVA,11,2.43
+116,Alamos,10,ENGATIVA,4,2.0
+85,Bosa Central,07,BOSA,23,3.22
+42,Venecia,06,TUNJUELITO,5,0.75
+111,Puente Aranda,16,PUENTE ARANDA,1,0.28
+44,Americas,08,KENNEDY,4,1.05
+41,Muzu,16,PUENTE ARANDA,2,0.79
+40,Ciudad Montes,16,PUENTE ARANDA,1,0.22
+34,20 De Julio,04,SAN CRISTOBAL,3,1.14
+84,Bosa Occidental,07,BOSA,13,3.02
+32,San Blas,04,SAN CRISTOBAL,4,1.0
+95,Las Cruces,03,SANTA FE,8,8.67
+87,Tintal Sur,07,BOSA,6,1.04
+117,Aeropuerto El Dorado,09,FONTIBON,0,0.0
+77,Zona Franca,09,FONTIBON,4,0.81
+54,Marruecos,18,RAFAEL URIBE URIBE,4,1.1
+39,Quiroga,18,RAFAEL URIBE URIBE,11,2.9
+62,Tunjuelito,06,TUNJUELITO,5,1.53
+53,Marco Fidel Suarez,18,RAFAEL URIBE URIBE,4,2.17
+69,Ismael Perdomo,19,CIUDAD BOLIVAR,2,0.36
+1,Paseo De Los Libertadores,01,USAQUEN,0,0.0
+46,Castilla,08,KENNEDY,5,0.99
+112,Granjas De Techo,09,FONTIBON,3,0.63
+25,La Floresta,11,SUBA,0,0.0
+97,Chico Lago,02,CHAPINERO,2,0.47
+98,Los Alcazares,12,BARRIOS UNIDOS,6,1.45
+96,Lourdes,03,SANTA FE,2,1.0
+92,La Macarena,03,SANTA FE,0,0.0
+94,La Candelaria,17,CANDELARIA,1,0.49
+78,Tintal Norte,08,KENNEDY,0,0.0
+9,Verbenal,01,USAQUEN,3,0.84
+113,Bavaria,08,KENNEDY,0,0.0
+81,Gran Britalia,08,KENNEDY,6,3.34

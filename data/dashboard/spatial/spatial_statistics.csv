@@ -1,0 +1,768 @@
+geography_level,geography_id,variable,method,statistic,p_value,significant,cluster_type
+UPZ,,deficit_aseo_relativo,Moran Global,0.4073,0.001,True,
+UPZ,,densidad_puntos_criticos_km2,Moran Global,0.2845,0.001,True,
+UPZ,,densidad_incidentes_km2,Moran Global,0.2936,0.001,True,
+UPZ,,densidad_cuadrantes_km2,Moran Global,0.5752,0.001,True,
+UPZ,,estrato_promedio_oficial,Moran Global,0.6986,0.001,True,
+UPZ,,estrato_promedio_reportado,Moran Global,0.7893,0.001,True,
+Localidad,,deficit_aseo_relativo,Moran Global,0.2689,0.022,True,
+Localidad,,densidad_puntos_criticos_km2,Moran Global,0.1198,0.121,False,
+Localidad,,densidad_homicidios_km2,Moran Global,0.0853,0.136,False,
+Localidad,,densidad_incidentes_km2,Moran Global,0.1523,0.079,False,
+UPZ,,deficit_aseo_relativo <-> densidad_puntos_criticos_km2,Moran Bivariado,-0.0074,0.476,False,
+UPZ,,densidad_puntos_criticos_km2 <-> densidad_incidentes_km2,Moran Bivariado,0.1056,0.029,True,
+UPZ,,estrato_promedio_oficial <-> deficit_aseo_relativo,Moran Bivariado,-0.381,0.001,True,
+Localidad,,deficit_aseo_relativo <-> densidad_puntos_criticos_km2,Moran Bivariado,-0.0728,0.335,False,
+Localidad,,densidad_puntos_criticos_km2 <-> densidad_homicidios_km2,Moran Bivariado,0.136,0.08,False,
+UPZ,75,deficit_aseo_relativo,Moran Local (LISA),0.2636,0.071,False,No significativo
+UPZ,22,deficit_aseo_relativo,Moran Local (LISA),0.082,0.369,False,No significativo
+UPZ,114,deficit_aseo_relativo,Moran Local (LISA),0.6937,0.099,False,No significativo
+UPZ,103,deficit_aseo_relativo,Moran Local (LISA),-0.3504,0.042,True,High-Low
+UPZ,105,deficit_aseo_relativo,Moran Local (LISA),0.2099,0.058,False,No significativo
+UPZ,88,deficit_aseo_relativo,Moran Local (LISA),0.4188,0.119,False,No significativo
+UPZ,27,deficit_aseo_relativo,Moran Local (LISA),0.0249,0.495,False,No significativo
+UPZ,99,deficit_aseo_relativo,Moran Local (LISA),3.2925,0.002,True,Low-Low
+UPZ,109,deficit_aseo_relativo,Moran Local (LISA),0.9671,0.046,True,Low-Low
+UPZ,90,deficit_aseo_relativo,Moran Local (LISA),0.0178,0.001,True,Low-Low
+UPZ,33,deficit_aseo_relativo,Moran Local (LISA),0.0607,0.394,False,No significativo
+UPZ,102,deficit_aseo_relativo,Moran Local (LISA),0.6402,0.013,True,Low-Low
+UPZ,45,deficit_aseo_relativo,Moran Local (LISA),-0.0504,0.161,False,No significativo
+UPZ,93,deficit_aseo_relativo,Moran Local (LISA),0.1751,0.201,False,No significativo
+UPZ,72,deficit_aseo_relativo,Moran Local (LISA),-0.2125,0.275,False,No significativo
+UPZ,15,deficit_aseo_relativo,Moran Local (LISA),-0.4299,0.089,False,No significativo
+UPZ,16,deficit_aseo_relativo,Moran Local (LISA),0.2327,0.021,True,Low-Low
+UPZ,21,deficit_aseo_relativo,Moran Local (LISA),0.4715,0.013,True,Low-Low
+UPZ,89,deficit_aseo_relativo,Moran Local (LISA),0.0,0.001,True,High-Low
+UPZ,106,deficit_aseo_relativo,Moran Local (LISA),0.6276,0.186,False,No significativo
+UPZ,86,deficit_aseo_relativo,Moran Local (LISA),0.2105,0.282,False,No significativo
+UPZ,82,deficit_aseo_relativo,Moran Local (LISA),-0.0934,0.398,False,No significativo
+UPZ,37,deficit_aseo_relativo,Moran Local (LISA),0.7717,0.121,False,No significativo
+UPZ,49,deficit_aseo_relativo,Moran Local (LISA),0.0494,0.409,False,No significativo
+UPZ,19,deficit_aseo_relativo,Moran Local (LISA),0.9553,0.022,True,Low-Low
+UPZ,24,deficit_aseo_relativo,Moran Local (LISA),0.3872,0.069,False,No significativo
+UPZ,23,deficit_aseo_relativo,Moran Local (LISA),-0.0412,0.115,False,No significativo
+UPZ,110,deficit_aseo_relativo,Moran Local (LISA),0.9238,0.101,False,No significativo
+UPZ,100,deficit_aseo_relativo,Moran Local (LISA),1.2177,0.01,True,Low-Low
+UPZ,83,deficit_aseo_relativo,Moran Local (LISA),-0.2291,0.216,False,No significativo
+UPZ,107,deficit_aseo_relativo,Moran Local (LISA),0.8662,0.045,True,Low-Low
+UPZ,101,deficit_aseo_relativo,Moran Local (LISA),1.7833,0.003,True,Low-Low
+UPZ,91,deficit_aseo_relativo,Moran Local (LISA),1.2116,0.026,True,Low-Low
+UPZ,108,deficit_aseo_relativo,Moran Local (LISA),-0.0714,0.019,True,High-Low
+UPZ,55,deficit_aseo_relativo,Moran Local (LISA),0.5218,0.027,True,High-High
+UPZ,51,deficit_aseo_relativo,Moran Local (LISA),1.1766,0.007,True,High-High
+UPZ,60,deficit_aseo_relativo,Moran Local (LISA),0.9604,0.022,True,High-High
+UPZ,56,deficit_aseo_relativo,Moran Local (LISA),0.3285,0.016,True,High-High
+UPZ,65,deficit_aseo_relativo,Moran Local (LISA),0.0515,0.103,False,No significativo
+UPZ,2,deficit_aseo_relativo,Moran Local (LISA),0.9069,0.081,False,No significativo
+UPZ,17,deficit_aseo_relativo,Moran Local (LISA),0.0002,0.295,False,No significativo
+UPZ,18,deficit_aseo_relativo,Moran Local (LISA),0.4847,0.107,False,No significativo
+UPZ,26,deficit_aseo_relativo,Moran Local (LISA),-0.1089,0.081,False,No significativo
+UPZ,48,deficit_aseo_relativo,Moran Local (LISA),0.0045,0.285,False,No significativo
+UPZ,13,deficit_aseo_relativo,Moran Local (LISA),-0.1265,0.098,False,No significativo
+UPZ,70,deficit_aseo_relativo,Moran Local (LISA),0.3374,0.191,False,No significativo
+UPZ,35,deficit_aseo_relativo,Moran Local (LISA),0.7301,0.031,True,Low-Low
+UPZ,38,deficit_aseo_relativo,Moran Local (LISA),0.6708,0.034,True,Low-Low
+UPZ,115,deficit_aseo_relativo,Moran Local (LISA),-0.0022,0.16,False,No significativo
+UPZ,50,deficit_aseo_relativo,Moran Local (LISA),0.7713,0.021,True,High-High
+UPZ,20,deficit_aseo_relativo,Moran Local (LISA),1.612,0.017,True,Low-Low
+UPZ,79,deficit_aseo_relativo,Moran Local (LISA),0.117,0.338,False,No significativo
+UPZ,61,deficit_aseo_relativo,Moran Local (LISA),1.0573,0.026,True,High-High
+UPZ,12,deficit_aseo_relativo,Moran Local (LISA),0.3241,0.317,False,No significativo
+UPZ,10,deficit_aseo_relativo,Moran Local (LISA),-0.3553,0.119,False,No significativo
+UPZ,59,deficit_aseo_relativo,Moran Local (LISA),0.4372,0.128,False,No significativo
+UPZ,58,deficit_aseo_relativo,Moran Local (LISA),0.6949,0.013,True,High-High
+UPZ,43,deficit_aseo_relativo,Moran Local (LISA),-0.1205,0.229,False,No significativo
+UPZ,47,deficit_aseo_relativo,Moran Local (LISA),0.1057,0.38,False,No significativo
+UPZ,36,deficit_aseo_relativo,Moran Local (LISA),0.4997,0.095,False,No significativo
+UPZ,66,deficit_aseo_relativo,Moran Local (LISA),0.5318,0.037,True,High-High
+UPZ,57,deficit_aseo_relativo,Moran Local (LISA),0.1049,0.001,True,High-High
+UPZ,52,deficit_aseo_relativo,Moran Local (LISA),1.2532,0.017,True,High-High
+UPZ,11,deficit_aseo_relativo,Moran Local (LISA),-0.3308,0.204,False,No significativo
+UPZ,14,deficit_aseo_relativo,Moran Local (LISA),-0.2283,0.131,False,No significativo
+UPZ,73,deficit_aseo_relativo,Moran Local (LISA),0.0178,0.431,False,No significativo
+UPZ,74,deficit_aseo_relativo,Moran Local (LISA),0.1502,0.424,False,No significativo
+UPZ,104,deficit_aseo_relativo,Moran Local (LISA),0.3164,0.001,True,Low-Low
+UPZ,31,deficit_aseo_relativo,Moran Local (LISA),0.2211,0.098,False,No significativo
+UPZ,68,deficit_aseo_relativo,Moran Local (LISA),1.217,0.014,True,High-High
+UPZ,64,deficit_aseo_relativo,Moran Local (LISA),1.513,0.006,True,High-High
+UPZ,71,deficit_aseo_relativo,Moran Local (LISA),0.2989,0.218,False,No significativo
+UPZ,29,deficit_aseo_relativo,Moran Local (LISA),0.0266,0.426,False,No significativo
+UPZ,76,deficit_aseo_relativo,Moran Local (LISA),0.9082,0.071,False,No significativo
+UPZ,3,deficit_aseo_relativo,Moran Local (LISA),1.709,0.007,True,High-High
+UPZ,80,deficit_aseo_relativo,Moran Local (LISA),-0.641,0.127,False,No significativo
+UPZ,67,deficit_aseo_relativo,Moran Local (LISA),1.1128,0.009,True,High-High
+UPZ,63,deficit_aseo_relativo,Moran Local (LISA),1.1113,0.007,True,High-High
+UPZ,28,deficit_aseo_relativo,Moran Local (LISA),-0.0296,0.355,False,No significativo
+UPZ,30,deficit_aseo_relativo,Moran Local (LISA),0.0817,0.268,False,No significativo
+UPZ,116,deficit_aseo_relativo,Moran Local (LISA),-0.0403,0.396,False,No significativo
+UPZ,85,deficit_aseo_relativo,Moran Local (LISA),0.1404,0.273,False,No significativo
+UPZ,42,deficit_aseo_relativo,Moran Local (LISA),0.0498,0.402,False,No significativo
+UPZ,111,deficit_aseo_relativo,Moran Local (LISA),-0.1289,0.044,True,High-Low
+UPZ,44,deficit_aseo_relativo,Moran Local (LISA),0.0968,0.066,False,No significativo
+UPZ,41,deficit_aseo_relativo,Moran Local (LISA),0.1984,0.317,False,No significativo
+UPZ,40,deficit_aseo_relativo,Moran Local (LISA),0.4034,0.042,True,Low-Low
+UPZ,34,deficit_aseo_relativo,Moran Local (LISA),-0.0119,0.483,False,No significativo
+UPZ,84,deficit_aseo_relativo,Moran Local (LISA),0.1585,0.32,False,No significativo
+UPZ,32,deficit_aseo_relativo,Moran Local (LISA),0.424,0.232,False,No significativo
+UPZ,95,deficit_aseo_relativo,Moran Local (LISA),-0.4377,0.099,False,No significativo
+UPZ,87,deficit_aseo_relativo,Moran Local (LISA),0.6174,0.187,False,No significativo
+UPZ,117,deficit_aseo_relativo,Moran Local (LISA),0.5339,0.186,False,No significativo
+UPZ,77,deficit_aseo_relativo,Moran Local (LISA),0.4899,0.109,False,No significativo
+UPZ,54,deficit_aseo_relativo,Moran Local (LISA),0.3281,0.005,True,High-High
+UPZ,39,deficit_aseo_relativo,Moran Local (LISA),0.0954,0.219,False,No significativo
+UPZ,62,deficit_aseo_relativo,Moran Local (LISA),0.7905,0.029,True,High-High
+UPZ,53,deficit_aseo_relativo,Moran Local (LISA),0.0322,0.483,False,No significativo
+UPZ,69,deficit_aseo_relativo,Moran Local (LISA),0.0045,0.234,False,No significativo
+UPZ,1,deficit_aseo_relativo,Moran Local (LISA),1.1797,0.035,True,High-High
+UPZ,46,deficit_aseo_relativo,Moran Local (LISA),-0.1643,0.355,False,No significativo
+UPZ,112,deficit_aseo_relativo,Moran Local (LISA),-0.0081,0.134,False,No significativo
+UPZ,25,deficit_aseo_relativo,Moran Local (LISA),0.4336,0.048,True,Low-Low
+UPZ,97,deficit_aseo_relativo,Moran Local (LISA),1.9965,0.013,True,Low-Low
+UPZ,98,deficit_aseo_relativo,Moran Local (LISA),0.9247,0.003,True,Low-Low
+UPZ,96,deficit_aseo_relativo,Moran Local (LISA),1.0066,0.025,True,High-High
+UPZ,92,deficit_aseo_relativo,Moran Local (LISA),-0.1187,0.357,False,No significativo
+UPZ,94,deficit_aseo_relativo,Moran Local (LISA),0.1901,0.113,False,No significativo
+UPZ,78,deficit_aseo_relativo,Moran Local (LISA),0.0442,0.491,False,No significativo
+UPZ,9,deficit_aseo_relativo,Moran Local (LISA),0.1279,0.037,True,High-High
+UPZ,113,deficit_aseo_relativo,Moran Local (LISA),-0.0026,0.383,False,No significativo
+UPZ,81,deficit_aseo_relativo,Moran Local (LISA),-0.0515,0.414,False,No significativo
+UPZ,75,densidad_puntos_criticos_km2,Moran Local (LISA),-0.1311,0.364,False,No significativo
+UPZ,22,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0209,0.457,False,No significativo
+UPZ,114,densidad_puntos_criticos_km2,Moran Local (LISA),-0.1104,0.388,False,No significativo
+UPZ,103,densidad_puntos_criticos_km2,Moran Local (LISA),0.0661,0.457,False,No significativo
+UPZ,105,densidad_puntos_criticos_km2,Moran Local (LISA),0.4736,0.072,False,No significativo
+UPZ,88,densidad_puntos_criticos_km2,Moran Local (LISA),0.5943,0.105,False,No significativo
+UPZ,27,densidad_puntos_criticos_km2,Moran Local (LISA),0.0676,0.402,False,No significativo
+UPZ,99,densidad_puntos_criticos_km2,Moran Local (LISA),-0.1059,0.312,False,No significativo
+UPZ,109,densidad_puntos_criticos_km2,Moran Local (LISA),0.6262,0.015,True,Low-Low
+UPZ,90,densidad_puntos_criticos_km2,Moran Local (LISA),0.1001,0.342,False,No significativo
+UPZ,33,densidad_puntos_criticos_km2,Moran Local (LISA),0.4385,0.009,True,High-High
+UPZ,102,densidad_puntos_criticos_km2,Moran Local (LISA),1.1347,0.037,True,High-High
+UPZ,45,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0729,0.493,False,No significativo
+UPZ,93,densidad_puntos_criticos_km2,Moran Local (LISA),1.0301,0.034,True,High-High
+UPZ,72,densidad_puntos_criticos_km2,Moran Local (LISA),-0.3705,0.12,False,No significativo
+UPZ,15,densidad_puntos_criticos_km2,Moran Local (LISA),0.7037,0.003,True,Low-Low
+UPZ,16,densidad_puntos_criticos_km2,Moran Local (LISA),0.5932,0.023,True,Low-Low
+UPZ,21,densidad_puntos_criticos_km2,Moran Local (LISA),0.0602,0.36,False,No significativo
+UPZ,89,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0,0.001,True,Low-Low
+UPZ,106,densidad_puntos_criticos_km2,Moran Local (LISA),0.3978,0.19,False,No significativo
+UPZ,86,densidad_puntos_criticos_km2,Moran Local (LISA),0.3356,0.176,False,No significativo
+UPZ,82,densidad_puntos_criticos_km2,Moran Local (LISA),1.5352,0.044,True,High-High
+UPZ,37,densidad_puntos_criticos_km2,Moran Local (LISA),0.2721,0.003,True,High-High
+UPZ,49,densidad_puntos_criticos_km2,Moran Local (LISA),-0.2195,0.032,True,Low-High
+UPZ,19,densidad_puntos_criticos_km2,Moran Local (LISA),0.0643,0.001,True,Low-Low
+UPZ,24,densidad_puntos_criticos_km2,Moran Local (LISA),0.4176,0.069,False,No significativo
+UPZ,23,densidad_puntos_criticos_km2,Moran Local (LISA),0.4658,0.09,False,No significativo
+UPZ,110,densidad_puntos_criticos_km2,Moran Local (LISA),0.3756,0.091,False,No significativo
+UPZ,100,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0002,0.084,False,No significativo
+UPZ,83,densidad_puntos_criticos_km2,Moran Local (LISA),0.1021,0.019,True,High-High
+UPZ,107,densidad_puntos_criticos_km2,Moran Local (LISA),0.0214,0.259,False,No significativo
+UPZ,101,densidad_puntos_criticos_km2,Moran Local (LISA),-0.1813,0.17,False,No significativo
+UPZ,91,densidad_puntos_criticos_km2,Moran Local (LISA),0.0189,0.237,False,No significativo
+UPZ,108,densidad_puntos_criticos_km2,Moran Local (LISA),0.0119,0.368,False,No significativo
+UPZ,55,densidad_puntos_criticos_km2,Moran Local (LISA),0.0707,0.372,False,No significativo
+UPZ,51,densidad_puntos_criticos_km2,Moran Local (LISA),0.0253,0.226,False,No significativo
+UPZ,60,densidad_puntos_criticos_km2,Moran Local (LISA),-0.1624,0.274,False,No significativo
+UPZ,56,densidad_puntos_criticos_km2,Moran Local (LISA),0.0952,0.393,False,No significativo
+UPZ,65,densidad_puntos_criticos_km2,Moran Local (LISA),0.6183,0.101,False,No significativo
+UPZ,2,densidad_puntos_criticos_km2,Moran Local (LISA),0.6781,0.026,True,Low-Low
+UPZ,17,densidad_puntos_criticos_km2,Moran Local (LISA),0.4774,0.021,True,Low-Low
+UPZ,18,densidad_puntos_criticos_km2,Moran Local (LISA),0.3053,0.019,True,Low-Low
+UPZ,26,densidad_puntos_criticos_km2,Moran Local (LISA),-0.2908,0.219,False,No significativo
+UPZ,48,densidad_puntos_criticos_km2,Moran Local (LISA),0.9693,0.033,True,High-High
+UPZ,13,densidad_puntos_criticos_km2,Moran Local (LISA),0.5408,0.036,True,Low-Low
+UPZ,70,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0799,0.062,False,No significativo
+UPZ,35,densidad_puntos_criticos_km2,Moran Local (LISA),1.0545,0.001,True,High-High
+UPZ,38,densidad_puntos_criticos_km2,Moran Local (LISA),1.8968,0.022,True,High-High
+UPZ,115,densidad_puntos_criticos_km2,Moran Local (LISA),-0.1037,0.367,False,No significativo
+UPZ,50,densidad_puntos_criticos_km2,Moran Local (LISA),0.1638,0.331,False,No significativo
+UPZ,20,densidad_puntos_criticos_km2,Moran Local (LISA),0.6188,0.007,True,Low-Low
+UPZ,79,densidad_puntos_criticos_km2,Moran Local (LISA),0.1113,0.271,False,No significativo
+UPZ,61,densidad_puntos_criticos_km2,Moran Local (LISA),0.5936,0.017,True,Low-Low
+UPZ,12,densidad_puntos_criticos_km2,Moran Local (LISA),0.2533,0.026,True,Low-Low
+UPZ,10,densidad_puntos_criticos_km2,Moran Local (LISA),0.3754,0.082,False,No significativo
+UPZ,59,densidad_puntos_criticos_km2,Moran Local (LISA),0.485,0.158,False,No significativo
+UPZ,58,densidad_puntos_criticos_km2,Moran Local (LISA),0.3707,0.007,True,Low-Low
+UPZ,43,densidad_puntos_criticos_km2,Moran Local (LISA),0.159,0.286,False,No significativo
+UPZ,47,densidad_puntos_criticos_km2,Moran Local (LISA),-0.4931,0.024,True,Low-High
+UPZ,36,densidad_puntos_criticos_km2,Moran Local (LISA),0.7109,0.036,True,High-High
+UPZ,66,densidad_puntos_criticos_km2,Moran Local (LISA),0.6012,0.187,False,No significativo
+UPZ,57,densidad_puntos_criticos_km2,Moran Local (LISA),0.1979,0.001,True,Low-Low
+UPZ,52,densidad_puntos_criticos_km2,Moran Local (LISA),0.4491,0.128,False,No significativo
+UPZ,11,densidad_puntos_criticos_km2,Moran Local (LISA),0.4554,0.059,False,No significativo
+UPZ,14,densidad_puntos_criticos_km2,Moran Local (LISA),0.7967,0.001,True,Low-Low
+UPZ,73,densidad_puntos_criticos_km2,Moran Local (LISA),0.0646,0.247,False,No significativo
+UPZ,74,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0126,0.453,False,No significativo
+UPZ,104,densidad_puntos_criticos_km2,Moran Local (LISA),0.4371,0.051,False,No significativo
+UPZ,31,densidad_puntos_criticos_km2,Moran Local (LISA),-0.101,0.254,False,No significativo
+UPZ,68,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0352,0.392,False,No significativo
+UPZ,64,densidad_puntos_criticos_km2,Moran Local (LISA),0.6969,0.04,True,Low-Low
+UPZ,71,densidad_puntos_criticos_km2,Moran Local (LISA),-0.244,0.32,False,No significativo
+UPZ,29,densidad_puntos_criticos_km2,Moran Local (LISA),0.0318,0.326,False,No significativo
+UPZ,76,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0177,0.414,False,No significativo
+UPZ,3,densidad_puntos_criticos_km2,Moran Local (LISA),0.8609,0.046,True,Low-Low
+UPZ,80,densidad_puntos_criticos_km2,Moran Local (LISA),1.5303,0.073,False,No significativo
+UPZ,67,densidad_puntos_criticos_km2,Moran Local (LISA),0.0827,0.247,False,No significativo
+UPZ,63,densidad_puntos_criticos_km2,Moran Local (LISA),0.2213,0.27,False,No significativo
+UPZ,28,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0656,0.223,False,No significativo
+UPZ,30,densidad_puntos_criticos_km2,Moran Local (LISA),0.1358,0.308,False,No significativo
+UPZ,116,densidad_puntos_criticos_km2,Moran Local (LISA),0.0705,0.337,False,No significativo
+UPZ,85,densidad_puntos_criticos_km2,Moran Local (LISA),0.6991,0.106,False,No significativo
+UPZ,42,densidad_puntos_criticos_km2,Moran Local (LISA),-0.3614,0.009,True,Low-High
+UPZ,111,densidad_puntos_criticos_km2,Moran Local (LISA),0.3851,0.026,True,Low-Low
+UPZ,44,densidad_puntos_criticos_km2,Moran Local (LISA),0.0528,0.149,False,No significativo
+UPZ,41,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0927,0.222,False,No significativo
+UPZ,40,densidad_puntos_criticos_km2,Moran Local (LISA),-0.4008,0.077,False,No significativo
+UPZ,34,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0634,0.055,False,No significativo
+UPZ,84,densidad_puntos_criticos_km2,Moran Local (LISA),0.9653,0.054,False,No significativo
+UPZ,32,densidad_puntos_criticos_km2,Moran Local (LISA),-0.2846,0.004,True,Low-High
+UPZ,95,densidad_puntos_criticos_km2,Moran Local (LISA),3.2546,0.01,True,High-High
+UPZ,87,densidad_puntos_criticos_km2,Moran Local (LISA),-0.1927,0.041,True,Low-High
+UPZ,117,densidad_puntos_criticos_km2,Moran Local (LISA),-0.4405,0.14,False,No significativo
+UPZ,77,densidad_puntos_criticos_km2,Moran Local (LISA),0.0487,0.41,False,No significativo
+UPZ,54,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0336,0.208,False,No significativo
+UPZ,39,densidad_puntos_criticos_km2,Moran Local (LISA),0.9814,0.043,True,High-High
+UPZ,62,densidad_puntos_criticos_km2,Moran Local (LISA),0.0479,0.244,False,No significativo
+UPZ,53,densidad_puntos_criticos_km2,Moran Local (LISA),0.3815,0.081,False,No significativo
+UPZ,69,densidad_puntos_criticos_km2,Moran Local (LISA),-0.4298,0.102,False,No significativo
+UPZ,1,densidad_puntos_criticos_km2,Moran Local (LISA),0.6695,0.058,False,No significativo
+UPZ,46,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0401,0.252,False,No significativo
+UPZ,112,densidad_puntos_criticos_km2,Moran Local (LISA),0.1427,0.137,False,No significativo
+UPZ,25,densidad_puntos_criticos_km2,Moran Local (LISA),0.0897,0.418,False,No significativo
+UPZ,97,densidad_puntos_criticos_km2,Moran Local (LISA),0.2847,0.044,True,Low-Low
+UPZ,98,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0265,0.309,False,No significativo
+UPZ,96,densidad_puntos_criticos_km2,Moran Local (LISA),-0.1803,0.048,True,Low-High
+UPZ,92,densidad_puntos_criticos_km2,Moran Local (LISA),-0.1233,0.352,False,No significativo
+UPZ,94,densidad_puntos_criticos_km2,Moran Local (LISA),-0.7863,0.012,True,Low-High
+UPZ,78,densidad_puntos_criticos_km2,Moran Local (LISA),0.1244,0.418,False,No significativo
+UPZ,9,densidad_puntos_criticos_km2,Moran Local (LISA),0.2572,0.012,True,Low-Low
+UPZ,113,densidad_puntos_criticos_km2,Moran Local (LISA),0.4166,0.125,False,No significativo
+UPZ,81,densidad_puntos_criticos_km2,Moran Local (LISA),1.6585,0.009,True,High-High
+UPZ,75,densidad_incidentes_km2,Moran Local (LISA),-0.1196,0.131,False,No significativo
+UPZ,22,densidad_incidentes_km2,Moran Local (LISA),-0.2502,0.075,False,No significativo
+UPZ,114,densidad_incidentes_km2,Moran Local (LISA),0.0637,0.497,False,No significativo
+UPZ,103,densidad_incidentes_km2,Moran Local (LISA),0.0305,0.393,False,No significativo
+UPZ,105,densidad_incidentes_km2,Moran Local (LISA),-0.3671,0.172,False,No significativo
+UPZ,88,densidad_incidentes_km2,Moran Local (LISA),-0.1347,0.303,False,No significativo
+UPZ,27,densidad_incidentes_km2,Moran Local (LISA),-0.036,0.102,False,No significativo
+UPZ,99,densidad_incidentes_km2,Moran Local (LISA),4.005,0.012,True,High-High
+UPZ,109,densidad_incidentes_km2,Moran Local (LISA),0.0243,0.179,False,No significativo
+UPZ,90,densidad_incidentes_km2,Moran Local (LISA),-0.2251,0.012,True,Low-High
+UPZ,33,densidad_incidentes_km2,Moran Local (LISA),1.2604,0.011,True,High-High
+UPZ,102,densidad_incidentes_km2,Moran Local (LISA),0.6559,0.006,True,High-High
+UPZ,45,densidad_incidentes_km2,Moran Local (LISA),-0.0059,0.453,False,No significativo
+UPZ,93,densidad_incidentes_km2,Moran Local (LISA),2.7747,0.001,True,High-High
+UPZ,72,densidad_incidentes_km2,Moran Local (LISA),0.006,0.44,False,No significativo
+UPZ,15,densidad_incidentes_km2,Moran Local (LISA),0.0019,0.497,False,No significativo
+UPZ,16,densidad_incidentes_km2,Moran Local (LISA),-0.0336,0.361,False,No significativo
+UPZ,21,densidad_incidentes_km2,Moran Local (LISA),-0.0005,0.431,False,No significativo
+UPZ,89,densidad_incidentes_km2,Moran Local (LISA),0.0,0.001,True,High-Low
+UPZ,106,densidad_incidentes_km2,Moran Local (LISA),-0.9553,0.019,True,Low-High
+UPZ,86,densidad_incidentes_km2,Moran Local (LISA),-0.0026,0.439,False,No significativo
+UPZ,82,densidad_incidentes_km2,Moran Local (LISA),0.0915,0.27,False,No significativo
+UPZ,37,densidad_incidentes_km2,Moran Local (LISA),-0.0805,0.013,True,Low-High
+UPZ,49,densidad_incidentes_km2,Moran Local (LISA),-0.0356,0.259,False,No significativo
+UPZ,19,densidad_incidentes_km2,Moran Local (LISA),0.0316,0.321,False,No significativo
+UPZ,24,densidad_incidentes_km2,Moran Local (LISA),0.1231,0.387,False,No significativo
+UPZ,23,densidad_incidentes_km2,Moran Local (LISA),0.0403,0.5,False,No significativo
+UPZ,110,densidad_incidentes_km2,Moran Local (LISA),-0.0015,0.105,False,No significativo
+UPZ,100,densidad_incidentes_km2,Moran Local (LISA),2.9056,0.008,True,High-High
+UPZ,83,densidad_incidentes_km2,Moran Local (LISA),-0.1565,0.379,False,No significativo
+UPZ,107,densidad_incidentes_km2,Moran Local (LISA),-0.0263,0.461,False,No significativo
+UPZ,101,densidad_incidentes_km2,Moran Local (LISA),0.8365,0.006,True,High-High
+UPZ,91,densidad_incidentes_km2,Moran Local (LISA),2.3373,0.004,True,High-High
+UPZ,108,densidad_incidentes_km2,Moran Local (LISA),-0.0801,0.258,False,No significativo
+UPZ,55,densidad_incidentes_km2,Moran Local (LISA),0.0256,0.084,False,No significativo
+UPZ,51,densidad_incidentes_km2,Moran Local (LISA),-0.0496,0.236,False,No significativo
+UPZ,60,densidad_incidentes_km2,Moran Local (LISA),0.2974,0.242,False,No significativo
+UPZ,56,densidad_incidentes_km2,Moran Local (LISA),0.4638,0.023,True,Low-Low
+UPZ,65,densidad_incidentes_km2,Moran Local (LISA),0.1664,0.276,False,No significativo
+UPZ,2,densidad_incidentes_km2,Moran Local (LISA),1.2098,0.007,True,Low-Low
+UPZ,17,densidad_incidentes_km2,Moran Local (LISA),0.0545,0.121,False,No significativo
+UPZ,18,densidad_incidentes_km2,Moran Local (LISA),-0.1803,0.257,False,No significativo
+UPZ,26,densidad_incidentes_km2,Moran Local (LISA),-0.0087,0.253,False,No significativo
+UPZ,48,densidad_incidentes_km2,Moran Local (LISA),0.0051,0.467,False,No significativo
+UPZ,13,densidad_incidentes_km2,Moran Local (LISA),0.0024,0.463,False,No significativo
+UPZ,70,densidad_incidentes_km2,Moran Local (LISA),0.0709,0.468,False,No significativo
+UPZ,35,densidad_incidentes_km2,Moran Local (LISA),1.054,0.015,True,High-High
+UPZ,38,densidad_incidentes_km2,Moran Local (LISA),0.3265,0.062,False,No significativo
+UPZ,115,densidad_incidentes_km2,Moran Local (LISA),0.1043,0.184,False,No significativo
+UPZ,50,densidad_incidentes_km2,Moran Local (LISA),0.0827,0.299,False,No significativo
+UPZ,20,densidad_incidentes_km2,Moran Local (LISA),-0.0333,0.322,False,No significativo
+UPZ,79,densidad_incidentes_km2,Moran Local (LISA),0.605,0.137,False,No significativo
+UPZ,61,densidad_incidentes_km2,Moran Local (LISA),0.3811,0.258,False,No significativo
+UPZ,12,densidad_incidentes_km2,Moran Local (LISA),0.0335,0.384,False,No significativo
+UPZ,10,densidad_incidentes_km2,Moran Local (LISA),0.0827,0.373,False,No significativo
+UPZ,59,densidad_incidentes_km2,Moran Local (LISA),-0.2582,0.103,False,No significativo
+UPZ,58,densidad_incidentes_km2,Moran Local (LISA),0.1836,0.018,True,Low-Low
+UPZ,43,densidad_incidentes_km2,Moran Local (LISA),-0.2214,0.231,False,No significativo
+UPZ,47,densidad_incidentes_km2,Moran Local (LISA),-0.2396,0.265,False,No significativo
+UPZ,36,densidad_incidentes_km2,Moran Local (LISA),-0.1663,0.116,False,No significativo
+UPZ,66,densidad_incidentes_km2,Moran Local (LISA),-0.56,0.047,True,High-Low
+UPZ,57,densidad_incidentes_km2,Moran Local (LISA),0.1984,0.043,True,Low-Low
+UPZ,52,densidad_incidentes_km2,Moran Local (LISA),-0.1223,0.044,True,High-Low
+UPZ,11,densidad_incidentes_km2,Moran Local (LISA),0.1727,0.313,False,No significativo
+UPZ,14,densidad_incidentes_km2,Moran Local (LISA),-0.0557,0.376,False,No significativo
+UPZ,73,densidad_incidentes_km2,Moran Local (LISA),0.0083,0.476,False,No significativo
+UPZ,74,densidad_incidentes_km2,Moran Local (LISA),0.0691,0.044,True,Low-Low
+UPZ,104,densidad_incidentes_km2,Moran Local (LISA),-0.4695,0.075,False,No significativo
+UPZ,31,densidad_incidentes_km2,Moran Local (LISA),-0.069,0.185,False,No significativo
+UPZ,68,densidad_incidentes_km2,Moran Local (LISA),-0.5234,0.229,False,No significativo
+UPZ,64,densidad_incidentes_km2,Moran Local (LISA),1.1325,0.034,True,Low-Low
+UPZ,71,densidad_incidentes_km2,Moran Local (LISA),0.0828,0.495,False,No significativo
+UPZ,29,densidad_incidentes_km2,Moran Local (LISA),-0.1552,0.399,False,No significativo
+UPZ,76,densidad_incidentes_km2,Moran Local (LISA),-0.2807,0.068,False,No significativo
+UPZ,3,densidad_incidentes_km2,Moran Local (LISA),1.7829,0.002,True,Low-Low
+UPZ,80,densidad_incidentes_km2,Moran Local (LISA),0.0006,0.438,False,No significativo
+UPZ,67,densidad_incidentes_km2,Moran Local (LISA),0.0148,0.489,False,No significativo
+UPZ,63,densidad_incidentes_km2,Moran Local (LISA),0.3367,0.11,False,No significativo
+UPZ,28,densidad_incidentes_km2,Moran Local (LISA),0.0263,0.343,False,No significativo
+UPZ,30,densidad_incidentes_km2,Moran Local (LISA),0.0001,0.469,False,No significativo
+UPZ,116,densidad_incidentes_km2,Moran Local (LISA),0.2489,0.22,False,No significativo
+UPZ,85,densidad_incidentes_km2,Moran Local (LISA),0.0301,0.172,False,No significativo
+UPZ,42,densidad_incidentes_km2,Moran Local (LISA),0.0405,0.459,False,No significativo
+UPZ,111,densidad_incidentes_km2,Moran Local (LISA),0.0064,0.463,False,No significativo
+UPZ,44,densidad_incidentes_km2,Moran Local (LISA),-0.0034,0.439,False,No significativo
+UPZ,41,densidad_incidentes_km2,Moran Local (LISA),-0.0106,0.401,False,No significativo
+UPZ,40,densidad_incidentes_km2,Moran Local (LISA),-0.0236,0.333,False,No significativo
+UPZ,34,densidad_incidentes_km2,Moran Local (LISA),0.0782,0.29,False,No significativo
+UPZ,84,densidad_incidentes_km2,Moran Local (LISA),0.0368,0.456,False,No significativo
+UPZ,32,densidad_incidentes_km2,Moran Local (LISA),-0.0151,0.024,True,Low-High
+UPZ,95,densidad_incidentes_km2,Moran Local (LISA),3.333,0.016,True,High-High
+UPZ,87,densidad_incidentes_km2,Moran Local (LISA),0.1146,0.477,False,No significativo
+UPZ,117,densidad_incidentes_km2,Moran Local (LISA),0.1579,0.448,False,No significativo
+UPZ,77,densidad_incidentes_km2,Moran Local (LISA),0.108,0.451,False,No significativo
+UPZ,54,densidad_incidentes_km2,Moran Local (LISA),0.3244,0.019,True,Low-Low
+UPZ,39,densidad_incidentes_km2,Moran Local (LISA),0.0481,0.367,False,No significativo
+UPZ,62,densidad_incidentes_km2,Moran Local (LISA),0.3455,0.111,False,No significativo
+UPZ,53,densidad_incidentes_km2,Moran Local (LISA),0.0382,0.397,False,No significativo
+UPZ,69,densidad_incidentes_km2,Moran Local (LISA),0.1463,0.248,False,No significativo
+UPZ,1,densidad_incidentes_km2,Moran Local (LISA),1.531,0.002,True,Low-Low
+UPZ,46,densidad_incidentes_km2,Moran Local (LISA),0.0902,0.121,False,No significativo
+UPZ,112,densidad_incidentes_km2,Moran Local (LISA),0.0118,0.073,False,No significativo
+UPZ,25,densidad_incidentes_km2,Moran Local (LISA),0.0029,0.466,False,No significativo
+UPZ,97,densidad_incidentes_km2,Moran Local (LISA),0.2173,0.115,False,No significativo
+UPZ,98,densidad_incidentes_km2,Moran Local (LISA),0.6381,0.003,True,High-High
+UPZ,96,densidad_incidentes_km2,Moran Local (LISA),-0.8509,0.001,True,Low-High
+UPZ,92,densidad_incidentes_km2,Moran Local (LISA),2.1928,0.032,True,High-High
+UPZ,94,densidad_incidentes_km2,Moran Local (LISA),3.9224,0.003,True,High-High
+UPZ,78,densidad_incidentes_km2,Moran Local (LISA),0.6369,0.062,False,No significativo
+UPZ,9,densidad_incidentes_km2,Moran Local (LISA),0.6154,0.013,True,Low-Low
+UPZ,113,densidad_incidentes_km2,Moran Local (LISA),0.0303,0.462,False,No significativo
+UPZ,81,densidad_incidentes_km2,Moran Local (LISA),-0.0012,0.454,False,No significativo
+UPZ,75,densidad_cuadrantes_km2,Moran Local (LISA),0.5082,0.003,True,Low-Low
+UPZ,22,densidad_cuadrantes_km2,Moran Local (LISA),-0.0123,0.469,False,No significativo
+UPZ,114,densidad_cuadrantes_km2,Moran Local (LISA),0.37,0.143,False,No significativo
+UPZ,103,densidad_cuadrantes_km2,Moran Local (LISA),-0.0783,0.367,False,No significativo
+UPZ,105,densidad_cuadrantes_km2,Moran Local (LISA),0.0331,0.362,False,No significativo
+UPZ,88,densidad_cuadrantes_km2,Moran Local (LISA),0.0662,0.303,False,No significativo
+UPZ,27,densidad_cuadrantes_km2,Moran Local (LISA),0.1909,0.236,False,No significativo
+UPZ,99,densidad_cuadrantes_km2,Moran Local (LISA),2.3748,0.057,False,No significativo
+UPZ,109,densidad_cuadrantes_km2,Moran Local (LISA),-0.0268,0.183,False,No significativo
+UPZ,90,densidad_cuadrantes_km2,Moran Local (LISA),0.818,0.008,True,High-High
+UPZ,33,densidad_cuadrantes_km2,Moran Local (LISA),0.7806,0.025,True,High-High
+UPZ,102,densidad_cuadrantes_km2,Moran Local (LISA),0.3939,0.003,True,High-High
+UPZ,45,densidad_cuadrantes_km2,Moran Local (LISA),-0.0004,0.429,False,No significativo
+UPZ,93,densidad_cuadrantes_km2,Moran Local (LISA),9.0308,0.001,True,High-High
+UPZ,72,densidad_cuadrantes_km2,Moran Local (LISA),0.2574,0.229,False,No significativo
+UPZ,15,densidad_cuadrantes_km2,Moran Local (LISA),0.1396,0.069,False,No significativo
+UPZ,16,densidad_cuadrantes_km2,Moran Local (LISA),0.1176,0.185,False,No significativo
+UPZ,21,densidad_cuadrantes_km2,Moran Local (LISA),0.0864,0.387,False,No significativo
+UPZ,89,densidad_cuadrantes_km2,Moran Local (LISA),-0.0,0.001,True,Low-Low
+UPZ,106,densidad_cuadrantes_km2,Moran Local (LISA),-0.0218,0.388,False,No significativo
+UPZ,86,densidad_cuadrantes_km2,Moran Local (LISA),-0.0434,0.297,False,No significativo
+UPZ,82,densidad_cuadrantes_km2,Moran Local (LISA),0.9145,0.075,False,No significativo
+UPZ,37,densidad_cuadrantes_km2,Moran Local (LISA),0.2258,0.036,True,High-High
+UPZ,49,densidad_cuadrantes_km2,Moran Local (LISA),-0.0347,0.477,False,No significativo
+UPZ,19,densidad_cuadrantes_km2,Moran Local (LISA),0.2345,0.064,False,No significativo
+UPZ,24,densidad_cuadrantes_km2,Moran Local (LISA),0.3353,0.127,False,No significativo
+UPZ,23,densidad_cuadrantes_km2,Moran Local (LISA),0.4181,0.029,True,Low-Low
+UPZ,110,densidad_cuadrantes_km2,Moran Local (LISA),0.1145,0.051,False,No significativo
+UPZ,100,densidad_cuadrantes_km2,Moran Local (LISA),0.2503,0.099,False,No significativo
+UPZ,83,densidad_cuadrantes_km2,Moran Local (LISA),0.3793,0.057,False,No significativo
+UPZ,107,densidad_cuadrantes_km2,Moran Local (LISA),-0.0199,0.425,False,No significativo
+UPZ,101,densidad_cuadrantes_km2,Moran Local (LISA),0.7477,0.005,True,High-High
+UPZ,91,densidad_cuadrantes_km2,Moran Local (LISA),3.9126,0.001,True,High-High
+UPZ,108,densidad_cuadrantes_km2,Moran Local (LISA),-0.0111,0.422,False,No significativo
+UPZ,55,densidad_cuadrantes_km2,Moran Local (LISA),-0.0603,0.439,False,No significativo
+UPZ,51,densidad_cuadrantes_km2,Moran Local (LISA),-0.0105,0.391,False,No significativo
+UPZ,60,densidad_cuadrantes_km2,Moran Local (LISA),-0.0064,0.298,False,No significativo
+UPZ,56,densidad_cuadrantes_km2,Moran Local (LISA),0.0814,0.346,False,No significativo
+UPZ,65,densidad_cuadrantes_km2,Moran Local (LISA),-0.0065,0.462,False,No significativo
+UPZ,2,densidad_cuadrantes_km2,Moran Local (LISA),1.2042,0.001,True,Low-Low
+UPZ,17,densidad_cuadrantes_km2,Moran Local (LISA),0.458,0.055,False,No significativo
+UPZ,18,densidad_cuadrantes_km2,Moran Local (LISA),0.2573,0.084,False,No significativo
+UPZ,26,densidad_cuadrantes_km2,Moran Local (LISA),0.0822,0.212,False,No significativo
+UPZ,48,densidad_cuadrantes_km2,Moran Local (LISA),-0.0386,0.162,False,No significativo
+UPZ,13,densidad_cuadrantes_km2,Moran Local (LISA),0.2047,0.153,False,No significativo
+UPZ,70,densidad_cuadrantes_km2,Moran Local (LISA),-0.1267,0.261,False,No significativo
+UPZ,35,densidad_cuadrantes_km2,Moran Local (LISA),1.155,0.025,True,High-High
+UPZ,38,densidad_cuadrantes_km2,Moran Local (LISA),0.4213,0.057,False,No significativo
+UPZ,115,densidad_cuadrantes_km2,Moran Local (LISA),0.4072,0.026,True,Low-Low
+UPZ,50,densidad_cuadrantes_km2,Moran Local (LISA),0.0119,0.379,False,No significativo
+UPZ,20,densidad_cuadrantes_km2,Moran Local (LISA),0.1977,0.194,False,No significativo
+UPZ,79,densidad_cuadrantes_km2,Moran Local (LISA),-0.0662,0.308,False,No significativo
+UPZ,61,densidad_cuadrantes_km2,Moran Local (LISA),0.6433,0.027,True,Low-Low
+UPZ,12,densidad_cuadrantes_km2,Moran Local (LISA),-0.0496,0.051,False,No significativo
+UPZ,10,densidad_cuadrantes_km2,Moran Local (LISA),0.1893,0.179,False,No significativo
+UPZ,59,densidad_cuadrantes_km2,Moran Local (LISA),0.2474,0.052,False,No significativo
+UPZ,58,densidad_cuadrantes_km2,Moran Local (LISA),0.4461,0.015,True,Low-Low
+UPZ,43,densidad_cuadrantes_km2,Moran Local (LISA),0.0831,0.257,False,No significativo
+UPZ,47,densidad_cuadrantes_km2,Moran Local (LISA),0.1643,0.096,False,No significativo
+UPZ,36,densidad_cuadrantes_km2,Moran Local (LISA),-0.0848,0.077,False,No significativo
+UPZ,66,densidad_cuadrantes_km2,Moran Local (LISA),-0.2673,0.419,False,No significativo
+UPZ,57,densidad_cuadrantes_km2,Moran Local (LISA),0.2433,0.066,False,No significativo
+UPZ,52,densidad_cuadrantes_km2,Moran Local (LISA),0.2748,0.137,False,No significativo
+UPZ,11,densidad_cuadrantes_km2,Moran Local (LISA),0.1038,0.351,False,No significativo
+UPZ,14,densidad_cuadrantes_km2,Moran Local (LISA),0.0038,0.415,False,No significativo
+UPZ,73,densidad_cuadrantes_km2,Moran Local (LISA),0.4694,0.068,False,No significativo
+UPZ,74,densidad_cuadrantes_km2,Moran Local (LISA),0.6642,0.04,True,Low-Low
+UPZ,104,densidad_cuadrantes_km2,Moran Local (LISA),-0.0273,0.388,False,No significativo
+UPZ,31,densidad_cuadrantes_km2,Moran Local (LISA),0.1666,0.174,False,No significativo
+UPZ,68,densidad_cuadrantes_km2,Moran Local (LISA),-0.05,0.442,False,No significativo
+UPZ,64,densidad_cuadrantes_km2,Moran Local (LISA),0.8418,0.044,True,Low-Low
+UPZ,71,densidad_cuadrantes_km2,Moran Local (LISA),0.0497,0.273,False,No significativo
+UPZ,29,densidad_cuadrantes_km2,Moran Local (LISA),0.1542,0.105,False,No significativo
+UPZ,76,densidad_cuadrantes_km2,Moran Local (LISA),0.8283,0.01,True,Low-Low
+UPZ,3,densidad_cuadrantes_km2,Moran Local (LISA),1.6391,0.001,True,Low-Low
+UPZ,80,densidad_cuadrantes_km2,Moran Local (LISA),1.6299,0.084,False,No significativo
+UPZ,67,densidad_cuadrantes_km2,Moran Local (LISA),-0.0005,0.396,False,No significativo
+UPZ,63,densidad_cuadrantes_km2,Moran Local (LISA),0.2089,0.088,False,No significativo
+UPZ,28,densidad_cuadrantes_km2,Moran Local (LISA),-0.049,0.084,False,No significativo
+UPZ,30,densidad_cuadrantes_km2,Moran Local (LISA),0.2378,0.071,False,No significativo
+UPZ,116,densidad_cuadrantes_km2,Moran Local (LISA),0.1927,0.004,True,Low-Low
+UPZ,85,densidad_cuadrantes_km2,Moran Local (LISA),-0.0247,0.25,False,No significativo
+UPZ,42,densidad_cuadrantes_km2,Moran Local (LISA),-0.082,0.206,False,No significativo
+UPZ,111,densidad_cuadrantes_km2,Moran Local (LISA),0.1701,0.201,False,No significativo
+UPZ,44,densidad_cuadrantes_km2,Moran Local (LISA),0.0166,0.372,False,No significativo
+UPZ,41,densidad_cuadrantes_km2,Moran Local (LISA),-0.0202,0.468,False,No significativo
+UPZ,40,densidad_cuadrantes_km2,Moran Local (LISA),-0.0185,0.378,False,No significativo
+UPZ,34,densidad_cuadrantes_km2,Moran Local (LISA),0.2207,0.154,False,No significativo
+UPZ,84,densidad_cuadrantes_km2,Moran Local (LISA),0.1251,0.294,False,No significativo
+UPZ,32,densidad_cuadrantes_km2,Moran Local (LISA),-0.3268,0.014,True,Low-High
+UPZ,95,densidad_cuadrantes_km2,Moran Local (LISA),4.6192,0.001,True,High-High
+UPZ,87,densidad_cuadrantes_km2,Moran Local (LISA),-0.1402,0.305,False,No significativo
+UPZ,117,densidad_cuadrantes_km2,Moran Local (LISA),0.7433,0.018,True,Low-Low
+UPZ,77,densidad_cuadrantes_km2,Moran Local (LISA),0.7507,0.027,True,Low-Low
+UPZ,54,densidad_cuadrantes_km2,Moran Local (LISA),0.0021,0.453,False,No significativo
+UPZ,39,densidad_cuadrantes_km2,Moran Local (LISA),-0.0002,0.165,False,No significativo
+UPZ,62,densidad_cuadrantes_km2,Moran Local (LISA),-0.0034,0.438,False,No significativo
+UPZ,53,densidad_cuadrantes_km2,Moran Local (LISA),0.0076,0.4,False,No significativo
+UPZ,69,densidad_cuadrantes_km2,Moran Local (LISA),0.0019,0.419,False,No significativo
+UPZ,1,densidad_cuadrantes_km2,Moran Local (LISA),1.1704,0.002,True,Low-Low
+UPZ,46,densidad_cuadrantes_km2,Moran Local (LISA),-0.0378,0.275,False,No significativo
+UPZ,112,densidad_cuadrantes_km2,Moran Local (LISA),0.3498,0.014,True,Low-Low
+UPZ,25,densidad_cuadrantes_km2,Moran Local (LISA),0.138,0.105,False,No significativo
+UPZ,97,densidad_cuadrantes_km2,Moran Local (LISA),0.1691,0.194,False,No significativo
+UPZ,98,densidad_cuadrantes_km2,Moran Local (LISA),-0.0716,0.074,False,No significativo
+UPZ,96,densidad_cuadrantes_km2,Moran Local (LISA),2.8529,0.004,True,High-High
+UPZ,92,densidad_cuadrantes_km2,Moran Local (LISA),6.9519,0.001,True,High-High
+UPZ,94,densidad_cuadrantes_km2,Moran Local (LISA),8.0117,0.001,True,High-High
+UPZ,78,densidad_cuadrantes_km2,Moran Local (LISA),0.4136,0.051,False,No significativo
+UPZ,9,densidad_cuadrantes_km2,Moran Local (LISA),0.3772,0.001,True,Low-Low
+UPZ,113,densidad_cuadrantes_km2,Moran Local (LISA),0.181,0.187,False,No significativo
+UPZ,81,densidad_cuadrantes_km2,Moran Local (LISA),1.1547,0.048,True,High-High
+UPZ,75,estrato_promedio_oficial,Moran Local (LISA),-0.0042,0.486,False,No significativo
+UPZ,22,estrato_promedio_oficial,Moran Local (LISA),0.1668,0.23,False,No significativo
+UPZ,114,estrato_promedio_oficial,Moran Local (LISA),0.6335,0.121,False,No significativo
+UPZ,103,estrato_promedio_oficial,Moran Local (LISA),0.1029,0.065,False,No significativo
+UPZ,105,estrato_promedio_oficial,Moran Local (LISA),-0.0369,0.044,True,Low-High
+UPZ,88,estrato_promedio_oficial,Moran Local (LISA),3.7042,0.013,True,High-High
+UPZ,27,estrato_promedio_oficial,Moran Local (LISA),-0.0557,0.285,False,No significativo
+UPZ,99,estrato_promedio_oficial,Moran Local (LISA),0.5499,0.027,True,High-High
+UPZ,109,estrato_promedio_oficial,Moran Local (LISA),0.7912,0.062,False,No significativo
+UPZ,90,estrato_promedio_oficial,Moran Local (LISA),0.0131,0.001,True,High-High
+UPZ,33,estrato_promedio_oficial,Moran Local (LISA),-0.0067,0.189,False,No significativo
+UPZ,102,estrato_promedio_oficial,Moran Local (LISA),0.0109,0.204,False,No significativo
+UPZ,45,estrato_promedio_oficial,Moran Local (LISA),0.0083,0.412,False,No significativo
+UPZ,93,estrato_promedio_oficial,Moran Local (LISA),0.0008,0.473,False,No significativo
+UPZ,72,estrato_promedio_oficial,Moran Local (LISA),-0.0435,0.298,False,No significativo
+UPZ,15,estrato_promedio_oficial,Moran Local (LISA),4.0666,0.001,True,High-High
+UPZ,16,estrato_promedio_oficial,Moran Local (LISA),4.4053,0.001,True,High-High
+UPZ,21,estrato_promedio_oficial,Moran Local (LISA),1.0804,0.001,True,High-High
+UPZ,89,estrato_promedio_oficial,Moran Local (LISA),-0.0,0.001,True,Low-Low
+UPZ,106,estrato_promedio_oficial,Moran Local (LISA),0.7802,0.126,False,No significativo
+UPZ,86,estrato_promedio_oficial,Moran Local (LISA),1.0892,0.048,True,Low-Low
+UPZ,82,estrato_promedio_oficial,Moran Local (LISA),0.4924,0.071,False,No significativo
+UPZ,37,estrato_promedio_oficial,Moran Local (LISA),-0.0061,0.496,False,No significativo
+UPZ,49,estrato_promedio_oficial,Moran Local (LISA),0.2169,0.096,False,No significativo
+UPZ,19,estrato_promedio_oficial,Moran Local (LISA),0.7539,0.001,True,High-High
+UPZ,24,estrato_promedio_oficial,Moran Local (LISA),1.0074,0.073,False,No significativo
+UPZ,23,estrato_promedio_oficial,Moran Local (LISA),0.4428,0.068,False,No significativo
+UPZ,110,estrato_promedio_oficial,Moran Local (LISA),0.6958,0.037,True,High-High
+UPZ,100,estrato_promedio_oficial,Moran Local (LISA),0.5819,0.035,True,High-High
+UPZ,83,estrato_promedio_oficial,Moran Local (LISA),0.6604,0.021,True,Low-Low
+UPZ,107,estrato_promedio_oficial,Moran Local (LISA),0.5946,0.069,False,No significativo
+UPZ,101,estrato_promedio_oficial,Moran Local (LISA),0.5375,0.05,False,No significativo
+UPZ,91,estrato_promedio_oficial,Moran Local (LISA),0.1201,0.253,False,No significativo
+UPZ,108,estrato_promedio_oficial,Moran Local (LISA),0.0445,0.141,False,No significativo
+UPZ,55,estrato_promedio_oficial,Moran Local (LISA),1.2422,0.001,True,Low-Low
+UPZ,51,estrato_promedio_oficial,Moran Local (LISA),1.1164,0.001,True,Low-Low
+UPZ,60,estrato_promedio_oficial,Moran Local (LISA),1.7113,0.001,True,Low-Low
+UPZ,56,estrato_promedio_oficial,Moran Local (LISA),1.406,0.001,True,Low-Low
+UPZ,65,estrato_promedio_oficial,Moran Local (LISA),0.3037,0.014,True,Low-Low
+UPZ,2,estrato_promedio_oficial,Moran Local (LISA),2.3018,0.027,True,High-High
+UPZ,17,estrato_promedio_oficial,Moran Local (LISA),0.6245,0.065,False,No significativo
+UPZ,18,estrato_promedio_oficial,Moran Local (LISA),0.1982,0.044,True,High-High
+UPZ,26,estrato_promedio_oficial,Moran Local (LISA),0.0858,0.071,False,No significativo
+UPZ,48,estrato_promedio_oficial,Moran Local (LISA),0.0589,0.187,False,No significativo
+UPZ,13,estrato_promedio_oficial,Moran Local (LISA),1.185,0.02,True,High-High
+UPZ,70,estrato_promedio_oficial,Moran Local (LISA),1.6838,0.011,True,Low-Low
+UPZ,35,estrato_promedio_oficial,Moran Local (LISA),-0.0017,0.442,False,No significativo
+UPZ,38,estrato_promedio_oficial,Moran Local (LISA),-0.0054,0.492,False,No significativo
+UPZ,115,estrato_promedio_oficial,Moran Local (LISA),0.1552,0.073,False,No significativo
+UPZ,50,estrato_promedio_oficial,Moran Local (LISA),0.7008,0.003,True,Low-Low
+UPZ,20,estrato_promedio_oficial,Moran Local (LISA),3.3153,0.001,True,High-High
+UPZ,79,estrato_promedio_oficial,Moran Local (LISA),0.4379,0.136,False,No significativo
+UPZ,61,estrato_promedio_oficial,Moran Local (LISA),1.9,0.001,True,Low-Low
+UPZ,12,estrato_promedio_oficial,Moran Local (LISA),0.2399,0.103,False,No significativo
+UPZ,10,estrato_promedio_oficial,Moran Local (LISA),0.0409,0.3,False,No significativo
+UPZ,59,estrato_promedio_oficial,Moran Local (LISA),1.9603,0.005,True,Low-Low
+UPZ,58,estrato_promedio_oficial,Moran Local (LISA),1.5917,0.001,True,Low-Low
+UPZ,43,estrato_promedio_oficial,Moran Local (LISA),0.0204,0.363,False,No significativo
+UPZ,47,estrato_promedio_oficial,Moran Local (LISA),-0.0572,0.234,False,No significativo
+UPZ,36,estrato_promedio_oficial,Moran Local (LISA),-0.0155,0.424,False,No significativo
+UPZ,66,estrato_promedio_oficial,Moran Local (LISA),0.8376,0.011,True,Low-Low
+UPZ,57,estrato_promedio_oficial,Moran Local (LISA),1.3606,0.001,True,Low-Low
+UPZ,52,estrato_promedio_oficial,Moran Local (LISA),1.9552,0.001,True,Low-Low
+UPZ,11,estrato_promedio_oficial,Moran Local (LISA),-0.2479,0.11,False,No significativo
+UPZ,14,estrato_promedio_oficial,Moran Local (LISA),3.7035,0.001,True,High-High
+UPZ,73,estrato_promedio_oficial,Moran Local (LISA),0.0042,0.461,False,No significativo
+UPZ,74,estrato_promedio_oficial,Moran Local (LISA),-0.073,0.409,False,No significativo
+UPZ,104,estrato_promedio_oficial,Moran Local (LISA),0.8263,0.013,True,High-High
+UPZ,31,estrato_promedio_oficial,Moran Local (LISA),0.155,0.203,False,No significativo
+UPZ,68,estrato_promedio_oficial,Moran Local (LISA),1.7901,0.044,True,Low-Low
+UPZ,64,estrato_promedio_oficial,Moran Local (LISA),1.8071,0.01,True,Low-Low
+UPZ,71,estrato_promedio_oficial,Moran Local (LISA),0.1147,0.406,False,No significativo
+UPZ,29,estrato_promedio_oficial,Moran Local (LISA),-0.0323,0.329,False,No significativo
+UPZ,76,estrato_promedio_oficial,Moran Local (LISA),0.0592,0.448,False,No significativo
+UPZ,3,estrato_promedio_oficial,Moran Local (LISA),3.8081,0.016,True,High-High
+UPZ,80,estrato_promedio_oficial,Moran Local (LISA),0.2831,0.221,False,No significativo
+UPZ,67,estrato_promedio_oficial,Moran Local (LISA),1.6649,0.003,True,Low-Low
+UPZ,63,estrato_promedio_oficial,Moran Local (LISA),0.9554,0.001,True,Low-Low
+UPZ,28,estrato_promedio_oficial,Moran Local (LISA),-0.1532,0.218,False,No significativo
+UPZ,30,estrato_promedio_oficial,Moran Local (LISA),0.0232,0.355,False,No significativo
+UPZ,116,estrato_promedio_oficial,Moran Local (LISA),0.0099,0.418,False,No significativo
+UPZ,85,estrato_promedio_oficial,Moran Local (LISA),0.5447,0.019,True,Low-Low
+UPZ,42,estrato_promedio_oficial,Moran Local (LISA),0.1265,0.158,False,No significativo
+UPZ,111,estrato_promedio_oficial,Moran Local (LISA),0.0992,0.05,False,No significativo
+UPZ,44,estrato_promedio_oficial,Moran Local (LISA),0.0001,0.367,False,No significativo
+UPZ,41,estrato_promedio_oficial,Moran Local (LISA),0.0011,0.464,False,No significativo
+UPZ,40,estrato_promedio_oficial,Moran Local (LISA),0.0165,0.383,False,No significativo
+UPZ,34,estrato_promedio_oficial,Moran Local (LISA),0.1725,0.219,False,No significativo
+UPZ,84,estrato_promedio_oficial,Moran Local (LISA),0.6952,0.008,True,Low-Low
+UPZ,32,estrato_promedio_oficial,Moran Local (LISA),0.4984,0.079,False,No significativo
+UPZ,95,estrato_promedio_oficial,Moran Local (LISA),0.1301,0.305,False,No significativo
+UPZ,87,estrato_promedio_oficial,Moran Local (LISA),0.9474,0.029,True,Low-Low
+UPZ,117,estrato_promedio_oficial,Moran Local (LISA),-0.0209,0.413,False,No significativo
+UPZ,77,estrato_promedio_oficial,Moran Local (LISA),0.1182,0.365,False,No significativo
+UPZ,54,estrato_promedio_oficial,Moran Local (LISA),0.7977,0.002,True,Low-Low
+UPZ,39,estrato_promedio_oficial,Moran Local (LISA),-0.0193,0.42,False,No significativo
+UPZ,62,estrato_promedio_oficial,Moran Local (LISA),0.621,0.002,True,Low-Low
+UPZ,53,estrato_promedio_oficial,Moran Local (LISA),0.1891,0.178,False,No significativo
+UPZ,69,estrato_promedio_oficial,Moran Local (LISA),1.0863,0.038,True,Low-Low
+UPZ,1,estrato_promedio_oficial,Moran Local (LISA),1.0307,0.01,True,High-High
+UPZ,46,estrato_promedio_oficial,Moran Local (LISA),0.0535,0.243,False,No significativo
+UPZ,112,estrato_promedio_oficial,Moran Local (LISA),0.1302,0.217,False,No significativo
+UPZ,25,estrato_promedio_oficial,Moran Local (LISA),0.7336,0.042,True,High-High
+UPZ,97,estrato_promedio_oficial,Moran Local (LISA),3.1612,0.001,True,High-High
+UPZ,98,estrato_promedio_oficial,Moran Local (LISA),0.2626,0.01,True,High-High
+UPZ,96,estrato_promedio_oficial,Moran Local (LISA),0.4962,0.11,False,No significativo
+UPZ,92,estrato_promedio_oficial,Moran Local (LISA),0.0559,0.371,False,No significativo
+UPZ,94,estrato_promedio_oficial,Moran Local (LISA),0.187,0.19,False,No significativo
+UPZ,78,estrato_promedio_oficial,Moran Local (LISA),0.2339,0.31,False,No significativo
+UPZ,9,estrato_promedio_oficial,Moran Local (LISA),-0.378,0.022,True,Low-High
+UPZ,113,estrato_promedio_oficial,Moran Local (LISA),0.038,0.363,False,No significativo
+UPZ,81,estrato_promedio_oficial,Moran Local (LISA),0.3921,0.064,False,No significativo
+UPZ,75,estrato_promedio_reportado,Moran Local (LISA),-0.0011,0.358,False,No significativo
+UPZ,22,estrato_promedio_reportado,Moran Local (LISA),0.6072,0.043,True,High-High
+UPZ,114,estrato_promedio_reportado,Moran Local (LISA),0.3993,0.109,False,No significativo
+UPZ,103,estrato_promedio_reportado,Moran Local (LISA),-0.017,0.004,True,Low-High
+UPZ,105,estrato_promedio_reportado,Moran Local (LISA),0.3711,0.094,False,No significativo
+UPZ,88,estrato_promedio_reportado,Moran Local (LISA),3.1209,0.014,True,High-High
+UPZ,27,estrato_promedio_reportado,Moran Local (LISA),-0.0027,0.321,False,No significativo
+UPZ,99,estrato_promedio_reportado,Moran Local (LISA),0.7496,0.006,True,High-High
+UPZ,109,estrato_promedio_reportado,Moran Local (LISA),0.3233,0.037,True,High-High
+UPZ,90,estrato_promedio_reportado,Moran Local (LISA),0.8393,0.005,True,High-High
+UPZ,33,estrato_promedio_reportado,Moran Local (LISA),0.4708,0.107,False,No significativo
+UPZ,102,estrato_promedio_reportado,Moran Local (LISA),0.0383,0.17,False,No significativo
+UPZ,45,estrato_promedio_reportado,Moran Local (LISA),0.0132,0.298,False,No significativo
+UPZ,93,estrato_promedio_reportado,Moran Local (LISA),-0.0123,0.344,False,No significativo
+UPZ,72,estrato_promedio_reportado,Moran Local (LISA),0.0368,0.333,False,No significativo
+UPZ,15,estrato_promedio_reportado,Moran Local (LISA),3.3624,0.001,True,High-High
+UPZ,16,estrato_promedio_reportado,Moran Local (LISA),4.1173,0.001,True,High-High
+UPZ,21,estrato_promedio_reportado,Moran Local (LISA),1.9239,0.001,True,High-High
+UPZ,89,estrato_promedio_reportado,Moran Local (LISA),0.0,0.001,True,High-Low
+UPZ,106,estrato_promedio_reportado,Moran Local (LISA),1.137,0.035,True,High-High
+UPZ,86,estrato_promedio_reportado,Moran Local (LISA),1.2289,0.017,True,Low-Low
+UPZ,82,estrato_promedio_reportado,Moran Local (LISA),0.6545,0.051,False,No significativo
+UPZ,37,estrato_promedio_reportado,Moran Local (LISA),0.0096,0.443,False,No significativo
+UPZ,49,estrato_promedio_reportado,Moran Local (LISA),0.1479,0.044,True,Low-Low
+UPZ,19,estrato_promedio_reportado,Moran Local (LISA),1.482,0.001,True,High-High
+UPZ,24,estrato_promedio_reportado,Moran Local (LISA),1.0913,0.032,True,High-High
+UPZ,23,estrato_promedio_reportado,Moran Local (LISA),0.6128,0.009,True,High-High
+UPZ,110,estrato_promedio_reportado,Moran Local (LISA),0.6026,0.058,False,No significativo
+UPZ,100,estrato_promedio_reportado,Moran Local (LISA),0.9269,0.014,True,High-High
+UPZ,83,estrato_promedio_reportado,Moran Local (LISA),0.9389,0.012,True,Low-Low
+UPZ,107,estrato_promedio_reportado,Moran Local (LISA),0.5342,0.082,False,No significativo
+UPZ,101,estrato_promedio_reportado,Moran Local (LISA),0.611,0.031,True,High-High
+UPZ,91,estrato_promedio_reportado,Moran Local (LISA),0.2892,0.196,False,No significativo
+UPZ,108,estrato_promedio_reportado,Moran Local (LISA),0.1651,0.197,False,No significativo
+UPZ,55,estrato_promedio_reportado,Moran Local (LISA),1.2121,0.001,True,Low-Low
+UPZ,51,estrato_promedio_reportado,Moran Local (LISA),1.497,0.001,True,Low-Low
+UPZ,60,estrato_promedio_reportado,Moran Local (LISA),1.834,0.001,True,Low-Low
+UPZ,56,estrato_promedio_reportado,Moran Local (LISA),1.3772,0.001,True,Low-Low
+UPZ,65,estrato_promedio_reportado,Moran Local (LISA),0.6543,0.012,True,Low-Low
+UPZ,2,estrato_promedio_reportado,Moran Local (LISA),1.4649,0.023,True,High-High
+UPZ,17,estrato_promedio_reportado,Moran Local (LISA),1.3952,0.035,True,High-High
+UPZ,18,estrato_promedio_reportado,Moran Local (LISA),1.0735,0.006,True,High-High
+UPZ,26,estrato_promedio_reportado,Moran Local (LISA),0.2663,0.026,True,High-High
+UPZ,48,estrato_promedio_reportado,Moran Local (LISA),0.0876,0.084,False,No significativo
+UPZ,13,estrato_promedio_reportado,Moran Local (LISA),1.6492,0.003,True,High-High
+UPZ,70,estrato_promedio_reportado,Moran Local (LISA),1.7593,0.002,True,Low-Low
+UPZ,35,estrato_promedio_reportado,Moran Local (LISA),0.2355,0.169,False,No significativo
+UPZ,38,estrato_promedio_reportado,Moran Local (LISA),0.0022,0.288,False,No significativo
+UPZ,115,estrato_promedio_reportado,Moran Local (LISA),0.2472,0.14,False,No significativo
+UPZ,50,estrato_promedio_reportado,Moran Local (LISA),1.2355,0.002,True,Low-Low
+UPZ,20,estrato_promedio_reportado,Moran Local (LISA),2.5614,0.001,True,High-High
+UPZ,79,estrato_promedio_reportado,Moran Local (LISA),0.4189,0.2,False,No significativo
+UPZ,61,estrato_promedio_reportado,Moran Local (LISA),2.2187,0.001,True,Low-Low
+UPZ,12,estrato_promedio_reportado,Moran Local (LISA),0.5213,0.007,True,High-High
+UPZ,10,estrato_promedio_reportado,Moran Local (LISA),0.1909,0.037,True,High-High
+UPZ,59,estrato_promedio_reportado,Moran Local (LISA),2.1984,0.001,True,Low-Low
+UPZ,58,estrato_promedio_reportado,Moran Local (LISA),2.0259,0.001,True,Low-Low
+UPZ,43,estrato_promedio_reportado,Moran Local (LISA),-0.0062,0.348,False,No significativo
+UPZ,47,estrato_promedio_reportado,Moran Local (LISA),0.0354,0.209,False,No significativo
+UPZ,36,estrato_promedio_reportado,Moran Local (LISA),0.0926,0.062,False,No significativo
+UPZ,66,estrato_promedio_reportado,Moran Local (LISA),1.1481,0.005,True,Low-Low
+UPZ,57,estrato_promedio_reportado,Moran Local (LISA),1.8462,0.001,True,Low-Low
+UPZ,52,estrato_promedio_reportado,Moran Local (LISA),1.8259,0.001,True,Low-Low
+UPZ,11,estrato_promedio_reportado,Moran Local (LISA),0.2114,0.089,False,No significativo
+UPZ,14,estrato_promedio_reportado,Moran Local (LISA),3.4759,0.001,True,High-High
+UPZ,73,estrato_promedio_reportado,Moran Local (LISA),-0.0001,0.49,False,No significativo
+UPZ,74,estrato_promedio_reportado,Moran Local (LISA),-0.0184,0.378,False,No significativo
+UPZ,104,estrato_promedio_reportado,Moran Local (LISA),0.744,0.007,True,High-High
+UPZ,31,estrato_promedio_reportado,Moran Local (LISA),0.1525,0.089,False,No significativo
+UPZ,68,estrato_promedio_reportado,Moran Local (LISA),1.6702,0.048,True,Low-Low
+UPZ,64,estrato_promedio_reportado,Moran Local (LISA),2.1034,0.003,True,Low-Low
+UPZ,71,estrato_promedio_reportado,Moran Local (LISA),0.1242,0.407,False,No significativo
+UPZ,29,estrato_promedio_reportado,Moran Local (LISA),-0.0109,0.235,False,No significativo
+UPZ,76,estrato_promedio_reportado,Moran Local (LISA),0.0003,0.496,False,No significativo
+UPZ,3,estrato_promedio_reportado,Moran Local (LISA),0.9228,0.053,False,No significativo
+UPZ,80,estrato_promedio_reportado,Moran Local (LISA),0.4117,0.137,False,No significativo
+UPZ,67,estrato_promedio_reportado,Moran Local (LISA),1.6945,0.001,True,Low-Low
+UPZ,63,estrato_promedio_reportado,Moran Local (LISA),1.1705,0.001,True,Low-Low
+UPZ,28,estrato_promedio_reportado,Moran Local (LISA),-0.0756,0.213,False,No significativo
+UPZ,30,estrato_promedio_reportado,Moran Local (LISA),0.0128,0.374,False,No significativo
+UPZ,116,estrato_promedio_reportado,Moran Local (LISA),0.0439,0.309,False,No significativo
+UPZ,85,estrato_promedio_reportado,Moran Local (LISA),0.9712,0.013,True,Low-Low
+UPZ,42,estrato_promedio_reportado,Moran Local (LISA),0.1567,0.036,True,Low-Low
+UPZ,111,estrato_promedio_reportado,Moran Local (LISA),0.1347,0.114,False,No significativo
+UPZ,44,estrato_promedio_reportado,Moran Local (LISA),0.001,0.455,False,No significativo
+UPZ,41,estrato_promedio_reportado,Moran Local (LISA),-0.0049,0.463,False,No significativo
+UPZ,40,estrato_promedio_reportado,Moran Local (LISA),-0.0008,0.425,False,No significativo
+UPZ,34,estrato_promedio_reportado,Moran Local (LISA),0.67,0.014,True,Low-Low
+UPZ,84,estrato_promedio_reportado,Moran Local (LISA),1.2343,0.004,True,Low-Low
+UPZ,32,estrato_promedio_reportado,Moran Local (LISA),0.5718,0.013,True,Low-Low
+UPZ,95,estrato_promedio_reportado,Moran Local (LISA),0.1618,0.102,False,No significativo
+UPZ,87,estrato_promedio_reportado,Moran Local (LISA),1.3697,0.014,True,Low-Low
+UPZ,117,estrato_promedio_reportado,Moran Local (LISA),0.0346,0.359,False,No significativo
+UPZ,77,estrato_promedio_reportado,Moran Local (LISA),0.0192,0.466,False,No significativo
+UPZ,54,estrato_promedio_reportado,Moran Local (LISA),0.8681,0.002,True,Low-Low
+UPZ,39,estrato_promedio_reportado,Moran Local (LISA),0.0175,0.156,False,No significativo
+UPZ,62,estrato_promedio_reportado,Moran Local (LISA),0.9796,0.003,True,Low-Low
+UPZ,53,estrato_promedio_reportado,Moran Local (LISA),0.6513,0.071,False,No significativo
+UPZ,69,estrato_promedio_reportado,Moran Local (LISA),1.3506,0.021,True,Low-Low
+UPZ,1,estrato_promedio_reportado,Moran Local (LISA),0.7024,0.078,False,No significativo
+UPZ,46,estrato_promedio_reportado,Moran Local (LISA),0.0387,0.171,False,No significativo
+UPZ,112,estrato_promedio_reportado,Moran Local (LISA),0.059,0.206,False,No significativo
+UPZ,25,estrato_promedio_reportado,Moran Local (LISA),1.2094,0.03,True,High-High
+UPZ,97,estrato_promedio_reportado,Moran Local (LISA),1.9891,0.001,True,High-High
+UPZ,98,estrato_promedio_reportado,Moran Local (LISA),1.4467,0.014,True,High-High
+UPZ,96,estrato_promedio_reportado,Moran Local (LISA),0.4438,0.192,False,No significativo
+UPZ,92,estrato_promedio_reportado,Moran Local (LISA),0.0434,0.37,False,No significativo
+UPZ,94,estrato_promedio_reportado,Moran Local (LISA),0.1723,0.179,False,No significativo
+UPZ,78,estrato_promedio_reportado,Moran Local (LISA),0.1207,0.314,False,No significativo
+UPZ,9,estrato_promedio_reportado,Moran Local (LISA),0.2404,0.011,True,High-High
+UPZ,113,estrato_promedio_reportado,Moran Local (LISA),0.0147,0.414,False,No significativo
+UPZ,81,estrato_promedio_reportado,Moran Local (LISA),0.6919,0.016,True,Low-Low
+Localidad,09,deficit_aseo_relativo,Moran Local (LISA),-0.0627,0.031,True,High-Low
+Localidad,10,deficit_aseo_relativo,Moran Local (LISA),0.2474,0.094,False,No significativo
+Localidad,11,deficit_aseo_relativo,Moran Local (LISA),-0.0403,0.375,False,No significativo
+Localidad,15,deficit_aseo_relativo,Moran Local (LISA),-0.0274,0.4,False,No significativo
+Localidad,06,deficit_aseo_relativo,Moran Local (LISA),-0.0676,0.392,False,No significativo
+Localidad,18,deficit_aseo_relativo,Moran Local (LISA),-0.0506,0.307,False,No significativo
+Localidad,17,deficit_aseo_relativo,Moran Local (LISA),0.0108,0.179,False,No significativo
+Localidad,12,deficit_aseo_relativo,Moran Local (LISA),0.223,0.226,False,No significativo
+Localidad,13,deficit_aseo_relativo,Moran Local (LISA),0.596,0.063,False,No significativo
+Localidad,16,deficit_aseo_relativo,Moran Local (LISA),0.5536,0.01,True,Low-Low
+Localidad,14,deficit_aseo_relativo,Moran Local (LISA),1.3423,0.022,True,Low-Low
+Localidad,20,deficit_aseo_relativo,Moran Local (LISA),1.671,0.066,False,No significativo
+Localidad,01,deficit_aseo_relativo,Moran Local (LISA),-0.0892,0.393,False,No significativo
+Localidad,02,deficit_aseo_relativo,Moran Local (LISA),-0.0413,0.357,False,No significativo
+Localidad,03,deficit_aseo_relativo,Moran Local (LISA),-0.7389,0.053,False,No significativo
+Localidad,04,deficit_aseo_relativo,Moran Local (LISA),0.091,0.373,False,No significativo
+Localidad,05,deficit_aseo_relativo,Moran Local (LISA),0.9671,0.013,True,High-High
+Localidad,19,deficit_aseo_relativo,Moran Local (LISA),0.5226,0.129,False,No significativo
+Localidad,07,deficit_aseo_relativo,Moran Local (LISA),0.1553,0.329,False,No significativo
+Localidad,08,deficit_aseo_relativo,Moran Local (LISA),-0.1536,0.214,False,No significativo
+Localidad,09,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0007,0.475,False,No significativo
+Localidad,10,densidad_puntos_criticos_km2,Moran Local (LISA),-0.1117,0.344,False,No significativo
+Localidad,11,densidad_puntos_criticos_km2,Moran Local (LISA),0.1502,0.305,False,No significativo
+Localidad,15,densidad_puntos_criticos_km2,Moran Local (LISA),0.4792,0.12,False,No significativo
+Localidad,06,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0199,0.157,False,No significativo
+Localidad,18,densidad_puntos_criticos_km2,Moran Local (LISA),0.2819,0.221,False,No significativo
+Localidad,17,densidad_puntos_criticos_km2,Moran Local (LISA),0.3852,0.266,False,No significativo
+Localidad,12,densidad_puntos_criticos_km2,Moran Local (LISA),-0.1759,0.092,False,No significativo
+Localidad,13,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0413,0.436,False,No significativo
+Localidad,16,densidad_puntos_criticos_km2,Moran Local (LISA),-0.3778,0.022,True,Low-High
+Localidad,14,densidad_puntos_criticos_km2,Moran Local (LISA),0.2958,0.25,False,No significativo
+Localidad,20,densidad_puntos_criticos_km2,Moran Local (LISA),1.0054,0.066,False,No significativo
+Localidad,01,densidad_puntos_criticos_km2,Moran Local (LISA),0.3484,0.259,False,No significativo
+Localidad,02,densidad_puntos_criticos_km2,Moran Local (LISA),0.4301,0.082,False,No significativo
+Localidad,03,densidad_puntos_criticos_km2,Moran Local (LISA),-0.2126,0.241,False,No significativo
+Localidad,04,densidad_puntos_criticos_km2,Moran Local (LISA),-0.1912,0.182,False,No significativo
+Localidad,05,densidad_puntos_criticos_km2,Moran Local (LISA),0.2319,0.251,False,No significativo
+Localidad,19,densidad_puntos_criticos_km2,Moran Local (LISA),-0.1644,0.354,False,No significativo
+Localidad,07,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0068,0.416,False,No significativo
+Localidad,08,densidad_puntos_criticos_km2,Moran Local (LISA),-0.0304,0.482,False,No significativo
+Localidad,09,densidad_homicidios_km2,Moran Local (LISA),0.0357,0.49,False,No significativo
+Localidad,10,densidad_homicidios_km2,Moran Local (LISA),0.16,0.072,False,No significativo
+Localidad,11,densidad_homicidios_km2,Moran Local (LISA),0.3476,0.065,False,No significativo
+Localidad,15,densidad_homicidios_km2,Moran Local (LISA),0.1569,0.033,True,High-High
+Localidad,06,densidad_homicidios_km2,Moran Local (LISA),0.0938,0.217,False,No significativo
+Localidad,18,densidad_homicidios_km2,Moran Local (LISA),-0.2937,0.471,False,No significativo
+Localidad,17,densidad_homicidios_km2,Moran Local (LISA),0.0168,0.475,False,No significativo
+Localidad,12,densidad_homicidios_km2,Moran Local (LISA),0.2365,0.013,True,Low-Low
+Localidad,13,densidad_homicidios_km2,Moran Local (LISA),-0.041,0.451,False,No significativo
+Localidad,16,densidad_homicidios_km2,Moran Local (LISA),-0.0961,0.071,False,No significativo
+Localidad,14,densidad_homicidios_km2,Moran Local (LISA),-0.7813,0.416,False,No significativo
+Localidad,20,densidad_homicidios_km2,Moran Local (LISA),0.8065,0.116,False,No significativo
+Localidad,01,densidad_homicidios_km2,Moran Local (LISA),0.43,0.081,False,No significativo
+Localidad,02,densidad_homicidios_km2,Moran Local (LISA),0.473,0.034,True,Low-Low
+Localidad,03,densidad_homicidios_km2,Moran Local (LISA),-0.084,0.328,False,No significativo
+Localidad,04,densidad_homicidios_km2,Moran Local (LISA),-0.0819,0.352,False,No significativo
+Localidad,05,densidad_homicidios_km2,Moran Local (LISA),-0.0531,0.446,False,No significativo
+Localidad,19,densidad_homicidios_km2,Moran Local (LISA),-0.0866,0.265,False,No significativo
+Localidad,07,densidad_homicidios_km2,Moran Local (LISA),0.3174,0.259,False,No significativo
+Localidad,08,densidad_homicidios_km2,Moran Local (LISA),0.0645,0.373,False,No significativo
+Localidad,09,densidad_incidentes_km2,Moran Local (LISA),-0.097,0.097,False,No significativo
+Localidad,10,densidad_incidentes_km2,Moran Local (LISA),0.1326,0.312,False,No significativo
+Localidad,11,densidad_incidentes_km2,Moran Local (LISA),-0.07,0.436,False,No significativo
+Localidad,15,densidad_incidentes_km2,Moran Local (LISA),-0.1063,0.397,False,No significativo
+Localidad,06,densidad_incidentes_km2,Moran Local (LISA),-0.0114,0.48,False,No significativo
+Localidad,18,densidad_incidentes_km2,Moran Local (LISA),-0.0657,0.361,False,No significativo
+Localidad,17,densidad_incidentes_km2,Moran Local (LISA),-1.0684,0.179,False,No significativo
+Localidad,12,densidad_incidentes_km2,Moran Local (LISA),0.0414,0.385,False,No significativo
+Localidad,13,densidad_incidentes_km2,Moran Local (LISA),0.1595,0.246,False,No significativo
+Localidad,16,densidad_incidentes_km2,Moran Local (LISA),0.3003,0.007,True,High-High
+Localidad,14,densidad_incidentes_km2,Moran Local (LISA),0.5278,0.056,False,No significativo
+Localidad,20,densidad_incidentes_km2,Moran Local (LISA),2.6387,0.066,False,No significativo
+Localidad,01,densidad_incidentes_km2,Moran Local (LISA),0.0327,0.448,False,No significativo
+Localidad,02,densidad_incidentes_km2,Moran Local (LISA),0.0132,0.396,False,No significativo
+Localidad,03,densidad_incidentes_km2,Moran Local (LISA),-0.696,0.022,True,Low-High
+Localidad,04,densidad_incidentes_km2,Moran Local (LISA),0.0789,0.382,False,No significativo
+Localidad,05,densidad_incidentes_km2,Moran Local (LISA),1.0641,0.015,True,Low-Low
+Localidad,19,densidad_incidentes_km2,Moran Local (LISA),0.1335,0.351,False,No significativo
+Localidad,07,densidad_incidentes_km2,Moran Local (LISA),-0.0927,0.246,False,No significativo
+Localidad,08,densidad_incidentes_km2,Moran Local (LISA),-0.0218,0.461,False,No significativo

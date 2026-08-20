@@ -1,0 +1,11 @@
+unidad,variable,moran_I,p_value_sim,z_score,n
+UPZ,deficit_aseo_relativo,0.4073,0.001,7.424,112
+UPZ,densidad_puntos_criticos_km2,0.2845,0.001,5.196,112
+UPZ,densidad_incidentes_km2,0.2936,0.001,5.455,112
+UPZ,densidad_cuadrantes_km2,0.5752,0.001,10.989,112
+UPZ,estrato_promedio_oficial,0.6986,0.001,12.596,112
+UPZ,estrato_promedio_reportado,0.7893,0.001,14.099,112
+Localidad,deficit_aseo_relativo,0.2689,0.022,2.222,20
+Localidad,densidad_puntos_criticos_km2,0.1198,0.121,1.204,20
+Localidad,densidad_homicidios_km2,0.0853,0.136,1.044,20
+Localidad,densidad_incidentes_km2,0.1523,0.079,1.412,20

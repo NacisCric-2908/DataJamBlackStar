@@ -8,6 +8,10 @@
 
 ---
 
+> ⚠️ **Nota (análisis posterior):** un análisis estadístico más riguroso (Moran's I, LISA, Getis-Ord Gi*, modelos multivariables con control de confusores, estrato oficial por manzana) matiza la "Hipótesis Validada" de esta nota — ver [`../14_resultados/informe_final.md`](../14_resultados/informe_final.md).
+
+---
+
 ### 1. Caracterización de la Problemática (Paso 1 y 2)
 Bogotá D.C. enfrenta un desafío multidimensional donde confluyen el **mal manejo de residuos sólidos (2.24 millones ton/año y 478 puntos críticos de arrojo clandestino)**, el **riesgo de emergencias urbanas e incendios (166.977 incidentes atendidos por UAECOB)** y la **criminalidad de alto impacto (11.445 homicidios y 562.000 casos de violencia intrafamiliar registrados en DAILoc entre 2018 y 2026)**.
 

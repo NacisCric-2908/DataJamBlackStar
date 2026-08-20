@@ -19,8 +19,9 @@ import pandas as pd
 import numpy as np
 
 BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-BRONZE = os.path.join(BASE, 'Bronze')
+BRONZE = os.path.join(BASE, 'data', 'bronze')
 SILVER = os.path.join(BASE, 'Silver')
+os.makedirs(SILVER, exist_ok=True)
 
 print("=" * 60)
 print("SCRIPT 03 — BUILD SILVER: INCIDENTES UAECOB")
@@ -123,7 +124,10 @@ for year, fname in ARCHIVOS_UAECOB.items():
     col_m_af   = buscar_col(cols, ['mujeres afectadas', 'pobla. afec.mujeres'])
 
     # ── Construir DataFrame limpio ────────────────────────────
-    df_clean = pd.DataFrame()
+    # OJO: pd.DataFrame() vacío no tiene índice, así que asignar un escalar
+    # aquí crea una columna de longitud 0 que luego se llena de NaN al
+    # alinearse con las columnas siguientes (que sí tienen índice de df).
+    df_clean = pd.DataFrame(index=df.index)
     df_clean['año'] = year
 
     # Fecha y mes

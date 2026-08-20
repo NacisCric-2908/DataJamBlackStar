@@ -1,0 +1,4 @@
+unidad,metodologia_principal,n_unidades,n_islas,islas_cod,transformacion_pesos,usado_en
+UPZ,Queen (contigüidad),112,1,[np.int64(89)],row-standardized (r),"09_estadistica_espacial (Moran/LISA/Gi*), 10_modelos (offset espacial no aplica)"
+Localidad,Queen (contigüidad),20,0,[],row-standardized (r),09_estadistica_espacial
+UPZ,"KNN k=5 (sensibilidad, Fase 12)",112,0,[],row-standardized (r),12_validacion (robustez)

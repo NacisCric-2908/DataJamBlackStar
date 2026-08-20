@@ -1,0 +1,9 @@
+hipotesis,unidad,transformacion,x,y,spearman_rho,p_value,n,sig_5pct
+H1,UPZ,estandarizado,estrato_promedio_oficial,deficit_aseo_relativo,-0.576,0.0,112,True
+H1,Localidad,estandarizado,estrato_promedio_oficial,deficit_aseo_relativo,-0.598,0.0068,19,True
+H4/H5 (conteo crudo),UPZ,crudo,n_puntos_criticos,n_incidentes_total,0.397,0.0,112,True
+H4/H5 (densidad),UPZ,densidad,densidad_puntos_criticos_km2,densidad_incidentes_km2,0.261,0.0055,112,True
+H4/H5 (log-densidad),UPZ,log,densidad_puntos_criticos_km2,densidad_incidentes_km2,0.261,0.0055,112,True
+H4/H5 (conteo crudo),Localidad,crudo,n_puntos_criticos,homicidios_cont,0.766,0.0001,20,True
+H4/H5 (densidad),Localidad,densidad,densidad_puntos_criticos_km2,densidad_homicidios_km2,0.827,0.0,20,True
+H4/H5 (log-densidad),Localidad,log,densidad_puntos_criticos_km2,densidad_homicidios_km2,0.827,0.0,20,True

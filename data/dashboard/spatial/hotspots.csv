@@ -1,0 +1,753 @@
+geography_level,geography_id,variable,cluster_type,statistic,p_value,significant
+UPZ,75,deficit_aseo_relativo,No significativo,-0.644,0.07100000232458115,False
+UPZ,22,deficit_aseo_relativo,No significativo,-0.125,0.36899998784065247,False
+UPZ,114,deficit_aseo_relativo,No significativo,-0.774,0.0989999994635582,False
+UPZ,103,deficit_aseo_relativo,"Hotspot (Gi* alto, sig.)",0.639,0.041999999433755875,True
+UPZ,105,deficit_aseo_relativo,No significativo,-0.624,0.057999998331069946,False
+UPZ,88,deficit_aseo_relativo,No significativo,-0.684,0.11900000274181366,False
+UPZ,27,deficit_aseo_relativo,No significativo,-0.066,0.4950000047683716,False
+UPZ,99,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-1.345,0.0020000000949949026,True
+UPZ,109,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.69,0.04600000008940697,True
+UPZ,90,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-1.794,0.0010000000474974513,True
+UPZ,33,deficit_aseo_relativo,No significativo,-0.067,0.39399999380111694,False
+UPZ,102,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.817,0.013000000268220901,True
+UPZ,45,deficit_aseo_relativo,No significativo,0.309,0.16099999845027924,False
+UPZ,93,deficit_aseo_relativo,No significativo,-0.315,0.20100000500679016,False
+UPZ,72,deficit_aseo_relativo,No significativo,0.242,0.2750000059604645,False
+UPZ,15,deficit_aseo_relativo,No significativo,0.61,0.08900000154972076,False
+UPZ,16,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.895,0.020999999716877937,True
+UPZ,21,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.972,0.013000000268220901,True
+UPZ,89,deficit_aseo_relativo,No significativo,,0.0010000000474974513,True
+UPZ,106,deficit_aseo_relativo,No significativo,-0.442,0.1860000044107437,False
+UPZ,86,deficit_aseo_relativo,No significativo,-0.429,0.28200000524520874,False
+UPZ,82,deficit_aseo_relativo,No significativo,0.079,0.39800000190734863,False
+UPZ,37,deficit_aseo_relativo,No significativo,-0.457,0.12099999934434891,False
+UPZ,49,deficit_aseo_relativo,No significativo,-0.157,0.4090000092983246,False
+UPZ,19,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.705,0.02199999988079071,True
+UPZ,24,deficit_aseo_relativo,No significativo,-0.584,0.0689999982714653,False
+UPZ,23,deficit_aseo_relativo,No significativo,0.543,0.11500000208616257,False
+UPZ,110,deficit_aseo_relativo,No significativo,-0.43,0.10100000351667404,False
+UPZ,100,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-1.077,0.009999999776482582,True
+UPZ,83,deficit_aseo_relativo,No significativo,0.448,0.2160000056028366,False
+UPZ,107,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.684,0.04500000178813934,True
+UPZ,101,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-1.043,0.003000000026077032,True
+UPZ,91,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.833,0.026000000536441803,True
+UPZ,108,deficit_aseo_relativo,"Hotspot (Gi* alto, sig.)",0.805,0.01899999938905239,True
+UPZ,55,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.858,0.027000000700354576,True
+UPZ,51,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-1.094,0.007000000216066837,True
+UPZ,60,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.719,0.02199999988079071,True
+UPZ,56,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.833,0.01600000075995922,True
+UPZ,65,deficit_aseo_relativo,No significativo,-0.454,0.10300000011920929,False
+UPZ,2,deficit_aseo_relativo,No significativo,-0.702,0.08100000023841858,False
+UPZ,17,deficit_aseo_relativo,No significativo,0.199,0.29499998688697815,False
+UPZ,18,deficit_aseo_relativo,No significativo,-0.471,0.10700000077486038,False
+UPZ,26,deficit_aseo_relativo,No significativo,0.441,0.0820000022649765,False
+UPZ,48,deficit_aseo_relativo,No significativo,-0.215,0.2849999964237213,False
+UPZ,13,deficit_aseo_relativo,No significativo,0.492,0.09799999743700027,False
+UPZ,70,deficit_aseo_relativo,No significativo,-0.502,0.19099999964237213,False
+UPZ,35,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.683,0.03099999949336052,True
+UPZ,38,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.594,0.03400000184774399,True
+UPZ,115,deficit_aseo_relativo,No significativo,0.319,0.1599999964237213,False
+UPZ,50,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.764,0.020999999716877937,True
+UPZ,20,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.786,0.017000000923871994,True
+UPZ,79,deficit_aseo_relativo,No significativo,-0.345,0.33799999952316284,False
+UPZ,61,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.844,0.026000000536441803,True
+UPZ,12,deficit_aseo_relativo,No significativo,-0.162,0.31700000166893005,False
+UPZ,10,deficit_aseo_relativo,No significativo,0.513,0.11900000274181366,False
+UPZ,59,deficit_aseo_relativo,No significativo,-0.716,0.12700000405311584,False
+UPZ,58,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.943,0.013000000268220901,True
+UPZ,43,deficit_aseo_relativo,No significativo,0.247,0.2290000021457672,False
+UPZ,47,deficit_aseo_relativo,No significativo,-0.073,0.3799999952316284,False
+UPZ,36,deficit_aseo_relativo,No significativo,-0.509,0.0949999988079071,False
+UPZ,66,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.743,0.03700000047683716,True
+UPZ,57,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-1.004,0.0010000000474974513,True
+UPZ,52,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.981,0.017000000923871994,True
+UPZ,11,deficit_aseo_relativo,No significativo,0.474,0.20399999618530273,False
+UPZ,14,deficit_aseo_relativo,No significativo,0.48,0.13099999725818634,False
+UPZ,73,deficit_aseo_relativo,No significativo,-0.042,0.4309999942779541,False
+UPZ,74,deficit_aseo_relativo,No significativo,-0.184,0.42399999499320984,False
+UPZ,104,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-1.003,0.0010000000474974513,True
+UPZ,31,deficit_aseo_relativo,No significativo,-0.513,0.09799999743700027,False
+UPZ,68,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-1.235,0.014000000432133675,True
+UPZ,64,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-1.133,0.006000000052154064,True
+UPZ,71,deficit_aseo_relativo,No significativo,-0.507,0.21799999475479126,False
+UPZ,29,deficit_aseo_relativo,No significativo,-0.033,0.4259999990463257,False
+UPZ,76,deficit_aseo_relativo,No significativo,-0.841,0.07100000232458115,False
+UPZ,3,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-1.316,0.007000000216066837,True
+UPZ,80,deficit_aseo_relativo,No significativo,0.568,0.12700000405311584,False
+UPZ,67,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-1.0,0.008999999612569809,True
+UPZ,63,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.867,0.007000000216066837,True
+UPZ,28,deficit_aseo_relativo,No significativo,0.117,0.35499998927116394,False
+UPZ,30,deficit_aseo_relativo,No significativo,-0.227,0.2680000066757202,False
+UPZ,116,deficit_aseo_relativo,No significativo,0.142,0.3959999978542328,False
+UPZ,85,deficit_aseo_relativo,No significativo,-0.283,0.27300000190734863,False
+UPZ,42,deficit_aseo_relativo,No significativo,-0.097,0.4020000100135803,False
+UPZ,111,deficit_aseo_relativo,"Hotspot (Gi* alto, sig.)",0.576,0.04399999976158142,True
+UPZ,44,deficit_aseo_relativo,No significativo,-0.517,0.06599999964237213,False
+UPZ,41,deficit_aseo_relativo,No significativo,-0.159,0.31700000166893005,False
+UPZ,40,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.576,0.041999999433755875,True
+UPZ,34,deficit_aseo_relativo,No significativo,0.022,0.4830000102519989,False
+UPZ,84,deficit_aseo_relativo,No significativo,-0.243,0.3190000057220459,False
+UPZ,32,deficit_aseo_relativo,No significativo,-0.363,0.23199999332427979,False
+UPZ,95,deficit_aseo_relativo,No significativo,0.408,0.0989999994635582,False
+UPZ,87,deficit_aseo_relativo,No significativo,-0.57,0.18700000643730164,False
+UPZ,117,deficit_aseo_relativo,No significativo,-0.434,0.1860000044107437,False
+UPZ,77,deficit_aseo_relativo,No significativo,-0.626,0.10899999737739563,False
+UPZ,54,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.892,0.004999999888241291,True
+UPZ,39,deficit_aseo_relativo,No significativo,-0.332,0.21899999678134918,False
+UPZ,62,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.67,0.028999999165534973,True
+UPZ,53,deficit_aseo_relativo,No significativo,-0.04,0.4830000102519989,False
+UPZ,69,deficit_aseo_relativo,No significativo,-0.405,0.23399999737739563,False
+UPZ,1,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.952,0.03500000014901161,True
+UPZ,46,deficit_aseo_relativo,No significativo,0.161,0.35499998927116394,False
+UPZ,112,deficit_aseo_relativo,No significativo,0.324,0.1340000033378601,False
+UPZ,25,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.686,0.04800000041723251,True
+UPZ,97,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.847,0.013000000268220901,True
+UPZ,98,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-1.2,0.003000000026077032,True
+UPZ,96,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.867,0.02500000037252903,True
+UPZ,92,deficit_aseo_relativo,No significativo,0.136,0.3569999933242798,False
+UPZ,94,deficit_aseo_relativo,No significativo,-0.629,0.11299999803304672,False
+UPZ,78,deficit_aseo_relativo,No significativo,-0.056,0.4909999966621399,False
+UPZ,9,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.82,0.03700000047683716,True
+UPZ,113,deficit_aseo_relativo,No significativo,0.086,0.382999986410141,False
+UPZ,81,deficit_aseo_relativo,No significativo,0.119,0.414000004529953,False
+UPZ,75,densidad_puntos_criticos_km2,No significativo,-0.179,0.36000001430511475,False
+UPZ,22,densidad_puntos_criticos_km2,No significativo,-0.011,0.4569999873638153,False
+UPZ,114,densidad_puntos_criticos_km2,No significativo,-0.226,0.382999986410141,False
+UPZ,103,densidad_puntos_criticos_km2,No significativo,-0.08,0.45500001311302185,False
+UPZ,105,densidad_puntos_criticos_km2,No significativo,-0.521,0.07199999690055847,False
+UPZ,88,densidad_puntos_criticos_km2,No significativo,-0.651,0.10400000214576721,False
+UPZ,27,densidad_puntos_criticos_km2,No significativo,-0.191,0.4009999930858612,False
+UPZ,99,densidad_puntos_criticos_km2,No significativo,-0.228,0.31299999356269836,False
+UPZ,109,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.686,0.014999999664723873,True
+UPZ,90,densidad_puntos_criticos_km2,No significativo,-0.247,0.3400000035762787,False
+UPZ,33,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",1.355,0.008999999612569809,True
+UPZ,102,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.697,0.03700000047683716,True
+UPZ,45,densidad_puntos_criticos_km2,No significativo,-0.039,0.49300000071525574,False
+UPZ,93,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.869,0.03400000184774399,True
+UPZ,72,densidad_puntos_criticos_km2,No significativo,0.473,0.11999999731779099,False
+UPZ,15,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.77,0.003000000026077032,True
+UPZ,16,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.65,0.02199999988079071,True
+UPZ,21,densidad_puntos_criticos_km2,No significativo,-0.158,0.35899999737739563,False
+UPZ,89,densidad_puntos_criticos_km2,No significativo,,0.0010000000474974513,True
+UPZ,106,densidad_puntos_criticos_km2,No significativo,-0.439,0.1889999955892563,False
+UPZ,86,densidad_puntos_criticos_km2,No significativo,0.412,0.17499999701976776,False
+UPZ,82,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.857,0.04399999976158142,True
+UPZ,37,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",1.538,0.003000000026077032,True
+UPZ,49,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.961,0.03200000151991844,True
+UPZ,19,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.797,0.0010000000474974513,True
+UPZ,24,densidad_puntos_criticos_km2,No significativo,-0.511,0.06700000166893005,False
+UPZ,23,densidad_puntos_criticos_km2,No significativo,-0.512,0.08900000154972076,False
+UPZ,110,densidad_puntos_criticos_km2,No significativo,-0.415,0.09099999815225601,False
+UPZ,100,densidad_puntos_criticos_km2,No significativo,-0.467,0.08399999886751175,False
+UPZ,83,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",1.38,0.01899999938905239,True
+UPZ,107,densidad_puntos_criticos_km2,No significativo,-0.266,0.2590000033378601,False
+UPZ,101,densidad_puntos_criticos_km2,No significativo,0.288,0.17000000178813934,False
+UPZ,91,densidad_puntos_criticos_km2,No significativo,0.233,0.2370000034570694,False
+UPZ,108,densidad_puntos_criticos_km2,No significativo,-0.148,0.36800000071525574,False
+UPZ,55,densidad_puntos_criticos_km2,No significativo,0.072,0.3720000088214874,False
+UPZ,51,densidad_puntos_criticos_km2,No significativo,0.312,0.2280000001192093,False
+UPZ,60,densidad_puntos_criticos_km2,No significativo,0.167,0.27300000190734863,False
+UPZ,56,densidad_puntos_criticos_km2,No significativo,-0.148,0.3930000066757202,False
+UPZ,65,densidad_puntos_criticos_km2,No significativo,0.435,0.10100000351667404,False
+UPZ,2,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.742,0.026000000536441803,True
+UPZ,17,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.638,0.020999999716877937,True
+UPZ,18,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.643,0.01899999938905239,True
+UPZ,26,densidad_puntos_criticos_km2,No significativo,-0.256,0.21799999475479126,False
+UPZ,48,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.875,0.032999999821186066,True
+UPZ,13,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.594,0.03500000014901161,True
+UPZ,70,densidad_puntos_criticos_km2,No significativo,0.777,0.06199999898672104,False
+UPZ,35,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",1.455,0.0010000000474974513,True
+UPZ,38,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.906,0.02199999988079071,True
+UPZ,115,densidad_puntos_criticos_km2,No significativo,-0.142,0.367000013589859,False
+UPZ,50,densidad_puntos_criticos_km2,No significativo,0.104,0.3310000002384186,False
+UPZ,20,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.678,0.007000000216066837,True
+UPZ,79,densidad_puntos_criticos_km2,No significativo,0.248,0.2709999978542328,False
+UPZ,61,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.711,0.017000000923871994,True
+UPZ,12,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.608,0.026000000536441803,True
+UPZ,10,densidad_puntos_criticos_km2,No significativo,-0.533,0.08100000023841858,False
+UPZ,59,densidad_puntos_criticos_km2,No significativo,-0.533,0.15600000321865082,False
+UPZ,58,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.78,0.007000000216066837,True
+UPZ,43,densidad_puntos_criticos_km2,No significativo,-0.232,0.2849999964237213,False
+UPZ,47,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.996,0.024000000208616257,True
+UPZ,36,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.849,0.035999998450279236,True
+UPZ,66,densidad_puntos_criticos_km2,No significativo,0.33,0.1889999955892563,False
+UPZ,57,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.818,0.0010000000474974513,True
+UPZ,52,densidad_puntos_criticos_km2,No significativo,-0.494,0.12700000405311584,False
+UPZ,11,densidad_puntos_criticos_km2,No significativo,-0.695,0.057999998331069946,False
+UPZ,14,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.87,0.0010000000474974513,True
+UPZ,73,densidad_puntos_criticos_km2,No significativo,0.246,0.2460000067949295,False
+UPZ,74,densidad_puntos_criticos_km2,No significativo,-0.036,0.45500001311302185,False
+UPZ,104,densidad_puntos_criticos_km2,No significativo,-0.481,0.050999999046325684,False
+UPZ,31,densidad_puntos_criticos_km2,No significativo,0.221,0.2540000081062317,False
+UPZ,68,densidad_puntos_criticos_km2,No significativo,-0.297,0.3919999897480011,False
+UPZ,64,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.762,0.03999999910593033,True
+UPZ,71,densidad_puntos_criticos_km2,No significativo,-0.3,0.3199999928474426,False
+UPZ,29,densidad_puntos_criticos_km2,No significativo,0.125,0.3269999921321869,False
+UPZ,76,densidad_puntos_criticos_km2,No significativo,-0.183,0.41100001335144043,False
+UPZ,3,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.94,0.0010000000474974513,True
+UPZ,80,densidad_puntos_criticos_km2,No significativo,0.712,0.07500000298023224,False
+UPZ,67,densidad_puntos_criticos_km2,No significativo,0.252,0.24699999392032623,False
+UPZ,63,densidad_puntos_criticos_km2,No significativo,-0.248,0.2669999897480011,False
+UPZ,28,densidad_puntos_criticos_km2,No significativo,-0.305,0.22300000488758087,False
+UPZ,30,densidad_puntos_criticos_km2,No significativo,0.166,0.3089999854564667,False
+UPZ,116,densidad_puntos_criticos_km2,No significativo,0.134,0.335999995470047,False
+UPZ,85,densidad_puntos_criticos_km2,No significativo,0.502,0.10599999874830246,False
+UPZ,42,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.96,0.008999999612569809,True
+UPZ,111,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.542,0.026000000536441803,True
+UPZ,44,densidad_puntos_criticos_km2,No significativo,-0.344,0.14900000393390656,False
+UPZ,41,densidad_puntos_criticos_km2,No significativo,0.265,0.22200000286102295,False
+UPZ,40,densidad_puntos_criticos_km2,No significativo,0.518,0.07699999958276749,False
+UPZ,34,densidad_puntos_criticos_km2,No significativo,0.719,0.054999999701976776,False
+UPZ,84,densidad_puntos_criticos_km2,No significativo,0.762,0.05400000140070915,False
+UPZ,32,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",1.487,0.004000000189989805,True
+UPZ,95,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.756,0.009999999776482582,True
+UPZ,87,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",1.19,0.04100000113248825,True
+UPZ,117,densidad_puntos_criticos_km2,No significativo,0.468,0.1379999965429306,False
+UPZ,77,densidad_puntos_criticos_km2,No significativo,-0.15,0.4090000092983246,False
+UPZ,54,densidad_puntos_criticos_km2,No significativo,0.284,0.20900000631809235,False
+UPZ,39,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.829,0.0430000014603138,True
+UPZ,62,densidad_puntos_criticos_km2,No significativo,0.242,0.24400000274181366,False
+UPZ,53,densidad_puntos_criticos_km2,No significativo,0.576,0.08100000023841858,False
+UPZ,69,densidad_puntos_criticos_km2,No significativo,0.644,0.10199999809265137,False
+UPZ,1,densidad_puntos_criticos_km2,No significativo,-0.733,0.0560000017285347,False
+UPZ,46,densidad_puntos_criticos_km2,No significativo,0.2,0.25200000405311584,False
+UPZ,112,densidad_puntos_criticos_km2,No significativo,-0.312,0.13600000739097595,False
+UPZ,25,densidad_puntos_criticos_km2,No significativo,-0.105,0.41600000858306885,False
+UPZ,97,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.496,0.04399999976158142,True
+UPZ,98,densidad_puntos_criticos_km2,No significativo,-0.188,0.3089999854564667,False
+UPZ,96,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.942,0.04800000041723251,True
+UPZ,92,densidad_puntos_criticos_km2,No significativo,0.125,0.3529999852180481,False
+UPZ,94,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",1.384,0.012000000104308128,True
+UPZ,78,densidad_puntos_criticos_km2,No significativo,-0.143,0.4180000126361847,False
+UPZ,9,densidad_puntos_criticos_km2,"Coldspot (Gi* bajo, sig.)",-0.835,0.012000000104308128,True
+UPZ,113,densidad_puntos_criticos_km2,No significativo,-0.459,0.12399999797344208,False
+UPZ,81,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",1.108,0.008999999612569809,True
+UPZ,75,densidad_incidentes_km2,No significativo,-0.451,0.13099999725818634,False
+UPZ,22,densidad_incidentes_km2,No significativo,0.849,0.07500000298023224,False
+UPZ,114,densidad_incidentes_km2,No significativo,-0.117,0.4970000088214874,False
+UPZ,103,densidad_incidentes_km2,No significativo,0.04,0.3930000066757202,False
+UPZ,105,densidad_incidentes_km2,No significativo,0.386,0.1720000058412552,False
+UPZ,88,densidad_incidentes_km2,No significativo,0.185,0.30300000309944153,False
+UPZ,27,densidad_incidentes_km2,No significativo,-0.545,0.10199999809265137,False
+UPZ,99,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",1.057,0.012000000104308128,True
+UPZ,109,densidad_incidentes_km2,No significativo,-0.358,0.17900000512599945,False
+UPZ,90,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",1.417,0.012000000104308128,True
+UPZ,33,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",1.21,0.010999999940395355,True
+UPZ,102,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",1.03,0.006000000052154064,True
+UPZ,45,densidad_incidentes_km2,No significativo,-0.077,0.453000009059906,False
+UPZ,93,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",1.975,0.0010000000474974513,True
+UPZ,72,densidad_incidentes_km2,No significativo,-0.026,0.4399999976158142,False
+UPZ,15,densidad_incidentes_km2,No significativo,-0.094,0.4970000088214874,False
+UPZ,16,densidad_incidentes_km2,No significativo,0.083,0.3610000014305115,False
+UPZ,21,densidad_incidentes_km2,No significativo,0.001,0.4309999942779541,False
+UPZ,89,densidad_incidentes_km2,No significativo,,0.0010000000474974513,True
+UPZ,106,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",1.303,0.01899999938905239,True
+UPZ,86,densidad_incidentes_km2,No significativo,-0.179,0.4390000104904175,False
+UPZ,82,densidad_incidentes_km2,No significativo,-0.296,0.27000001072883606,False
+UPZ,37,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",1.075,0.013000000268220901,True
+UPZ,49,densidad_incidentes_km2,No significativo,-0.305,0.2590000033378601,False
+UPZ,19,densidad_incidentes_km2,No significativo,-0.186,0.32100000977516174,False
+UPZ,24,densidad_incidentes_km2,No significativo,-0.161,0.3869999945163727,False
+UPZ,23,densidad_incidentes_km2,No significativo,-0.087,0.5,False
+UPZ,110,densidad_incidentes_km2,No significativo,-0.398,0.10499999672174454,False
+UPZ,100,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",1.235,0.00800000037997961,True
+UPZ,83,densidad_incidentes_km2,No significativo,-0.22,0.3790000081062317,False
+UPZ,107,densidad_incidentes_km2,No significativo,-0.09,0.460999995470047,False
+UPZ,101,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",1.197,0.006000000052154064,True
+UPZ,91,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",1.505,0.004000000189989805,True
+UPZ,108,densidad_incidentes_km2,No significativo,0.216,0.257999986410141,False
+UPZ,55,densidad_incidentes_km2,No significativo,-0.539,0.08399999886751175,False
+UPZ,51,densidad_incidentes_km2,No significativo,-0.358,0.23600000143051147,False
+UPZ,60,densidad_incidentes_km2,No significativo,-0.261,0.24199999868869781,False
+UPZ,56,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",-0.66,0.023000000044703484,True
+UPZ,65,densidad_incidentes_km2,No significativo,-0.225,0.2759999930858612,False
+UPZ,2,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",-0.905,0.007000000216066837,True
+UPZ,17,densidad_incidentes_km2,No significativo,-0.436,0.12099999934434891,False
+UPZ,18,densidad_incidentes_km2,No significativo,-0.286,0.25699999928474426,False
+UPZ,26,densidad_incidentes_km2,No significativo,0.185,0.2529999911785126,False
+UPZ,48,densidad_incidentes_km2,No significativo,-0.018,0.46700000762939453,False
+UPZ,13,densidad_incidentes_km2,No significativo,-0.01,0.46299999952316284,False
+UPZ,70,densidad_incidentes_km2,No significativo,-0.118,0.46799999475479126,False
+UPZ,35,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",1.023,0.014999999664723873,True
+UPZ,38,densidad_incidentes_km2,No significativo,0.643,0.06199999898672104,False
+UPZ,115,densidad_incidentes_km2,No significativo,-0.341,0.18400000035762787,False
+UPZ,50,densidad_incidentes_km2,No significativo,-0.226,0.29899999499320984,False
+UPZ,20,densidad_incidentes_km2,No significativo,-0.207,0.32199999690055847,False
+UPZ,79,densidad_incidentes_km2,No significativo,-0.566,0.13699999451637268,False
+UPZ,61,densidad_incidentes_km2,No significativo,-0.308,0.257999986410141,False
+UPZ,12,densidad_incidentes_km2,No significativo,-0.164,0.3840000033378601,False
+UPZ,10,densidad_incidentes_km2,No significativo,-0.206,0.37299999594688416,False
+UPZ,59,densidad_incidentes_km2,No significativo,-0.64,0.10300000011920929,False
+UPZ,58,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",-0.707,0.017999999225139618,True
+UPZ,43,densidad_incidentes_km2,No significativo,-0.281,0.23100000619888306,False
+UPZ,47,densidad_incidentes_km2,No significativo,-0.27,0.26499998569488525,False
+UPZ,36,densidad_incidentes_km2,No significativo,0.556,0.11599999666213989,False
+UPZ,66,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",-0.602,0.04699999839067459,True
+UPZ,57,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",-0.535,0.0430000014603138,True
+UPZ,52,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",-0.68,0.04399999976158142,True
+UPZ,11,densidad_incidentes_km2,No significativo,-0.326,0.31299999356269836,False
+UPZ,14,densidad_incidentes_km2,No significativo,-0.199,0.37599998712539673,False
+UPZ,73,densidad_incidentes_km2,No significativo,-0.048,0.47600001096725464,False
+UPZ,74,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",-0.804,0.04399999976158142,True
+UPZ,104,densidad_incidentes_km2,No significativo,0.53,0.07500000298023224,False
+UPZ,31,densidad_incidentes_km2,No significativo,-0.354,0.1850000023841858,False
+UPZ,68,densidad_incidentes_km2,No significativo,-0.501,0.2290000021457672,False
+UPZ,64,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",-0.818,0.03400000184774399,True
+UPZ,71,densidad_incidentes_km2,No significativo,-0.117,0.4950000047683716,False
+UPZ,29,densidad_incidentes_km2,No significativo,-0.154,0.39899998903274536,False
+UPZ,76,densidad_incidentes_km2,No significativo,-0.688,0.06800000369548798,False
+UPZ,3,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",-1.372,0.0020000000949949026,True
+UPZ,80,densidad_incidentes_km2,No significativo,-0.006,0.43799999356269836,False
+UPZ,67,densidad_incidentes_km2,No significativo,-0.086,0.48899999260902405,False
+UPZ,63,densidad_incidentes_km2,No significativo,-0.41,0.10999999940395355,False
+UPZ,28,densidad_incidentes_km2,No significativo,-0.191,0.34299999475479126,False
+UPZ,30,densidad_incidentes_km2,No significativo,-0.029,0.4690000116825104,False
+UPZ,116,densidad_incidentes_km2,No significativo,-0.303,0.2199999988079071,False
+UPZ,85,densidad_incidentes_km2,No significativo,-0.364,0.1720000058412552,False
+UPZ,42,densidad_incidentes_km2,No significativo,-0.077,0.45899999141693115,False
+UPZ,111,densidad_incidentes_km2,No significativo,-0.016,0.46299999952316284,False
+UPZ,44,densidad_incidentes_km2,No significativo,0.007,0.4390000104904175,False
+UPZ,41,densidad_incidentes_km2,No significativo,0.04,0.4009999930858612,False
+UPZ,40,densidad_incidentes_km2,No significativo,0.118,0.3330000042915344,False
+UPZ,34,densidad_incidentes_km2,No significativo,0.188,0.28999999165534973,False
+UPZ,84,densidad_incidentes_km2,No significativo,-0.125,0.4560000002384186,False
+UPZ,32,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",1.106,0.024000000208616257,True
+UPZ,95,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",0.828,0.01600000075995922,True
+UPZ,87,densidad_incidentes_km2,No significativo,-0.132,0.47699999809265137,False
+UPZ,117,densidad_incidentes_km2,No significativo,-0.128,0.4480000138282776,False
+UPZ,77,densidad_incidentes_km2,No significativo,-0.122,0.45100000500679016,False
+UPZ,54,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",-0.592,0.01899999938905239,True
+UPZ,39,densidad_incidentes_km2,No significativo,0.083,0.367000013589859,False
+UPZ,62,densidad_incidentes_km2,No significativo,-0.393,0.11100000143051147,False
+UPZ,53,densidad_incidentes_km2,No significativo,-0.125,0.3970000147819519,False
+UPZ,69,densidad_incidentes_km2,No significativo,-0.345,0.24799999594688416,False
+UPZ,1,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",-1.172,0.0020000000949949026,True
+UPZ,46,densidad_incidentes_km2,No significativo,-0.358,0.12099999934434891,False
+UPZ,112,densidad_incidentes_km2,No significativo,-0.391,0.0729999989271164,False
+UPZ,25,densidad_incidentes_km2,No significativo,-0.011,0.4659999907016754,False
+UPZ,97,densidad_incidentes_km2,No significativo,0.483,0.11500000208616257,False
+UPZ,98,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",1.321,0.003000000026077032,True
+UPZ,96,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",2.177,0.0010000000474974513,True
+UPZ,92,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",1.199,0.03200000151991844,True
+UPZ,94,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",1.99,0.003000000026077032,True
+UPZ,78,densidad_incidentes_km2,No significativo,-0.596,0.06199999898672104,False
+UPZ,9,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",-0.817,0.013000000268220901,True
+UPZ,113,densidad_incidentes_km2,No significativo,-0.093,0.4620000123977661,False
+UPZ,81,densidad_incidentes_km2,No significativo,0.001,0.45399999618530273,False
+UPZ,75,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-0.901,0.003000000026077032,True
+UPZ,22,densidad_cuadrantes_km2,No significativo,-0.144,0.46799999475479126,False
+UPZ,114,densidad_cuadrantes_km2,No significativo,-0.55,0.1420000046491623,False
+UPZ,103,densidad_cuadrantes_km2,No significativo,-0.176,0.367000013589859,False
+UPZ,105,densidad_cuadrantes_km2,No significativo,-0.184,0.36399999260902405,False
+UPZ,88,densidad_cuadrantes_km2,No significativo,0.134,0.30300000309944153,False
+UPZ,27,densidad_cuadrantes_km2,No significativo,-0.373,0.23600000143051147,False
+UPZ,99,densidad_cuadrantes_km2,No significativo,0.732,0.05700000002980232,False
+UPZ,109,densidad_cuadrantes_km2,No significativo,-0.361,0.18299999833106995,False
+UPZ,90,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",1.667,0.00800000037997961,True
+UPZ,33,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",1.024,0.02500000037252903,True
+UPZ,102,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",1.267,0.003000000026077032,True
+UPZ,45,densidad_cuadrantes_km2,No significativo,0.01,0.42899999022483826,False
+UPZ,93,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",2.205,0.0010000000474974513,True
+UPZ,72,densidad_cuadrantes_km2,No significativo,-0.351,0.2290000021457672,False
+UPZ,15,densidad_cuadrantes_km2,No significativo,-0.548,0.0689999982714653,False
+UPZ,16,densidad_cuadrantes_km2,No significativo,-0.352,0.1850000023841858,False
+UPZ,21,densidad_cuadrantes_km2,No significativo,-0.151,0.3869999945163727,False
+UPZ,89,densidad_cuadrantes_km2,No significativo,,0.0010000000474974513,True
+UPZ,106,densidad_cuadrantes_km2,No significativo,0.033,0.3880000114440918,False
+UPZ,86,densidad_cuadrantes_km2,No significativo,0.124,0.296999990940094,False
+UPZ,82,densidad_cuadrantes_km2,No significativo,0.722,0.07699999958276749,False
+UPZ,37,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",0.831,0.035999998450279236,True
+UPZ,49,densidad_cuadrantes_km2,No significativo,-0.094,0.47699999809265137,False
+UPZ,19,densidad_cuadrantes_km2,No significativo,-0.461,0.06400000303983688,False
+UPZ,24,densidad_cuadrantes_km2,No significativo,-0.43,0.12700000405311584,False
+UPZ,23,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-0.647,0.028999999165534973,True
+UPZ,110,densidad_cuadrantes_km2,No significativo,-0.483,0.050999999046325684,False
+UPZ,100,densidad_cuadrantes_km2,No significativo,0.565,0.0989999994635582,False
+UPZ,83,densidad_cuadrantes_km2,No significativo,0.882,0.05700000002980232,False
+UPZ,107,densidad_cuadrantes_km2,No significativo,-0.147,0.4259999990463257,False
+UPZ,101,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",1.234,0.004999999888241291,True
+UPZ,91,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",2.111,0.0010000000474974513,True
+UPZ,108,densidad_cuadrantes_km2,No significativo,0.01,0.421999990940094,False
+UPZ,55,densidad_cuadrantes_km2,No significativo,-0.169,0.43799999356269836,False
+UPZ,51,densidad_cuadrantes_km2,No significativo,0.015,0.38999998569488525,False
+UPZ,60,densidad_cuadrantes_km2,No significativo,-0.227,0.2980000078678131,False
+UPZ,56,densidad_cuadrantes_km2,No significativo,-0.212,0.34599998593330383,False
+UPZ,65,densidad_cuadrantes_km2,No significativo,-0.025,0.4620000123977661,False
+UPZ,2,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-0.956,0.0010000000474974513,True
+UPZ,17,densidad_cuadrantes_km2,No significativo,-0.55,0.054999999701976776,False
+UPZ,18,densidad_cuadrantes_km2,No significativo,-0.495,0.08299999684095383,False
+UPZ,26,densidad_cuadrantes_km2,No significativo,-0.278,0.21199999749660492,False
+UPZ,48,densidad_cuadrantes_km2,No significativo,0.4,0.16300000250339508,False
+UPZ,13,densidad_cuadrantes_km2,No significativo,-0.38,0.15299999713897705,False
+UPZ,70,densidad_cuadrantes_km2,No significativo,0.245,0.26100000739097595,False
+UPZ,35,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",0.827,0.02500000037252903,True
+UPZ,38,densidad_cuadrantes_km2,No significativo,0.605,0.05700000002980232,False
+UPZ,115,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-0.579,0.026000000536441803,True
+UPZ,50,densidad_cuadrantes_km2,No significativo,0.05,0.3790000081062317,False
+UPZ,20,densidad_cuadrantes_km2,No significativo,-0.323,0.1940000057220459,False
+UPZ,79,densidad_cuadrantes_km2,No significativo,0.129,0.30799999833106995,False
+UPZ,61,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-0.657,0.027000000700354576,True
+UPZ,12,densidad_cuadrantes_km2,No significativo,-0.539,0.050999999046325684,False
+UPZ,10,densidad_cuadrantes_km2,No significativo,-0.409,0.17900000512599945,False
+UPZ,59,densidad_cuadrantes_km2,No significativo,-0.714,0.052000001072883606,False
+UPZ,58,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-0.713,0.014999999664723873,True
+UPZ,43,densidad_cuadrantes_km2,No significativo,-0.269,0.25600001215934753,False
+UPZ,47,densidad_cuadrantes_km2,No significativo,0.562,0.09700000286102295,False
+UPZ,36,densidad_cuadrantes_km2,No significativo,0.643,0.07699999958276749,False
+UPZ,66,densidad_cuadrantes_km2,No significativo,-0.198,0.4180000126361847,False
+UPZ,57,densidad_cuadrantes_km2,No significativo,-0.488,0.06599999964237213,False
+UPZ,52,densidad_cuadrantes_km2,No significativo,-0.505,0.13600000739097595,False
+UPZ,11,densidad_cuadrantes_km2,No significativo,-0.311,0.3499999940395355,False
+UPZ,14,densidad_cuadrantes_km2,No significativo,-0.012,0.41499999165534973,False
+UPZ,73,densidad_cuadrantes_km2,No significativo,-0.556,0.06800000369548798,False
+UPZ,74,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-0.754,0.03999999910593033,True
+UPZ,104,densidad_cuadrantes_km2,No significativo,0.04,0.3880000114440918,False
+UPZ,31,densidad_cuadrantes_km2,No significativo,-0.365,0.17399999499320984,False
+UPZ,68,densidad_cuadrantes_km2,No significativo,-0.265,0.44200000166893005,False
+UPZ,64,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-0.722,0.04399999976158142,True
+UPZ,71,densidad_cuadrantes_km2,No significativo,-0.389,0.27300000190734863,False
+UPZ,29,densidad_cuadrantes_km2,No significativo,-0.438,0.10400000214576721,False
+UPZ,76,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-0.927,0.009999999776482582,True
+UPZ,3,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-1.245,0.0010000000474974513,True
+UPZ,80,densidad_cuadrantes_km2,No significativo,0.792,0.08399999886751175,False
+UPZ,67,densidad_cuadrantes_km2,No significativo,0.012,0.3959999978542328,False
+UPZ,63,densidad_cuadrantes_km2,No significativo,-0.431,0.08799999952316284,False
+UPZ,28,densidad_cuadrantes_km2,No significativo,-0.477,0.08399999886751175,False
+UPZ,30,densidad_cuadrantes_km2,No significativo,-0.501,0.07100000232458115,False
+UPZ,116,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-0.756,0.004000000189989805,True
+UPZ,85,densidad_cuadrantes_km2,No significativo,0.23,0.25,False
+UPZ,42,densidad_cuadrantes_km2,No significativo,0.254,0.20600000023841858,False
+UPZ,111,densidad_cuadrantes_km2,No significativo,-0.29,0.20100000500679016,False
+UPZ,44,densidad_cuadrantes_km2,No significativo,-0.167,0.3709999918937683,False
+UPZ,41,densidad_cuadrantes_km2,No significativo,-0.058,0.46799999475479126,False
+UPZ,40,densidad_cuadrantes_km2,No significativo,0.059,0.3779999911785126,False
+UPZ,34,densidad_cuadrantes_km2,No significativo,0.421,0.15399999916553497,False
+UPZ,84,densidad_cuadrantes_km2,No significativo,0.149,0.2939999997615814,False
+UPZ,32,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",1.276,0.014000000432133675,True
+UPZ,95,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",1.435,0.0010000000474974513,True
+UPZ,87,densidad_cuadrantes_km2,No significativo,0.141,0.3050000071525574,False
+UPZ,117,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-0.681,0.017999999225139618,True
+UPZ,77,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-0.719,0.026000000536441803,True
+UPZ,54,densidad_cuadrantes_km2,No significativo,-0.012,0.453000009059906,False
+UPZ,39,densidad_cuadrantes_km2,No significativo,0.422,0.16500000655651093,False
+UPZ,62,densidad_cuadrantes_km2,No significativo,0.005,0.4390000104904175,False
+UPZ,53,densidad_cuadrantes_km2,No significativo,0.022,0.4000000059604645,False
+UPZ,69,densidad_cuadrantes_km2,No significativo,-0.008,0.4189999997615814,False
+UPZ,1,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-1.026,0.0020000000949949026,True
+UPZ,46,densidad_cuadrantes_km2,No significativo,0.164,0.2750000059604645,False
+UPZ,112,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-0.523,0.014000000432133675,True
+UPZ,25,densidad_cuadrantes_km2,No significativo,-0.43,0.10499999672174454,False
+UPZ,97,densidad_cuadrantes_km2,No significativo,0.287,0.1940000057220459,False
+UPZ,98,densidad_cuadrantes_km2,No significativo,0.574,0.07500000298023224,False
+UPZ,96,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",2.158,0.004000000189989805,True
+UPZ,92,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",2.75,0.0010000000474974513,True
+UPZ,94,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",3.162,0.0010000000474974513,True
+UPZ,78,densidad_cuadrantes_km2,No significativo,-0.624,0.050999999046325684,False
+UPZ,9,densidad_cuadrantes_km2,"Coldspot (Gi* bajo, sig.)",-0.945,0.0010000000474974513,True
+UPZ,113,densidad_cuadrantes_km2,No significativo,-0.388,0.18700000643730164,False
+UPZ,81,densidad_cuadrantes_km2,"Hotspot (Gi* alto, sig.)",0.72,0.04800000041723251,True
+UPZ,75,estrato_promedio_oficial,No significativo,-0.03,0.4860000014305115,False
+UPZ,22,estrato_promedio_oficial,No significativo,0.375,0.23000000417232513,False
+UPZ,114,estrato_promedio_oficial,No significativo,0.685,0.12099999934434891,False
+UPZ,103,estrato_promedio_oficial,No significativo,0.583,0.06499999761581421,False
+UPZ,105,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",0.721,0.04399999976158142,True
+UPZ,88,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",1.373,0.013000000268220901,True
+UPZ,27,estrato_promedio_oficial,No significativo,0.292,0.2849999964237213,False
+UPZ,99,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",0.815,0.027000000700354576,True
+UPZ,109,estrato_promedio_oficial,No significativo,0.668,0.06199999898672104,False
+UPZ,90,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",1.581,0.0010000000474974513,True
+UPZ,33,estrato_promedio_oficial,No significativo,-0.393,0.1889999955892563,False
+UPZ,102,estrato_promedio_oficial,No significativo,0.289,0.20399999618530273,False
+UPZ,45,estrato_promedio_oficial,No significativo,-0.073,0.41200000047683716,False
+UPZ,93,estrato_promedio_oficial,No significativo,0.009,0.4729999899864197,False
+UPZ,72,estrato_promedio_oficial,No significativo,-0.244,0.2980000078678131,False
+UPZ,15,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",1.72,0.0010000000474974513,True
+UPZ,16,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",1.698,0.0010000000474974513,True
+UPZ,21,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",1.303,0.0010000000474974513,True
+UPZ,89,estrato_promedio_oficial,No significativo,,0.0010000000474974513,True
+UPZ,106,estrato_promedio_oficial,No significativo,0.594,0.12600000202655792,False
+UPZ,86,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-0.858,0.04800000041723251,True
+UPZ,82,estrato_promedio_oficial,No significativo,-0.629,0.07100000232458115,False
+UPZ,37,estrato_promedio_oficial,No significativo,-0.033,0.4959999918937683,False
+UPZ,49,estrato_promedio_oficial,No significativo,-0.569,0.09600000083446503,False
+UPZ,19,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",1.472,0.0010000000474974513,True
+UPZ,24,estrato_promedio_oficial,No significativo,0.622,0.0729999989271164,False
+UPZ,23,estrato_promedio_oficial,No significativo,0.668,0.06800000369548798,False
+UPZ,110,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",0.598,0.03700000047683716,True
+UPZ,100,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",0.775,0.03500000014901161,True
+UPZ,83,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-0.907,0.020999999716877937,True
+UPZ,107,estrato_promedio_oficial,No significativo,0.619,0.0689999982714653,False
+UPZ,101,estrato_promedio_oficial,No significativo,0.542,0.05000000074505806,False
+UPZ,91,estrato_promedio_oficial,No significativo,0.257,0.2529999911785126,False
+UPZ,108,estrato_promedio_oficial,No significativo,0.392,0.14100000262260437,False
+UPZ,55,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-1.113,0.0010000000474974513,True
+UPZ,51,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-1.29,0.0010000000474974513,True
+UPZ,60,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-1.126,0.0010000000474974513,True
+UPZ,56,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-1.019,0.0010000000474974513,True
+UPZ,65,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-0.707,0.014000000432133675,True
+UPZ,2,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",1.001,0.027000000700354576,True
+UPZ,17,estrato_promedio_oficial,No significativo,0.624,0.06499999761581421,False
+UPZ,18,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",0.72,0.04399999976158142,True
+UPZ,26,estrato_promedio_oficial,No significativo,0.453,0.07100000232458115,False
+UPZ,48,estrato_promedio_oficial,No significativo,-0.372,0.18700000643730164,False
+UPZ,13,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",0.844,0.019999999552965164,True
+UPZ,70,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-1.084,0.010999999940395355,True
+UPZ,35,estrato_promedio_oficial,No significativo,-0.08,0.44200000166893005,False
+UPZ,38,estrato_promedio_oficial,No significativo,-0.029,0.492000013589859,False
+UPZ,115,estrato_promedio_oficial,No significativo,0.52,0.0729999989271164,False
+UPZ,50,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-0.914,0.003000000026077032,True
+UPZ,20,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",1.709,0.0010000000474974513,True
+UPZ,79,estrato_promedio_oficial,No significativo,-0.632,0.13600000739097595,False
+UPZ,61,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-1.459,0.0010000000474974513,True
+UPZ,12,estrato_promedio_oficial,No significativo,0.52,0.10300000011920929,False
+UPZ,10,estrato_promedio_oficial,No significativo,0.213,0.30000001192092896,False
+UPZ,59,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-1.221,0.004999999888241291,True
+UPZ,58,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-1.287,0.0010000000474974513,True
+UPZ,43,estrato_promedio_oficial,No significativo,0.117,0.3630000054836273,False
+UPZ,47,estrato_promedio_oficial,No significativo,-0.322,0.23399999737739563,False
+UPZ,36,estrato_promedio_oficial,No significativo,-0.106,0.42399999499320984,False
+UPZ,66,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-0.933,0.010999999940395355,True
+UPZ,57,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-1.383,0.0010000000474974513,True
+UPZ,52,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-1.217,0.0010000000474974513,True
+UPZ,11,estrato_promedio_oficial,No significativo,0.697,0.10999999940395355,False
+UPZ,14,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",2.401,0.0010000000474974513,True
+UPZ,73,estrato_promedio_oficial,No significativo,-0.076,0.460999995470047,False
+UPZ,74,estrato_promedio_oficial,No significativo,0.093,0.4090000092983246,False
+UPZ,104,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",0.773,0.013000000268220901,True
+UPZ,31,estrato_promedio_oficial,No significativo,0.336,0.2029999941587448,False
+UPZ,68,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-1.148,0.04399999976158142,True
+UPZ,64,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-1.134,0.009999999776482582,True
+UPZ,71,estrato_promedio_oficial,No significativo,-0.173,0.4059999883174896,False
+UPZ,29,estrato_promedio_oficial,No significativo,0.181,0.32899999618530273,False
+UPZ,76,estrato_promedio_oficial,No significativo,-0.13,0.4480000138282776,False
+UPZ,3,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",1.617,0.01600000075995922,True
+UPZ,80,estrato_promedio_oficial,No significativo,-0.395,0.22100000083446503,False
+UPZ,67,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-1.132,0.003000000026077032,True
+UPZ,63,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-1.309,0.0010000000474974513,True
+UPZ,28,estrato_promedio_oficial,No significativo,0.311,0.21799999475479126,False
+UPZ,30,estrato_promedio_oficial,No significativo,0.132,0.35499998927116394,False
+UPZ,116,estrato_promedio_oficial,No significativo,0.057,0.4180000126361847,False
+UPZ,85,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-0.749,0.01899999938905239,True
+UPZ,42,estrato_promedio_oficial,No significativo,-0.337,0.15800000727176666,False
+UPZ,111,estrato_promedio_oficial,No significativo,0.562,0.05000000074505806,False
+UPZ,44,estrato_promedio_oficial,No significativo,0.106,0.367000013589859,False
+UPZ,41,estrato_promedio_oficial,No significativo,0.008,0.46399998664855957,False
+UPZ,40,estrato_promedio_oficial,No significativo,0.095,0.382999986410141,False
+UPZ,34,estrato_promedio_oficial,No significativo,-0.334,0.21899999678134918,False
+UPZ,84,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-0.912,0.00800000037997961,True
+UPZ,32,estrato_promedio_oficial,No significativo,-0.582,0.07900000363588333,False
+UPZ,95,estrato_promedio_oficial,No significativo,-0.184,0.3050000071525574,False
+UPZ,87,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-0.948,0.028999999165534973,True
+UPZ,117,estrato_promedio_oficial,No significativo,-0.117,0.4129999876022339,False
+UPZ,77,estrato_promedio_oficial,No significativo,-0.178,0.36500000953674316,False
+UPZ,54,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-0.934,0.0020000000949949026,True
+UPZ,39,estrato_promedio_oficial,No significativo,-0.108,0.41999998688697815,False
+UPZ,62,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-0.899,0.0020000000949949026,True
+UPZ,53,estrato_promedio_oficial,No significativo,-0.375,0.17800000309944153,False
+UPZ,69,estrato_promedio_oficial,"Coldspot (Gi* bajo, sig.)",-0.806,0.03799999877810478,True
+UPZ,1,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",1.517,0.009999999776482582,True
+UPZ,46,estrato_promedio_oficial,No significativo,-0.267,0.24300000071525574,False
+UPZ,112,estrato_promedio_oficial,No significativo,0.252,0.21699999272823334,False
+UPZ,25,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",0.687,0.041999999433755875,True
+UPZ,97,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",1.426,0.0010000000474974513,True
+UPZ,98,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",0.941,0.009999999776482582,True
+UPZ,96,estrato_promedio_oficial,No significativo,-0.597,0.10999999940395355,False
+UPZ,92,estrato_promedio_oficial,No significativo,-0.173,0.3709999918937683,False
+UPZ,94,estrato_promedio_oficial,No significativo,-0.455,0.1899999976158142,False
+UPZ,78,estrato_promedio_oficial,No significativo,-0.275,0.3100000023841858,False
+UPZ,9,estrato_promedio_oficial,"Hotspot (Gi* alto, sig.)",1.076,0.02199999988079071,True
+UPZ,113,estrato_promedio_oficial,No significativo,0.139,0.3630000054836273,False
+UPZ,81,estrato_promedio_oficial,No significativo,-0.543,0.06400000303983688,False
+UPZ,75,estrato_promedio_reportado,No significativo,0.164,0.3580000102519989,False
+UPZ,22,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",0.852,0.0430000014603138,True
+UPZ,114,estrato_promedio_reportado,No significativo,0.686,0.10899999737739563,False
+UPZ,103,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",0.955,0.004000000189989805,True
+UPZ,105,estrato_promedio_reportado,No significativo,0.552,0.09399999678134918,False
+UPZ,88,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",1.253,0.014000000432133675,True
+UPZ,27,estrato_promedio_reportado,No significativo,0.225,0.32100000977516174,False
+UPZ,99,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",1.053,0.006000000052154064,True
+UPZ,109,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",0.725,0.03700000047683716,True
+UPZ,90,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",1.357,0.004999999888241291,True
+UPZ,33,estrato_promedio_reportado,No significativo,-0.555,0.10700000077486038,False
+UPZ,102,estrato_promedio_reportado,No significativo,0.336,0.17000000178813934,False
+UPZ,45,estrato_promedio_reportado,No significativo,-0.176,0.2980000078678131,False
+UPZ,93,estrato_promedio_reportado,No significativo,0.147,0.3440000116825104,False
+UPZ,72,estrato_promedio_reportado,No significativo,-0.198,0.3330000042915344,False
+UPZ,15,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",1.773,0.0010000000474974513,True
+UPZ,16,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",1.558,0.0010000000474974513,True
+UPZ,21,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",1.444,0.0010000000474974513,True
+UPZ,89,estrato_promedio_reportado,No significativo,,0.0010000000474974513,True
+UPZ,106,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",0.911,0.03500000014901161,True
+UPZ,86,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.106,0.017000000923871994,True
+UPZ,82,estrato_promedio_reportado,No significativo,-0.726,0.050999999046325684,False
+UPZ,37,estrato_promedio_reportado,No significativo,-0.074,0.4429999887943268,False
+UPZ,49,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-0.752,0.04399999976158142,True
+UPZ,19,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",1.443,0.0010000000474974513,True
+UPZ,24,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",0.773,0.03200000151991844,True
+UPZ,23,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",1.13,0.008999999612569809,True
+UPZ,110,estrato_promedio_reportado,No significativo,0.533,0.057999998331069946,False
+UPZ,100,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",0.934,0.014000000432133675,True
+UPZ,83,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.047,0.012000000104308128,True
+UPZ,107,estrato_promedio_reportado,No significativo,0.568,0.0820000022649765,False
+UPZ,101,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",0.643,0.03099999949336052,True
+UPZ,91,estrato_promedio_reportado,No significativo,0.357,0.19599999487400055,False
+UPZ,108,estrato_promedio_reportado,No significativo,0.314,0.19699999690055847,False
+UPZ,55,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.216,0.0010000000474974513,True
+UPZ,51,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.288,0.0010000000474974513,True
+UPZ,60,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.183,0.0010000000474974513,True
+UPZ,56,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.127,0.0010000000474974513,True
+UPZ,65,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-0.731,0.012000000104308128,True
+UPZ,2,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",0.993,0.023000000044703484,True
+UPZ,17,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",0.715,0.03500000014901161,True
+UPZ,18,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",0.992,0.006000000052154064,True
+UPZ,26,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",0.633,0.026000000536441803,True
+UPZ,48,estrato_promedio_reportado,No significativo,-0.561,0.08399999886751175,False
+UPZ,13,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",1.125,0.003000000026077032,True
+UPZ,70,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.263,0.0020000000949949026,True
+UPZ,35,estrato_promedio_reportado,No significativo,-0.355,0.16899999976158142,False
+UPZ,38,estrato_promedio_reportado,No significativo,-0.2,0.2879999876022339,False
+UPZ,115,estrato_promedio_reportado,No significativo,0.396,0.14000000059604645,False
+UPZ,50,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.056,0.0020000000949949026,True
+UPZ,20,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",1.662,0.0010000000474974513,True
+UPZ,79,estrato_promedio_reportado,No significativo,-0.517,0.20000000298023224,False
+UPZ,61,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.486,0.0010000000474974513,True
+UPZ,12,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",1.038,0.007000000216066837,True
+UPZ,10,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",0.83,0.03700000047683716,True
+UPZ,59,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.481,0.0010000000474974513,True
+UPZ,58,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.406,0.0010000000474974513,True
+UPZ,43,estrato_promedio_reportado,No significativo,0.148,0.3479999899864197,False
+UPZ,47,estrato_promedio_reportado,No significativo,-0.341,0.20900000631809235,False
+UPZ,36,estrato_promedio_reportado,No significativo,-0.605,0.06199999898672104,False
+UPZ,66,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.031,0.004999999888241291,True
+UPZ,57,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.378,0.0010000000474974513,True
+UPZ,52,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.436,0.0010000000474974513,True
+UPZ,11,estrato_promedio_reportado,No significativo,0.748,0.08900000154972076,False
+UPZ,14,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",2.06,0.0010000000474974513,True
+UPZ,73,estrato_promedio_reportado,No significativo,-0.002,0.49000000953674316,False
+UPZ,74,estrato_promedio_reportado,No significativo,0.168,0.3779999911785126,False
+UPZ,104,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",0.779,0.007000000216066837,True
+UPZ,31,estrato_promedio_reportado,No significativo,0.54,0.08900000154972076,False
+UPZ,68,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.168,0.04800000041723251,True
+UPZ,64,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.312,0.003000000026077032,True
+UPZ,71,estrato_promedio_reportado,No significativo,-0.152,0.40700000524520874,False
+UPZ,29,estrato_promedio_reportado,No significativo,0.292,0.23499999940395355,False
+UPZ,76,estrato_promedio_reportado,No significativo,-0.016,0.4959999918937683,False
+UPZ,3,estrato_promedio_reportado,No significativo,1.187,0.05299999937415123,False
+UPZ,80,estrato_promedio_reportado,No significativo,-0.526,0.13699999451637268,False
+UPZ,67,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.203,0.0010000000474974513,True
+UPZ,63,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.39,0.0010000000474974513,True
+UPZ,28,estrato_promedio_reportado,No significativo,0.323,0.21299999952316284,False
+UPZ,30,estrato_promedio_reportado,No significativo,0.126,0.37400001287460327,False
+UPZ,116,estrato_promedio_reportado,No significativo,0.202,0.3089999854564667,False
+UPZ,85,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-0.87,0.013000000268220901,True
+UPZ,42,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-0.57,0.035999998450279236,True
+UPZ,111,estrato_promedio_reportado,No significativo,0.442,0.11400000005960464,False
+UPZ,44,estrato_promedio_reportado,No significativo,0.026,0.45500001311302185,False
+UPZ,41,estrato_promedio_reportado,No significativo,-0.063,0.46299999952316284,False
+UPZ,40,estrato_promedio_reportado,No significativo,0.063,0.42500001192092896,False
+UPZ,34,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-0.797,0.014000000432133675,True
+UPZ,84,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.078,0.004000000189989805,True
+UPZ,32,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-0.877,0.013000000268220901,True
+UPZ,95,estrato_promedio_reportado,No significativo,-0.42,0.10199999809265137,False
+UPZ,87,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.161,0.014000000432133675,True
+UPZ,117,estrato_promedio_reportado,No significativo,0.147,0.35899999737739563,False
+UPZ,77,estrato_promedio_reportado,No significativo,-0.071,0.4659999907016754,False
+UPZ,54,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-1.084,0.0020000000949949026,True
+UPZ,39,estrato_promedio_reportado,No significativo,-0.459,0.15600000321865082,False
+UPZ,62,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-0.965,0.003000000026077032,True
+UPZ,53,estrato_promedio_reportado,No significativo,-0.567,0.07100000232458115,False
+UPZ,69,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-0.938,0.020999999716877937,True
+UPZ,1,estrato_promedio_reportado,No significativo,0.845,0.07800000160932541,False
+UPZ,46,estrato_promedio_reportado,No significativo,-0.336,0.17100000381469727,False
+UPZ,112,estrato_promedio_reportado,No significativo,0.243,0.20600000023841858,False
+UPZ,25,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",0.779,0.029999999329447746,True
+UPZ,97,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",1.649,0.0010000000474974513,True
+UPZ,98,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",0.922,0.014000000432133675,True
+UPZ,96,estrato_promedio_reportado,No significativo,-0.433,0.19200000166893005,False
+UPZ,92,estrato_promedio_reportado,No significativo,-0.176,0.3700000047683716,False
+UPZ,94,estrato_promedio_reportado,No significativo,-0.448,0.17900000512599945,False
+UPZ,78,estrato_promedio_reportado,No significativo,-0.249,0.3140000104904175,False
+UPZ,9,estrato_promedio_reportado,"Hotspot (Gi* alto, sig.)",1.159,0.010999999940395355,True
+UPZ,113,estrato_promedio_reportado,No significativo,0.088,0.414000004529953,False
+UPZ,81,estrato_promedio_reportado,"Coldspot (Gi* bajo, sig.)",-0.751,0.01600000075995922,True
+Localidad,09,deficit_aseo_relativo,"Hotspot (Gi* alto, sig.)",0.82,0.03200000151991844,True
+Localidad,10,deficit_aseo_relativo,No significativo,-0.629,0.09399999678134918,False
+Localidad,11,deficit_aseo_relativo,No significativo,0.141,0.375,False
+Localidad,15,deficit_aseo_relativo,No significativo,-0.087,0.4000000059604645,False
+Localidad,06,deficit_aseo_relativo,No significativo,0.088,0.3919999897480011,False
+Localidad,18,deficit_aseo_relativo,No significativo,0.249,0.3070000112056732,False
+Localidad,17,deficit_aseo_relativo,No significativo,-1.1,0.17900000512599945,False
+Localidad,12,deficit_aseo_relativo,No significativo,-0.284,0.22499999403953552,False
+Localidad,13,deficit_aseo_relativo,No significativo,-0.474,0.06300000101327896,False
+Localidad,16,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.895,0.009999999776482582,True
+Localidad,14,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.948,0.02199999988079071,True
+Localidad,20,deficit_aseo_relativo,No significativo,-1.39,0.06599999964237213,False
+Localidad,01,deficit_aseo_relativo,No significativo,0.136,0.3930000066757202,False
+Localidad,02,deficit_aseo_relativo,No significativo,0.157,0.3569999933242798,False
+Localidad,03,deficit_aseo_relativo,No significativo,0.636,0.05299999937415123,False
+Localidad,04,deficit_aseo_relativo,No significativo,-0.148,0.3720000088214874,False
+Localidad,05,deficit_aseo_relativo,"Coldspot (Gi* bajo, sig.)",-0.879,0.013000000268220901,True
+Localidad,19,deficit_aseo_relativo,No significativo,-0.532,0.1289999932050705,False
+Localidad,07,deficit_aseo_relativo,No significativo,-0.367,0.32600000500679016,False
+Localidad,08,deficit_aseo_relativo,No significativo,0.3,0.21400000154972076,False
+Localidad,09,densidad_puntos_criticos_km2,No significativo,0.011,0.47600001096725464,False
+Localidad,10,densidad_puntos_criticos_km2,No significativo,-0.215,0.3440000116825104,False
+Localidad,11,densidad_puntos_criticos_km2,No significativo,-0.277,0.30300000309944153,False
+Localidad,15,densidad_puntos_criticos_km2,No significativo,0.4,0.11999999731779099,False
+Localidad,06,densidad_puntos_criticos_km2,No significativo,0.338,0.15700000524520874,False
+Localidad,18,densidad_puntos_criticos_km2,No significativo,0.333,0.22499999403953552,False
+Localidad,17,densidad_puntos_criticos_km2,No significativo,-0.727,0.26600000262260437,False
+Localidad,12,densidad_puntos_criticos_km2,No significativo,-0.495,0.09399999678134918,False
+Localidad,13,densidad_puntos_criticos_km2,No significativo,0.034,0.4350000023841858,False
+Localidad,16,densidad_puntos_criticos_km2,"Hotspot (Gi* alto, sig.)",0.693,0.02199999988079071,True
+Localidad,14,densidad_puntos_criticos_km2,No significativo,0.286,0.25,False
+Localidad,20,densidad_puntos_criticos_km2,No significativo,-1.065,0.06599999964237213,False
+Localidad,01,densidad_puntos_criticos_km2,No significativo,-0.437,0.25699999928474426,False
+Localidad,02,densidad_puntos_criticos_km2,No significativo,-0.56,0.07599999755620956,False
+Localidad,03,densidad_puntos_criticos_km2,No significativo,0.275,0.24199999868869781,False
+Localidad,04,densidad_puntos_criticos_km2,No significativo,0.454,0.18299999833106995,False
+Localidad,05,densidad_puntos_criticos_km2,No significativo,-0.296,0.25,False
+Localidad,19,densidad_puntos_criticos_km2,No significativo,0.183,0.3540000021457672,False
+Localidad,07,densidad_puntos_criticos_km2,No significativo,0.059,0.41600000858306885,False
+Localidad,08,densidad_puntos_criticos_km2,No significativo,-0.002,0.48100000619888306,False
+Localidad,09,densidad_homicidios_km2,No significativo,-0.093,0.4909999966621399,False
+Localidad,10,densidad_homicidios_km2,No significativo,-0.58,0.07199999690055847,False
+Localidad,11,densidad_homicidios_km2,No significativo,-0.592,0.06499999761581421,False
+Localidad,15,densidad_homicidios_km2,"Hotspot (Gi* alto, sig.)",0.691,0.032999999821186066,True
+Localidad,06,densidad_homicidios_km2,No significativo,0.277,0.21699999272823334,False
+Localidad,18,densidad_homicidios_km2,No significativo,-0.096,0.47099998593330383,False
+Localidad,17,densidad_homicidios_km2,No significativo,-0.399,0.42800000309944153,False
+Localidad,12,densidad_homicidios_km2,"Coldspot (Gi* bajo, sig.)",-0.649,0.013000000268220901,True
+Localidad,13,densidad_homicidios_km2,No significativo,0.026,0.45100000500679016,False
+Localidad,16,densidad_homicidios_km2,No significativo,0.544,0.07100000232458115,False
+Localidad,14,densidad_homicidios_km2,No significativo,-0.132,0.41600000858306885,False
+Localidad,20,densidad_homicidios_km2,No significativo,-0.896,0.050999999046325684,False
+Localidad,01,densidad_homicidios_km2,No significativo,-0.666,0.07800000160932541,False
+Localidad,02,densidad_homicidios_km2,"Coldspot (Gi* bajo, sig.)",-0.611,0.03400000184774399,True
+Localidad,03,densidad_homicidios_km2,No significativo,0.192,0.328000009059906,False
+Localidad,04,densidad_homicidios_km2,No significativo,0.146,0.35199999809265137,False
+Localidad,05,densidad_homicidios_km2,No significativo,0.022,0.44600000977516174,False
+Localidad,19,densidad_homicidios_km2,No significativo,0.343,0.26499998569488525,False
+Localidad,07,densidad_homicidios_km2,No significativo,0.382,0.2619999945163727,False
+Localidad,08,densidad_homicidios_km2,No significativo,0.122,0.37299999594688416,False
+Localidad,09,densidad_incidentes_km2,No significativo,0.589,0.09799999743700027,False
+Localidad,10,densidad_incidentes_km2,No significativo,0.247,0.31200000643730164,False
+Localidad,11,densidad_incidentes_km2,No significativo,0.088,0.4359999895095825,False
+Localidad,15,densidad_incidentes_km2,No significativo,0.095,0.3970000147819519,False
+Localidad,06,densidad_incidentes_km2,No significativo,0.011,0.47999998927116394,False
+Localidad,18,densidad_incidentes_km2,No significativo,0.164,0.3610000014305115,False
+Localidad,17,densidad_incidentes_km2,No significativo,-0.903,0.17900000512599945,False
+Localidad,12,densidad_incidentes_km2,No significativo,0.105,0.38499999046325684,False
+Localidad,13,densidad_incidentes_km2,No significativo,0.214,0.2460000067949295,False
+Localidad,16,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",0.841,0.007000000216066837,True
+Localidad,14,densidad_incidentes_km2,No significativo,0.761,0.0560000017285347,False
+Localidad,20,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",-1.78,0.0010000000474974513,True
+Localidad,01,densidad_incidentes_km2,No significativo,-0.088,0.4480000138282776,False
+Localidad,02,densidad_incidentes_km2,No significativo,-0.107,0.3959999978542328,False
+Localidad,03,densidad_incidentes_km2,"Hotspot (Gi* alto, sig.)",0.717,0.02199999988079071,True
+Localidad,04,densidad_incidentes_km2,No significativo,-0.155,0.38199999928474426,False
+Localidad,05,densidad_incidentes_km2,"Coldspot (Gi* bajo, sig.)",-0.829,0.014999999664723873,True
+Localidad,19,densidad_incidentes_km2,No significativo,-0.18,0.35100001096725464,False
+Localidad,07,densidad_incidentes_km2,No significativo,-0.462,0.2460000067949295,False
+Localidad,08,densidad_incidentes_km2,No significativo,-0.044,0.460999995470047,False
