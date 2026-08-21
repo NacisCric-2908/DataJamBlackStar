@@ -44,7 +44,7 @@ Bogotá presenta una distribución territorial heterogénea de tres fenómenos u
 
 1. Integrar en una sola arquitectura de datos (Medallion: Bronze → Silver → Gold) las fuentes abiertas de aseo, seguridad, emergencias y estratificación de Bogotá.
 2. Construir indicadores territoriales comparables a nivel UPZ y localidad.
-3. Contrastar estadísticamente 7 hipótesis (H1–H7) sobre la relación entre vulnerabilidad, déficit de aseo, arrojo clandestino, delitos y emergencias — con estadística espacial formal, no solo correlación simple.
+3. Contrastar estadísticamente la hipótesis principal — *las zonas con mayor vulnerabilidad socioeconómica y menor disponibilidad relativa de infraestructura formal de aseo concentran más puntos críticos de arrojo clandestino* — y sus derivaciones hacia delitos y emergencias, con estadística espacial formal y modelos multivariables, no solo correlación simple.
 4. Producir un dashboard interactivo y una capa de datos reutilizable para visualización externa.
 
 ### Fuera de alcance (esta fase)
@@ -100,7 +100,7 @@ flowchart TD
         G["dimensiones · indicadores · modelos · estadística espacial"]
     end
     subgraph Consumo ["🚀 Capas de consumo"]
-        D1["Dashboard HTML (pipeline original)"]
+        D1["Atlas territorial — outputs/dashboard_prototipo_atlas.html"]
         D2["Informe final + notebooks (pipeline riguroso)"]
         D3["data/dashboard/ — CSV para app externa"]
     end
@@ -171,7 +171,7 @@ El repositorio sigue estrictamente el estándar de entregables del **DataJam Bog
 │
 ├── outputs/                            # Entregables visuales y mapas exportados
 │   ├── figures/                        # Gráficos de alta resolución (distribuciones, LISA, hotspots)
-│   └── dashboard_datajam_bogota_2026.html  # Dashboard interactivo autónomo (Leaflet / Plotly)
+│   └── dashboard_prototipo_atlas.html  # Atlas territorial: dashboard interactivo autónomo (SVG propio, sin librerías externas)
 │
 └── docs/                               # Informes analíticos y notas técnicas
     ├── informe_final.md                # Informe final consolidado con modelos multivariables
@@ -239,9 +239,9 @@ python main.py --skip-notebooks
 python main.py --phases 1 2 3
 
 # Visualizar el dashboard interactivo
-xdg-open outputs/dashboard_datajam_bogota_2026.html   # Linux
-open outputs/dashboard_datajam_bogota_2026.html       # macOS
-start outputs/dashboard_datajam_bogota_2026.html      # Windows
+xdg-open outputs/dashboard_prototipo_atlas.html   # Linux
+open outputs/dashboard_prototipo_atlas.html       # macOS
+start outputs/dashboard_prototipo_atlas.html      # Windows
 ```
 
 Resultado principal: **[`docs/informe_final.md`](docs/informe_final.md)**.
@@ -250,12 +250,27 @@ Resultado principal: **[`docs/informe_final.md`](docs/informe_final.md)**.
 
 ## 💡 7. Hallazgos principales
 
-> Ver la tabla completa de 8 hipótesis (28 pruebas estadísticas) en [`docs/informe_final.md`](docs/informe_final.md) sección 6, o en formato de datos en [`data/dashboard/hypotheses/hypothesis_results.csv`](data/dashboard/hypotheses/hypothesis_results.csv).
+### La hipótesis principal
 
-- **Desigualdad de cobertura (hallazgo principal):** al normalizar por población oficial (15ª fuente), las UPZ de **estrato 1–2 tienen 8,9 veces menos cestas por habitante** que las de estrato 4–6 (2,56 vs 22,81 por 1.000 hab). La brecha **persiste al controlar por densidad poblacional** (IRR=1,78 por punto de estrato, p<0,0001) — no es un efecto de aglomeración urbana.
-- **Confirmado:** la vulnerabilidad socioeconómica se asocia significativamente con el déficit de aseo (H1), de forma robusta a la unidad espacial (UPZ/localidad), a la fuente de estrato (oficial vs. proxy) y a la normalización (área vs. per cápita — donde de hecho se fortalece: rho -0,574 → -0,628).
-- **No respaldado:** el déficit de aseo por sí solo no predice el arrojo clandestino una vez se controla por estrato (H2) — de hecho, los puntos críticos están más cerca de la infraestructura formal que un punto aleatorio de la ciudad.
-- **Parcialmente respaldado:** arrojo↔delitos y arrojo↔emergencias tienen correlación bivariada fuerte (rho hasta 0.83) pero se atenúan al controlar por vulnerabilidad — evidencia de mediación por estrato, no de un efecto directo.
+> **Las zonas de Bogotá D.C. con mayor vulnerabilidad socioeconómica y menor disponibilidad relativa de infraestructura formal de aseo presentan una mayor concentración espacial de puntos críticos de arrojo clandestino de residuos.**
+
+**Veredicto: se confirma por la vía socioeconómica y se refuta por la vía de la infraestructura.** El arrojo clandestino sí se concentra donde vive la población más vulnerable, pero no donde falta el mobiliario de aseo — de hecho ocurre justo al lado de él.
+
+**1. La concentración espacial existe y no es azar.** Los puntos críticos de arrojo se agrupan en el territorio (I de Moran = 0,284, p = 0,001, 112 UPZ): 13 UPZ forman conglomerados de alta concentración rodeados de alta concentración, frente a 20 UPZ en el extremo opuesto.
+
+**2. La vulnerabilidad socioeconómica explica esa concentración.** En el modelo Binomial Negativa multivariable por UPZ, por cada punto que sube el estrato promedio de la zona el conteo de puntos críticos cae cerca de un 59% (coeficiente −0,899; IRR 0,407; IC 95% [−1,18; −0,62]; p corregido por FDR < 0,001; n = 112). El efecto se mantiene al controlar por el déficit de aseo y por el área de la zona.
+
+**3. La desigualdad en la infraestructura de aseo también es real — y es el hallazgo más contundente del estudio.** Al normalizar por población oficial, las UPZ de **estrato 1–2 tienen 8,9 veces menos cestas por habitante** que las de estrato 4–6 (2,56 vs. 22,81 por cada 1.000 habitantes). La brecha **persiste al controlar por densidad poblacional** (IRR = 1,78 por punto de estrato, p < 0,0001), así que no es un efecto de aglomeración urbana. La asociación entre estrato y déficit de aseo aguanta todas las pruebas: Spearman ρ = −0,576 por UPZ y −0,598 por localidad, Moran bivariado = −0,381 (p = 0,001), y se fortalece al medir per cápita en vez de por área (ρ −0,574 → −0,628).
+
+**4. Pero el déficit de infraestructura no es lo que produce el arrojo.** Cuando el modelo incluye el estrato, el déficit de aseo deja de predecir los puntos críticos y su coeficiente apunta en dirección contraria a la esperada (−0,484; p corregido = 0,001). El análisis de proximidad lo confirma: un punto crítico está en promedio a **91,8 m de una cesta pública**, mientras que un punto aleatorio de la ciudad está a **212,8 m** (Mann-Whitney, p < 0,001); con contenedores, 303,9 m frente a 466,3 m. Y la correlación espacial entre déficit y arrojo es prácticamente nula (Moran bivariado = −0,007, p = 0,48). La basura no se acumula donde no hay canecas: se acumula donde ya hay infraestructura, en las zonas de mayor vulnerabilidad.
+
+**Lectura conjunta.** El estrato socioeconómico es el factor común detrás de los dos fenómenos, no un eslabón de una cadena. La mitad socioeconómica de la hipótesis se sostiene con evidencia sólida; la mitad de infraestructura no, y sostenerla llevaría a una intervención equivocada — instalar mobiliario donde ya lo hay.
+
+### Lo que ocurre con delitos y emergencias
+
+Donde hay más arrojo clandestino hay más homicidios (ρ = 0,83) y más emergencias urbanas (ρ = 0,40), y esas correlaciones aguantan los cambios de unidad territorial, de normalización y de período. Pero al meter el estrato en el modelo el arrojo deja de aportar información (coeficiente 0,007, p = 0,777 con homicidios; −0,009, p = 0,759 con emergencias). Es mediación por vulnerabilidad, no un efecto directo: la misma condición de fondo produce los dos fenómenos.
+
+> El registro completo de las pruebas estadísticas — las 29, incluidas las que fallaron, con su p corregido por comparaciones múltiples — está en [`docs/informe_final.md`](docs/informe_final.md) sección 6, en [`data/dashboard/hypotheses/hypothesis_results.csv`](data/dashboard/hypotheses/hypothesis_results.csv) y en el tablero de hipótesis del dashboard.
 
 ---
 
@@ -264,12 +279,23 @@ Resultado principal: **[`docs/informe_final.md`](docs/informe_final.md)**.
 | Entregable | Ubicación |
 |---|---|
 | Orquestador Maestro de Ejecución | [`main.py`](main.py) |
-| Dashboard HTML interactivo | [`outputs/dashboard_datajam_bogota_2026.html`](outputs/dashboard_datajam_bogota_2026.html) |
+| Atlas territorial — dashboard HTML interactivo | [`outputs/dashboard_prototipo_atlas.html`](outputs/dashboard_prototipo_atlas.html) |
 | Informe final riguroso | [`docs/informe_final.md`](docs/informe_final.md) |
 | Reporte de auditoría de datos | [`scripts/02_auditoria/reporte_auditoria.md`](scripts/02_auditoria/reporte_auditoria.md) |
 | Diccionario de datos (Gold) | [`scripts/06_construccion_variables/data_dictionary.csv`](scripts/06_construccion_variables/data_dictionary.csv) |
 | Capa de datos para dashboard externo | [`data/dashboard/`](data/dashboard/) |
 | Notebooks analíticos ejecutados | [`notebooks/`](notebooks/) |
+
+### 🗺️ Dónde está el dashboard y qué hace
+
+**Ubicación:** [`outputs/dashboard_prototipo_atlas.html`](outputs/dashboard_prototipo_atlas.html) — un archivo HTML único de ~220 KB. Se abre con doble clic o con `xdg-open outputs/dashboard_prototipo_atlas.html`: no necesita servidor, ni conexión a internet, ni librerías de terceros. El mapa, los sparklines y las barras son SVG generado por el propio archivo, y todas las cifras vienen embebidas desde `data/dashboard/` y `data/gold/`. Se adapta a tema claro y oscuro y es navegable con teclado.
+
+| Sección | Qué permite |
+|---|---|
+| **Atlas territorial** | Mapa coroplético de las 112 UPZ / 19 localidades con 8 indicadores conmutables (vulnerabilidad compuesta, estrato, déficit de aseo, arrojo clandestino, emergencias, cestas, homicidios, densidad poblacional), interruptor **por km² / por habitante**, leyenda dinámica, I de Moran del indicador activo, panel de detalle por zona con sus clusters LISA/Gi\*, y ranking de las 12 UPZ prioritarias |
+| **El hallazgo que reordena la historia** | La misma asociación medida sola y medida con el estrato dentro del modelo: el efecto del arrojo clandestino se desvanece al controlar por vulnerabilidad |
+| **Tablero de hipótesis** | Las hipótesis declaradas antes de correr los modelos, con sus 29 pruebas, estadístico y p corregido por comparaciones múltiples (FDR), clasificadas en confirmada / parcial / no respaldada |
+| **Series en el tiempo** | 7 series de UAECOB, DAILoc y UAESP, cada una en su ventana temporal nativa y con los cortes parciales advertidos |
 
 ### 🏛️ Recomendaciones de política pública (pipeline original — sujetas a los matices de la sección 7)
 
