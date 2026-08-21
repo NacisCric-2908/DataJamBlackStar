@@ -281,6 +281,7 @@ Donde hay más arrojo clandestino hay más homicidios (ρ = 0,83) y más emergen
 | Orquestador Maestro de Ejecución | [`main.py`](main.py) |
 | Atlas territorial — dashboard HTML interactivo | [`outputs/dashboard_prototipo_atlas.html`](outputs/dashboard_prototipo_atlas.html) |
 | Informe final riguroso | [`docs/informe_final.md`](docs/informe_final.md) |
+| Nota Técnica de Integración de Datos | [`docs/nota_tecnica_integracion_datos.md`](docs/nota_tecnica_integracion_datos.md) |
 | Reporte de auditoría de datos | [`scripts/02_auditoria/reporte_auditoria.md`](scripts/02_auditoria/reporte_auditoria.md) |
 | Diccionario de datos (Gold) | [`scripts/06_construccion_variables/data_dictionary.csv`](scripts/06_construccion_variables/data_dictionary.csv) |
 | Capa de datos para dashboard externo | [`data/dashboard/`](data/dashboard/) |
